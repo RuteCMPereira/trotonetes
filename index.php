@@ -17,7 +17,6 @@
 
 <?php
 include_once "components/header_nav.php";
-include_once  "components/component.php";
 include_once "helpers/js.php";
 
 ?>
