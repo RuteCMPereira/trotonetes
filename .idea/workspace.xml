@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d71ba43-f9be-40ef-982f-72219111cf29" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/components/menu_app.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/menu_app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/css.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,17 +11,17 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="480">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/components/menu_app.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="208">
@@ -35,7 +34,7 @@
         <entry file="file://$PROJECT_DIR$/css/css.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="336">
-              <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+              <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -63,7 +62,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="502" />
+    <option name="x" value="501" />
     <option name="width" value="1166" />
     <option name="height" value="1060" />
   </component>
@@ -133,6 +132,7 @@
       <workItem from="1558265142574" duration="688000" />
       <workItem from="1558275907020" duration="644000" />
       <workItem from="1558279709505" duration="4128000" />
+      <workItem from="1558347316320" duration="310000" />
     </task>
     <task id="LOCAL-00001" summary="hello trotonetes!">
       <created>1557954611171</created>
@@ -204,16 +204,24 @@
       <option name="project" value="LOCAL" />
       <updated>1558279781440</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="//Mudança do Index">
+      <created>1558347449927</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1558347449928</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10647000" />
+    <option name="totallyTimeSpent" value="10957000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="456" y="0" width="1056" height="960" extended-state="0" />
+    <frame x="-7" y="-7" width="1753" height="954" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.402" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24160282" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -248,7 +256,8 @@
     <MESSAGE value="//Apagar tudo" />
     <MESSAGE value="//Apagar tudo (de novo)" />
     <MESSAGE value="//Adicionar Pastas Base." />
-    <option name="LAST_COMMIT_MESSAGE" value="//Adicionar Pastas Base." />
+    <MESSAGE value="//Mudança do Index" />
+    <option name="LAST_COMMIT_MESSAGE" value="//Mudança do Index" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/imgs/sprite.jpg" />
@@ -261,14 +270,7 @@
     <entry file="file://$PROJECT_DIR$/css/css.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
-          <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -276,6 +278,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
           <caret line="13" column="78" selection-start-line="13" selection-start-column="78" selection-end-line="13" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
