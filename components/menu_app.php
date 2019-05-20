@@ -23,7 +23,7 @@
             <img src="images/back_icon.png" class="icon" width="40" height="auto">
         </a>
         <a>
-            <img src="images/play_icon.png" class="icon" width="180" height="auto">
+            <img src="images/play_icon.png" class="icon" width="170vp" height="auto">
         </a>
         <a>
             <img src="images/back_icon.png" class="icon" width="40" height="auto">
