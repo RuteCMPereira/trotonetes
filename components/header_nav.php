@@ -1,22 +1,16 @@
-
-<section class="row p-0 clip-me-header bg-danger" id="header_nav">
-    
-    <div class="col-12 d-flex justify-content-between my-auto" >
-        <a>
-            <img src="images/back_icon.png" class="icon" width="40" height="auto">
-        </a>
-        <a>
-            <img src="images/back_icon.png" class="icon" width="40" height="auto">
-        </a>
-        <a>
-            <img src="images/back_icon.png" class="icon" width="40" height="auto">
-        </a>
-
+<section class="clip-me-header  p-0">
+    <div class="row h-100 align-middle ">
+        <div class="col-4  my-auto text-center">
+            <img src="images/back_icon.png" class="icon">
+        </div>
+        <div class="col-4  my-auto text-center">
+            <img src="images/logo.png" height="80">
+        </div>
+        <div class="col-4  my-auto text-center">
+            <img src="images/perfil_icon.png" class="icon">
+        </div>
     </div>
 
-
 </section>
-
-
 
 

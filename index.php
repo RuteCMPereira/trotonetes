@@ -13,10 +13,14 @@
 
 </head>
 
-<body class="container-fluid" scroll="no" style="overflow: hidden">
+<body class="container-fluid p-0 m-0" scroll="no" style="overflow: hidden" >
 
 <?php
-include_once "components/loader.php";
+include_once "components/information.php";
+include_once "components/header_nav.php";
+include_once "components/bottom_nav.php";
+
+
 include_once "helpers/js.php";
 
 ?>

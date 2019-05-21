@@ -4,47 +4,18 @@
     background-color: #EDCEBA;
     border-radius: 50%;
     -webkit-box-shadow: 0px 1px 24px 8px rgba(0, 0, 0, 0.25);
-    animation-name : fade;
-    animation-timing-function: ease-in-out;
-    animation-duration: 2s;
+    height: 5vh;
 
 }
 
-.clip-me-div {
 
-    background: linear-gradient(180deg, rgba(162,133,123,1) 0%, rgba(56,20,39,1) 23%);
-    z-index: 0;
-    position: absolute;
-    padding-top: 150px!important;
-    width: 100%;
-    height: 90%;
-    clip-path: ellipse(120% 100% at 50% 0%);
-    animation-name : fall;
-    animation-timing-function: ease-in-out;
-    animation-duration: 1s;
+* {
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
-.clip-me-header {
-    z-index: 1;
-    position: absolute;
-    width: 100%;
-    height: 20%;
-    clip-path: ellipse(70% 100% at 50% 0%);
-    animation-name : fall;
-    animation-timing-function: ease-in-out;
-    animation-duration: 500ms;
-}
 
-.fixed-bottom{
-
-    bottom: 0;
-    position: absolute;
-    animation-name : up;
-    animation-timing-function: ease-in-out;
-    animation-duration: 1s;
-}
-
-body{
+body {
 
     height: 100%;
     width: 100%;
@@ -53,34 +24,157 @@ body{
 
 @keyframes fall {
 
-0% {
-    top: -100%;
-}
-
-100%{
-    top: 0;
-}
-
-}
-
-
-
-@keyframes fade {
-
     0% {
-        opacity: 0;
+        top: -100%;
     }
 
-    100%{
-        opacity: 1;
+    100% {
+        top: 0;
     }
 
 }
 
 
-.tile {
+.clip-me-header {
+    background: linear-gradient(180deg, rgba(101,66,60,1) 11%, rgba(119,88,69,1) 40%);
+    z-index: 3;
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    left: 0;
+    right: 0;
+    clip-path: ellipse(65% 100% at 50% 0%);
+    animation-name: fall;
+    animation-timing-function: ease-in-out;
+    animation-duration: 500ms;
+}
 
-    animation-name : return;
+
+.clip-me-div {
+
+    z-index: 0;
+    background: linear-gradient(180deg, rgba(119,88,69,1) 0%, rgba(56, 20, 39, 1)19%);
+    position: absolute;
+    padding-top: 15vh !important;
+    width: 100%;
+    height: 88%;
+    left: 0;
+    right: 0;
+    clip-path: ellipse(130% 100% at 50% 0%);
+    animation-name: fall;
     animation-timing-function: ease-in-out;
     animation-duration: 1s;
 }
+
+.begin {
+
+    display: none;
+}
+
+
+@keyframes animation1 {
+
+    0% {
+        position: relative;
+        display: block;
+        opacity: 0;
+        top: -10%;
+    }
+
+    100% {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+
+/*CSS DO LOADER*/
+
+/* LOADING DOTS*/
+.spinner {
+    margin: 100px auto 0;
+    width: 70px;
+    text-align: center;
+}
+
+.spinner > div {
+    width: 18px;
+    height: 18px;
+    background-color: #EFD0BC;
+
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+    0%, 80%, 100% {
+        -webkit-transform: scale(0)
+    }
+    40% {
+        -webkit-transform: scale(1.0)
+    }
+}
+
+@keyframes sk-bouncedelay {
+    0%, 80%, 100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    40% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+}
+
+/*LANTERNA ANIMATION*/
+
+.open_close_animation {
+
+    animation: open_close 7s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes open_close {
+
+    0% {clip-path: polygon(0 0, 100% 0, 50% 0%, 50% 88%, 50% 0%);}
+    5%{clip-path: polygon(0 0, 100% 0, 50% 0%, 50% 88%, 50% 0%);}
+    8% {clip-path: polygon(0 0, 100% 0, 100% 0%, 50% 88%, 0 0%);}
+    10% {clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 88%, 0 60%);}
+    90% {clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 88%, 0 60%);}
+    92% {clip-path: polygon(0 0, 100% 0, 100% 0%, 50% 88%, 0 0%);}
+    95%{clip-path: polygon(0 0, 100% 0, 50% 0%, 50% 88%, 50% 0%);}
+    100% {clip-path: polygon(0 0, 100% 0, 50% 0%, 50% 88%, 50% 0%);}
+
+
+
+}
+
+
+/* BACKGROUND COLORS */
+.bg-gradient-1 {
+
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(35, 15, 27, 1) 0%, rgba(56, 20, 39, 1) 27%);
+
+}
+
+
+.bg-ligth-lantern {
+
+    background-color: #542D44;
+}
+
+/*FIM DO CSS DO LOADER*/
