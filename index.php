@@ -16,8 +16,7 @@
 <body class="container-fluid" scroll="no" style="overflow: hidden">
 
 <?php
-include_once "components/header_nav.php";
-include_once "components/menu_app.php";
+include_once "components/loader.php";
 include_once "helpers/js.php";
 
 ?>
