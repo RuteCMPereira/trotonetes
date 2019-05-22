@@ -1,3 +1,30 @@
+/*TIRAR TODAS AS MARGENS E PADINGS DOS ELEMENTOS E PROPRIEDADES BASE DO HTML*/
+
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+body {
+
+     height: 100%;
+     width: 100%;
+ }
+html {
+    scroll-behavior: smooth;
+}
+
+/*PROPRIEDADES DE DIV'S COM SCROLL*/
+
+.div-w-scroll {
+
+    max-height: 120%;
+    overflow: auto;
+    padding-bottom: 40vh;
+
+}
+
+/*ICONS DE FUNDO CLARO UTILIZADO NA NAV-TOP*/
+
 .icon {
 
     padding: 3px;
@@ -8,32 +35,7 @@
 
 }
 
-
-* {
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-
-body {
-
-    height: 100%;
-    width: 100%;
-}
-
-
-@keyframes fall {
-
-    0% {
-        top: -100%;
-    }
-
-    100% {
-        top: 0;
-    }
-
-}
-
+/*CLIPING-MASK'S DAS DIV'S E DA NAV-TOP*/
 
 .clip-me-header {
     background: linear-gradient(180deg, rgba(101,66,60,1) 11%, rgba(119,88,69,1) 40%);
@@ -66,11 +68,30 @@ body {
     animation-duration: 1s;
 }
 
+/*ESTADO INICIAL DO DAS DIV INFO*/
+
 .begin {
 
     display: none;
 }
 
+
+
+/*ANIMAÇÃO INICIAL DE DEXER TODOS OS ELEMENTOS*/
+
+@keyframes fall {
+
+    0% {
+        top: -100%;
+    }
+
+    100% {
+        top: 0;
+    }
+
+}
+
+/*ANIMAÇÃO DE DEXER AS DIV INFO*/
 
 @keyframes animation1 {
 
@@ -86,6 +107,7 @@ body {
         top: 0;
     }
 }
+
 
 
 /*CSS DO LOADER*/
