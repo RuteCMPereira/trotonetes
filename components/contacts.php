@@ -18,7 +18,7 @@
                 <i class="fas fa-plus circulo p-2" style="border-radius: 50px"></i>
             </a>
         </div>
-        <div class="col-9 bg-light p-2 justify-content-between begin" id="info1" style="border-radius: 0px 0 20px 0px">
+        <div class="col-9 contacto_baixo p-2 justify-content-between begin" id="info1" style="border-radius: 0px 0 20px 0px">
             <p class="m-0 pl-3">234776145</p>
         </div>
         <div class="col-10 info_contactos p-2 justify-content-between d-flex mt-3 " style="border-radius: 0px 50px 50px 0px">
@@ -27,7 +27,7 @@
                 <i class="fas fa-plus circulo  p-2" style="border-radius: 50px"></i>
             </a>
         </div>
-        <div class="col-9 bg-light p-2 justify-content-between begin" id="info2" style="border-radius: 0px 0 20px 0px">
+        <div class="col-9 contacto_baixo p-2 justify-content-between begin" id="info2" style="border-radius: 0px 0 20px 0px">
             <p class="m-0 pl-3">234776145</p>
         </div>
         <div class="col-10 info_contactos p-2 justify-content-between d-flex mt-3 " style="border-radius: 0px 50px 50px 0px">
@@ -36,7 +36,7 @@
                 <i class="fas fa-plus circulo p-2" style="border-radius: 50px"></i>
             </a>
         </div>
-        <div class="col-9 bg-light p-2 justify-content-between begin" id="info3" style="border-radius: 0px 0 20px 0px">
+        <div class="col-9 contacto_baixo p-2 justify-content-between begin" id="info3" style="border-radius: 0px 0 20px 0px">
             <p class="m-0 pl-3">234776145</p>
         </div>
 
