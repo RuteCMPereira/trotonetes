@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d71ba43-f9be-40ef-982f-72219111cf29" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/components/log_in.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/information.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/information.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/css.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,7 +15,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="384">
@@ -24,19 +25,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/components/information.php">
+        <entry file="file://$PROJECT_DIR$/components/log_in.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1616">
-              <caret line="101" column="10" selection-start-line="101" selection-start-column="10" selection-end-line="101" selection-end-column="10" />
+            <state relative-caret-position="650">
+              <caret line="70" column="20" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/components/information.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1392">
+              <caret line="114" lean-forward="true" selection-start-line="114" selection-end-line="114" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/css.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret lean-forward="true" />
+            <state relative-caret-position="279">
+              <caret line="174" lean-forward="true" selection-start-line="174" selection-end-line="174" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../Exercicio 21/public/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="269">
+              <caret line="118" column="39" selection-start-line="118" selection-end-line="164" />
+              <folding>
+                <element signature="n#div#1;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -67,10 +89,11 @@
         <option value="$PROJECT_DIR$/../../../Creating-Radial-Social-Share-Buttons-with-jQuery-socialCircle/scripts/socialCircle.js" />
         <option value="$PROJECT_DIR$/components/loader.php" />
         <option value="$PROJECT_DIR$/components/header_nav.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/components/bottom_nav.php" />
-        <option value="$PROJECT_DIR$/css/css.css" />
         <option value="$PROJECT_DIR$/components/information.php" />
+        <option value="$PROJECT_DIR$/css/css.css" />
+        <option value="$PROJECT_DIR$/components/log_in.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -123,13 +146,13 @@
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/components/header_nav.php" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\rutep\OneDrive\Ambiente de Trabalho\Lab IV\Server_Rute\Projeto_Final_GIT" />
-      <recent name="C:\Users\rutep\OneDrive\Ambiente de Trabalho\Nova pasta\imgs" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\rutep\OneDrive\Ambiente de Trabalho\Lab IV\Server_Rute\Projeto_Final_GIT\components" />
       <recent name="C:\Users\rutep\OneDrive\Ambiente de Trabalho\Nova pasta" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\rutep\OneDrive\Ambiente de Trabalho\Lab IV\Server_Rute\Projeto_Final_GIT" />
+      <recent name="C:\Users\rutep\OneDrive\Ambiente de Trabalho\Nova pasta\imgs" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -162,7 +185,7 @@
       <workItem from="1558365802154" duration="755000" />
       <workItem from="1558430766644" duration="122000" />
       <workItem from="1558433893241" duration="26013000" />
-      <workItem from="1558517762048" duration="1199000" />
+      <workItem from="1558517762048" duration="6333000" />
     </task>
     <task id="LOCAL-00001" summary="hello trotonetes!">
       <created>1557954611171</created>
@@ -283,11 +306,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558481098790</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="//ADD COMPONENTE INFORMAÇÃO E ORGANIZAÇÃO DO CSS">
+      <created>1558519157226</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1558519157226</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39046000" />
+    <option name="totallyTimeSpent" value="44180000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1753" height="954" extended-state="6" />
@@ -307,7 +337,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32786885" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.2704918" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3290398" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -354,7 +384,8 @@
     <MESSAGE value="//ADD LOADER" />
     <MESSAGE value="//ADD INFORMATION COMPONENTE E BOTTOM (HOME)" />
     <MESSAGE value="//DELETE STUFF" />
-    <option name="LAST_COMMIT_MESSAGE" value="//DELETE STUFF" />
+    <MESSAGE value="//ADD COMPONENTE INFORMAÇÃO E ORGANIZAÇÃO DO CSS" />
+    <option name="LAST_COMMIT_MESSAGE" value="//ADD COMPONENTE INFORMAÇÃO E ORGANIZAÇÃO DO CSS" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -365,9 +396,9 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/index.php</url>
-          <line>23</line>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/../Exercicio 21/public/index.php</url>
+          <line>81</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -430,24 +461,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/components/information.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1616">
-          <caret line="101" column="10" selection-start-line="101" selection-start-column="10" selection-end-line="101" selection-end-column="10" />
+        <state relative-caret-position="1392">
+          <caret line="114" lean-forward="true" selection-start-line="114" selection-end-line="114" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/css.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
+        <state relative-caret-position="279">
+          <caret line="174" lean-forward="true" selection-start-line="174" selection-end-line="174" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Exercicio 21/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="118" column="39" selection-start-line="118" selection-end-line="164" />
+          <folding>
+            <element signature="n#div#1;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/log_in.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="70" column="20" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
