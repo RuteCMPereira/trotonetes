@@ -1,7 +1,7 @@
 <section class="clip-me-div">
 
-    <section class="row  p-0 justify-content-center">
-        <div class="col-6 bg-danger p-2 my-4 text-center" style="border-radius: 15px">
+    <section class="row  p-0 justify-content-center ">
+        <div class="col-6 titulo-contactos p-2 my-4 text-center" style="border-radius: 15px">
             <p class="m-0 ">INFORMAÇÕES</p>
 
         </div>
