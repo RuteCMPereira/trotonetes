@@ -16,8 +16,9 @@
 <body class="container-fluid p-0 m-0" scroll="no" style="overflow: hidden" >
 
 <?php
-include_once "components/log_in.php";
-
+include_once "components/caderneta.php";
+include_once "components/header_nav.php";
+include_once "components/bottom_nav.php";
 
 include_once "helpers/js.php";
 
