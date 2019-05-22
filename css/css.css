@@ -19,7 +19,7 @@ html {
 
     max-height: 120%;
     overflow: auto;
-    padding-bottom: 40vh!important;
+    padding-bottom: 40vh;
 
 }
 
@@ -167,11 +167,6 @@ html {
     animation: open_close 7s infinite;
     animation-timing-function: linear;
 }
-.open_animation {
-    clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 88%, 0 60%);
-    animation: open 7s ;
-    animation-timing-function: linear;
-}
 
 @keyframes open_close {
 
@@ -185,14 +180,6 @@ html {
     100% {clip-path: polygon(0 0, 100% 0, 50% 0%, 50% 88%, 50% 0%);}
 
 
-
-}
-@keyframes open {
-
-    0% {clip-path: polygon(0 0, 100% 0, 50% 0%, 50% 88%, 50% 0%);}
-    5%{clip-path: polygon(0 0, 100% 0, 50% 0%, 50% 88%, 50% 0%);}
-    8% {clip-path: polygon(0 0, 100% 0, 100% 0%, 50% 88%, 0 0%);}
-    10% {clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 88%, 0 60%);}
 
 }
 
