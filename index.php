@@ -17,7 +17,7 @@
 <body class="container-fluid p-0 m-0" scroll="no" style="overflow: hidden" >
 
 <?php
-include_once "components/log_in.php";
+include_once "components/info_obra.php";
 
 include_once "helpers/js.php";
 
