@@ -171,6 +171,12 @@ html {
     animation: open_close 7s infinite;
     animation-timing-function: linear;
 }
+.open_animation{
+    padding-top: 15vh !important;
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 88%, 0 60%);
+    animation: open 7s;
+    animation-timing-function: linear;
+}
 
 @keyframes open_close {
 
@@ -186,6 +192,15 @@ html {
 
 
 }
+
+@keyframes open {
+
+    0% {clip-path: polygon(0 0, 100% 0, 50% 0%, 50% 88%, 50% 0%);}
+    5%{clip-path: polygon(0 0, 100% 0, 50% 0%, 50% 88%, 50% 0%);}
+    8% {clip-path: polygon(0 0, 100% 0, 100% 0%, 50% 88%, 0 0%);}
+    10% {clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 88%, 0 60%);}
+}
+
 
 
 /* BACKGROUND COLORS */
@@ -238,4 +253,9 @@ a {
 
 .casa {
     color: #E6CEBB;
+}
+
+.p-t-0{
+
+    padding-top: 10vh!important;
 }
