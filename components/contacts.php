@@ -13,7 +13,7 @@
     <section class="row p-0 justify-content-start overflow-auto" style="max-height: 120%;">
 
         <div class="col-10 info_contactos p-2 justify-content-between d-flex mt-3 " style="border-radius: 0px 50px 50px 0px">
-            <p class="m-0 pl-3">hhhhhh</p>
+            <p class="m-0 pl-3">Número Telefone</p>
             <a onclick="myFunction('info1') " id="toggle_plus">
                 <i class="fas fa-plus circulo p-2" style="border-radius: 50px"></i>
             </a>
@@ -22,7 +22,7 @@
             <p class="m-0 pl-3">234776145</p>
         </div>
         <div class="col-10 info_contactos p-2 justify-content-between d-flex mt-3 " style="border-radius: 0px 50px 50px 0px">
-            <p class="m-0 pl-3">hhhhhh</p>
+            <p class="m-0 pl-3">Correio Eletrónico</p>
             <a onclick="myFunction('info2')">
                 <i class="fas fa-plus circulo  p-2" style="border-radius: 50px"></i>
             </a>
@@ -31,7 +31,7 @@
             <p class="m-0 pl-3">234776145</p>
         </div>
         <div class="col-10 info_contactos p-2 justify-content-between d-flex mt-3 " style="border-radius: 0px 50px 50px 0px">
-            <p class="m-0 pl-3">hhhhhh</p>
+            <p class="m-0 pl-3">Morada</p>
             <a onclick="myFunction('info3')">
                 <i class="fas fa-plus circulo p-2" style="border-radius: 50px"></i>
             </a>

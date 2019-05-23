@@ -10,6 +10,8 @@ body {
      width: 100%;
     background-image: url("../images/background.png");
     background-size: cover;
+    font-family: 'Barlow', sans-serif;
+    font-size: 15pt;
  }
 html {
     scroll-behavior: smooth;
@@ -228,4 +230,12 @@ html {
 }
 a {
     text-decoration: none;
+}
+
+.home-casa {
+    background-color: #33192A;
+}
+
+.casa {
+    color: #E6CEBB;
 }
