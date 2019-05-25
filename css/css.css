@@ -11,7 +11,8 @@ body {
     background-image: url("../images/background.png");
     background-size: cover;
     font-family: 'Barlow', sans-serif;
-    font-size: 15pt;
+    font-size: 11pt!important;
+    color:#efd0bc;
  }
 html {
     scroll-behavior: smooth;
@@ -23,7 +24,7 @@ html {
 
     max-height: 120%;
     overflow: auto;
-    padding-bottom: 40vh!important;
+    padding-bottom: 28vh!important;
 
 }
 
@@ -222,8 +223,12 @@ html {
 /*FIM DO CSS DO LOADER*/
 
 .titulo_contactos {
+    font-size: 16pt;
     background-color: #23151F;
     color: #E6CEBB;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 7px;
 }
 
 .info_contactos {
@@ -233,6 +238,7 @@ html {
 }
 
 .circulo {
+    border-radius: 50px;
     background-color: #23151F;
     color: #9A867B;
 }
@@ -273,15 +279,21 @@ a {
     border: solid #efd0bc 5px!important;
 }
 
-.border2 {
+.border_3 {
+    border-radius: 12px;
+    border: solid rgba(56, 20, 39, 1) 4px!important;
+    background-color: #a2857b;
+}
+.border_2 {
     border-radius: 20px;
     border: solid #a2857b 8px!important;
 }
 
 .coracao {
+    border-radius: 50px;
+    padding: 12px!important;
     background-color:#a2857b;
     color: #efd0bc;
-    top: -35px;
     font-size: 30px;
     -webkit-box-shadow: 0 1px 24px 8px rgba(0, 0, 0, 0.25);
 }
@@ -289,48 +301,3 @@ a {
 
 
 
-/*flip
- */
-
-
-.flip-box {
-    background-color: transparent;
-    width: 300px;
-    height: 200px;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
-}
-
-/* This container is needed to position the front and back side */
-.flip-box-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-box:hover .flip-box-inner {
-    transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.flip-box-front, .flip-box-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-}
-
-/* Style the front side (fallback if image is missing) */
-.flip-box-front {
-    color: black;
-}
-
-/* Style the back side */
-.flip-box-back {
-    transform: rotateY(180deg);
-    border-radius: 20px;
-
-}

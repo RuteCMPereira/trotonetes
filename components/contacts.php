@@ -1,18 +1,15 @@
 <section class="clip-me-div">
 
-    <section class="row  p-0 justify-content-center ">
-        <div class="col-6 titulo_contactos p-2 my-4 text-center text-center" style="border-radius: 15px">
-            <p class="m-0 ">CONTACTOS</p>
-
+    <section class="row my-2 justify-content-center">
+        <div class="col-8 text-center titulo_contactos">
+            <p>CONTACTOS</p>
         </div>
-
-
     </section>
 
 
-    <section class="row p-0 justify-content-start overflow-auto" style="max-height: 120%;">
+    <section class="row p-0 justify-content-start overflow-auto div-w-scroll">
 
-        <div class="col-10 info_contactos p-2 justify-content-between d-flex mt-3 " style="border-radius: 0px 50px 50px 0px">
+        <div class="col-10 info_contactos p-2 justify-content-between d-flex  " style="border-radius: 0px 50px 50px 0px">
             <p class="m-0 pl-3">Número Telefone</p>
             <a onclick="myFunction('info1') " id="toggle_plus">
                 <i class="fas fa-plus circulo p-2" style="border-radius: 50px"></i>

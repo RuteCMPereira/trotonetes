@@ -1,9 +1,8 @@
 <section class="clip-me-div">
 
-    <section class="row  p-0 justify-content-center">
-        <div class="col-8 p-2 my-4 text-center text-center" style="border-radius: 15px; background-color: #230f1b;">
-            <p class="m-0 " style="color:#efd0bc">CADERNETA DE OBRAS</p>
-
+    <section class="row my-2 justify-content-center">
+        <div class="col-8 text-center titulo_contactos">
+            <p>OBRAS DE ARTE</p>
         </div>
     </section>
 

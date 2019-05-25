@@ -1,20 +1,19 @@
 <section class="clip-me-div">
 
-    <section class="row  p-0 justify-content-center ">
-        <div class="col-6 titulo-contactos p-2 my-4 text-center" style="border-radius: 15px">
-            <p class="m-0 ">INFORMAÇÕES</p>
+        <section class="row my-2 justify-content-center">
+            <div class="col-8 text-center titulo_contactos">
+                <p>SOBRE O MUSEU...</p>
+            </div>
+        </section>
 
-        </div>
 
-
-    </section>
 
 
     <section class="row p-0 justify-content-center div-w-scroll">
         <div class="col-12 py-4">
             <img src="images/museu-2.jpg" class="img-fluid">
         </div>
-        <div class="col-10  text-danger text-wrap">
+        <div class="col-10 text-wrap">
             <p>
 
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consequat a nibh in sollicitudin.
@@ -56,7 +55,7 @@
         <div class="col-12 py-5">
             <img src="images/museu-2.jpg" class="img-fluid">
         </div>
-        <div class="col-10  text-danger text-wrap">
+        <div class="col-10  text-wrap">
             <p>
 
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consequat a nibh in sollicitudin.
