@@ -9,7 +9,7 @@
     include_once "helpers/css.php";
 
     ?>
-  <title>Agency - Start Bootstrap Theme</title>
+    <title>Agency - Start Bootstrap Theme</title>
 
 
 </head>
@@ -18,8 +18,7 @@
 
 <?php
 
-include_once "components/header_nav.php";
-include_once "components/bottom_nav.php";
+include_once "components/log_in.php";
 include_once "helpers/js.php";
 
 ?>
