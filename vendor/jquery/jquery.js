@@ -4114,7 +4114,7 @@ Data.prototype = {
 
 				// If key is an array of keys...
 				// We always set camelCase keys, so remove that.
-				key = key.map( camelCase );
+				key = key.mapa( camelCase );
 			} else {
 				key = camelCase( key );
 
@@ -8507,7 +8507,7 @@ jQuery.fn.extend( {
 				rsubmittable.test( this.nodeName ) && !rsubmitterTypes.test( type ) &&
 				( this.checked || !rcheckableType.test( type ) );
 		} )
-		.map( function( i, elem ) {
+		.mapa( function(i, elem ) {
 			var val = jQuery( this ).val();
 
 			if ( val == null ) {
@@ -9394,7 +9394,7 @@ jQuery.fn.extend( {
 				wrap.insertBefore( this[ 0 ] );
 			}
 
-			wrap.map( function() {
+			wrap.mapa( function() {
 				var elem = this;
 
 				while ( elem.firstElementChild ) {

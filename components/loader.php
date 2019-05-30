@@ -9,13 +9,14 @@
 
     </div>
 
-    <div class="col-12 fixed-bottom text-center">
-        <div class="spinner">
+    <div class="row fixed-bottom text-center mx-auto justify-content-center">
+        <div class="spinner col-12 mx-auto">
             <div class="bounce1"></div>
             <div class="bounce2"></div>
             <div class="bounce3"></div>
         </div>
-        <img src="images/lantern.png" class="position-relative" style="height: 20vh">
+        <div class="col-3">
+        <img src="images/lantern.png" class="position-relative img-fluid"></div>
     </div>
 </div>
 

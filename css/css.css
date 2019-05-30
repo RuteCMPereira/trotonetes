@@ -4,13 +4,20 @@
     margin: 0 !important;
     padding: 0 !important;
 }
-body {
 
-     height: 100%;
-     width: 100%;
+body {
+    text-align: justify;
+    text-justify: inter-word;
+
+    height: 100%;
+    width: 100%;
     background-image: url("../images/background.png");
     background-size: cover;
- }
+    font-family: 'Barlow', sans-serif;
+    font-size: 11pt !important;
+    color: #efd0bc;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -21,7 +28,14 @@ html {
 
     max-height: 120%;
     overflow: auto;
-    padding-bottom: 40vh;
+    padding-bottom: 28vh !important;
+
+}
+.div-w-scroll-2 {
+
+    max-height: 90%;
+    overflow: auto;
+    padding-bottom: 28vh !important;
 
 }
 
@@ -32,7 +46,7 @@ html {
     padding: 3px;
     background-color: #EDCEBA;
     border-radius: 50%;
-    -webkit-box-shadow: 0px 1px 24px 8px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0 1px 24px 8px rgba(0, 0, 0, 0.25);
     height: 5vh;
 
 }
@@ -40,7 +54,7 @@ html {
 /*CLIPING-MASK'S DAS DIV'S E DA NAV-TOP*/
 
 .clip-me-header {
-    background: linear-gradient(180deg, rgba(101,66,60,1) 11%, rgba(119,88,69,1) 40%);
+    background: linear-gradient(0deg, rgba(101, 66, 60, 1) 11%, rgba(119, 88, 69, 1) 70%);
     z-index: 3;
     position: absolute;
     width: 100%;
@@ -57,11 +71,11 @@ html {
 .clip-me-div {
 
     z-index: 0;
-    background: linear-gradient(180deg, rgba(119,88,69,1) 0%, rgba(56, 20, 39, 1)19%);
+    background: linear-gradient(180deg, rgba(119, 88, 69, 1) 0%, rgba(56, 20, 39, 1) 19%);
     position: absolute;
     padding-top: 15vh !important;
     width: 100%;
-    height:89%;
+    height: 89%;
     left: 0;
     right: 0;
     clip-path: ellipse(130% 100% at 50% 0%);
@@ -70,13 +84,29 @@ html {
     animation-duration: 1s;
 }
 
+.clip-me-div-2 {
+
+    z-index: 0;
+    background: linear-gradient(180deg, rgba(119, 88, 69, 1) 0%, rgba(56, 20, 39, 1) 19%);
+    position: absolute;
+    padding-top: 15vh !important;
+    width: 100%;
+    height: 89%;
+    left: 0;
+    right: 0;
+    clip-path: ellipse(130% 100% at 50% 0%);
+    animation-name: fall;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1s;
+}
+
+
 /*ESTADO INICIAL DO DAS DIV INFO*/
 
 .begin {
 
     display: none;
 }
-
 
 
 /*ANIMAÇÃO INICIAL DE DEXER TODOS OS ELEMENTOS*/
@@ -109,7 +139,6 @@ html {
         top: 0;
     }
 }
-
 
 
 /*CSS DO LOADER*/
@@ -169,19 +198,58 @@ html {
     animation: open_close 7s infinite;
     animation-timing-function: linear;
 }
-.open_animation{
+
+.open_animation {
     padding-top: 15vh !important;
-    clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 88%, 0 60%);
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 90%, 0 75%);
     animation: open 7s;
     animation-timing-function: linear;
 }
 
+@keyframes open_close {
+
+    0% {
+        clip-path: polygon(0 0, 100% 0, 50% 0%, 50% 88%, 50% 0%);
+    }
+    5% {
+        clip-path: polygon(0 0, 100% 0, 50% 0%, 50% 88%, 50% 0%);
+    }
+    8% {
+        clip-path: polygon(0 0, 100% 0, 100% 0%, 50% 88%, 0 0%);
+    }
+    10% {
+        clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 88%, 0 60%);
+    }
+    90% {
+        clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 88%, 0 60%);
+    }
+    92% {
+        clip-path: polygon(0 0, 100% 0, 100% 0%, 50% 88%, 0 0%);
+    }
+    95% {
+        clip-path: polygon(0 0, 100% 0, 50% 0%, 50% 88%, 50% 0%);
+    }
+    100% {
+        clip-path: polygon(0 0, 100% 0, 50% 0%, 50% 88%, 50% 0%);
+    }
+
+
+}
+
 @keyframes open {
 
-    0% {clip-path: polygon(0 0, 100% 0, 50% 0%, 50% 88%, 50% 0%);}
-    5%{clip-path: polygon(0 0, 100% 0, 50% 0%, 50% 88%, 50% 0%);}
-    8% {clip-path: polygon(0 0, 100% 0, 100% 0%, 50% 88%, 0 0%);}
-    10% {clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 88%, 0 60%);}
+    0% {
+        clip-path: polygon(0 0, 100% 0, 50% 0%, 50% 88%, 50% 0%);
+    }
+    5% {
+        clip-path: polygon(0 0, 100% 0, 50% 0%, 50% 88%, 50% 0%);
+    }
+    8% {
+        clip-path: polygon(0 0, 100% 0, 100% 0%, 50% 88%, 0 0%);
+    }
+    10% {
+        clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 90%, 0 75%);
+    }
 }
 
 
@@ -204,32 +272,100 @@ html {
 /*FIM DO CSS DO LOADER*/
 
 .titulo_contactos {
+    font-size: 16pt;
     background-color: #23151F;
     color: #E6CEBB;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 7px;
 }
 
 .info_contactos {
-    background: rgb(154,134,123);
-    background: linear-gradient(90deg, rgba(154,134,123,0.29735644257703087) 0%, rgba(154,134,123,1) 100%);
+    background: rgb(154, 134, 123);
+    background: linear-gradient(90deg, rgba(154, 134, 123, 0.2) 20%, rgba(154, 134, 123, 1) 100%);
     color: #E6CEBB;
+    border-radius: 0 40px 40px 0;
+}
+
+.info_contactos hr {
+
+    background-color: rgba(56, 20, 39, 1);
+    height: 3px;
+    border-radius: 50%;
+    width: 70%;
+
+
+}
+
+.info_contactos p:first-child{
+
+    font-size: 17px;
+
 }
 
 .circulo {
+    border-radius: 50px;
     background-color: #23151F;
     color: #9A867B;
 }
 
 .contacto_baixo {
 
-    background: rgb(111,89,72);
-    background: linear-gradient(90deg, rgba(111,89,72,1) 0%, rgba(230,206,187,1) 100%);
+    background: rgb(111, 89, 72);
+    background: linear-gradient(90deg, rgba(111, 89, 72, 1) 0%, rgba(230, 206, 187, 1) 100%);
     color: #23151F;
 }
+
 a {
     text-decoration: none;
 }
 
-.p-t-0{
-
-    padding-top: 10vh!important;
+.home-casa {
+    background-color: #33192A;
 }
+
+.casa {
+    color: #E6CEBB;
+}
+
+.p-t-0 {
+
+    padding-top: 10vh !important;
+}
+
+
+.circulo2 {
+    background-color: #efd0bc;
+    color: #230f1b;
+    top: -20px;
+    font-size: 30px;
+}
+
+.border {
+    border-radius: 20px;
+    border: solid #efd0bc 5px !important;
+}
+
+.border_3 {
+    border-radius: 12px;
+    border: solid rgba(56, 20, 39, 1) 4px !important;
+    background-color: #a2857b;
+}
+
+.border_2 {
+    border-radius: 20px;
+    border: solid #a2857b 8px !important;
+}
+
+.coracao {
+    border-radius: 50px;
+    padding: 12px !important;
+    background-color: #a2857b;
+    color: #efd0bc;
+    font-size: 30px;
+    -webkit-box-shadow: 0 1px 24px 8px rgba(0, 0, 0, 0.25);
+}
+
+
+
+

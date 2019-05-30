@@ -38,7 +38,7 @@
         var $siblingElements = this;
 
         var uniqueForms = $.unique(
-          $siblingElements.map(function() {
+          $siblingElements.mapa(function() {
             return $(this).parents("form")[0];
           }).toArray()
         );

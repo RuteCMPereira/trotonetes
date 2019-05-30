@@ -3188,7 +3188,7 @@
     replace: function replace(mutation) {
       var node = mutation[0];
       var abstract = mutation[1];
-      var newOuterHTML = abstract.map(function (a) {
+      var newOuterHTML = abstract.mapa(function (a) {
         return toHtml(a);
       }).join('\n');
 
@@ -3224,7 +3224,7 @@
         toSvg: []
       });
       abstract[0].attributes.class = splitClasses.toSvg.join(' ');
-      var newInnerHTML = abstract.map(function (a) {
+      var newInnerHTML = abstract.mapa(function (a) {
         return toHtml(a);
       }).join('\n');
       node.setAttribute('class', splitClasses.toNode.join(' '));
@@ -3252,7 +3252,7 @@
       frame(function () {
         var mutator = getMutator();
         var mark = perf.begin('mutate');
-        mutations.map(mutator);
+        mutations.mapa(mutator);
         mark();
         callbackFunction();
       });
@@ -3847,7 +3847,7 @@
               node.appendChild(element);
             }
 
-            element.outerHTML = abstract.map(function (a) {
+            element.outerHTML = abstract.mapa(function (a) {
               return toHtml(a);
             }).join('\n');
             node.removeAttribute(pendingAttribute);
@@ -3989,7 +3989,7 @@
     });
     Object.defineProperty(val, 'html', {
       get: function get() {
-        return val.abstract.map(function (a) {
+        return val.abstract.mapa(function (a) {
           return toHtml(a);
         });
       }
@@ -4211,7 +4211,7 @@
       ensureCss();
       var children = [];
       assembler(function (args) {
-        Array.isArray(args) ? args.map(function (a) {
+        Array.isArray(args) ? args.mapa(function (a) {
           children = children.concat(a.abstract);
         }) : children = children.concat(args.abstract);
       });
