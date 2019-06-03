@@ -18,9 +18,9 @@
 
 <?php
 
-include_once "components/header_nav.php";
+include_once "components/header_app.php";
 include_once "components/informacao.php";
-include_once "components/bottom_nav.php";
+include_once "components/bottom_app.php";
 include_once "helpers/js.php";
 
 ?>

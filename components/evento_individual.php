@@ -2,13 +2,18 @@
 
     <section class="row mt-2 justify-content-center">
         <div class="col-11 text-center titulo_contactos">
-            <p>SOBRE O MUSEU...</p>
+            <p>NOME DO EVENTO</p>
         </div>
     </section>
 
     <section class="row p-0 justify-content-center div-w-scroll-2 clip-me-div-2 mx-4">
         <div class="col-12 pb-2 px">
             <img src="images/museu-3.jpg" class="img-fluid">
+        </div>
+        <div class="row justify-content-around w-100 position-relative" style="top: -3vh;">
+            <div class="col-4 p-2 bg-danger text-center">RESERVAR</div>
+            <div class="col-4 p-2 bg-danger text-center">140 RESERVAS</div>
+
         </div>
         <div class="col-12 px-3">
             <p>
@@ -26,40 +31,25 @@
 
             </p>
         </div>
-        <div class="col-12 my-4">
-            <img src="images/museu-2.jpg" class="img-fluid">
-        </div>
-        <div class="col-12 px-3 ">
-            <p>
+        <div class="row justify-content-center my-auto">
 
-                Digna de nota é a Igreja de Jesus, decorada com uma sumptuosa talha dourada e azulejos portugueses,
-                exemplo da exuberância da decoração barroca. O coro interior contém o túmulo da Princesa Joana,
-                obra-prima da arte barroca, em mármore multicor com elementos escultóricos influenciados pelo gosto
-                italiano, sendo da autoria do arquiteto real João Antunes.
+            <div class="col-3 align-middle my-auto p-2">
+                <img src="images/John-thumbnail.png" class="img-fluid" style="border-radius: 15px">
+            </div>
+            <div class="col-9 p-1 my-auto align-middle">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consequat a nibh in
+                    sollicitudin.
+                </p>
+            </div>
 
 
-            </p>
         </div>
 
     </section>
 
 
+
+
 </section>
 
-<script>
-    function myFunction(DIV) {
-
-        var x = document.getElementById(DIV);
-
-
-        if (!x.style.display || x.style.display == "none") {
-            x.style.display = "block";
-            x.style.animation = "animation1 500ms ease-in-out";
-        } else {
-            x.style.display = "none";
-
-        }
-
-
-    }
-</script>

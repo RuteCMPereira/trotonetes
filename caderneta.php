@@ -18,8 +18,9 @@
 
 <?php
 
-include_once "components/header_app.php";
-include_once "components/contactos.php";
+include_once "components/header_jogo.php";
+include_once "components/caderneta.php";
+include_once "components/bottom_jogo.php";
 include_once "helpers/js.php";
 
 ?>
