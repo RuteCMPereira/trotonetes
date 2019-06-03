@@ -4,16 +4,15 @@
     margin: 0 !important;
     padding: 0 !important;
 }
-body {
 
-     height: 100%;
-     width: 100%;
-    background-image: url("../images/background.png");
-    background-size: cover;
+body {
+    height: 100%;
+    width: 100%;
     font-family: 'Barlow', sans-serif;
-    font-size: 11pt!important;
-    color:#efd0bc;
- }
+    font-size: 11pt !important;
+    color: #efd0bc;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -22,11 +21,28 @@ html {
 
 .div-w-scroll {
 
+    position: absolute;
     max-height: 120%;
     overflow: auto;
-    padding-bottom: 28vh!important;
+    padding-bottom: 28vh !important;
 
 }
+.div-w-scroll-2 {
+    position: absolute;
+    max-height: 85%;
+    overflow: auto;
+    padding-bottom: 15vh !important;}
+.div-w-scroll-3 {
+    position: absolute;
+    max-height: 100%;
+    overflow: auto;
+    padding-bottom: 35vh !important;
+    max-width: 100% !important;
+    overflow-x: hidden!important;
+
+}
+
+
 
 /*ICONS DE FUNDO CLARO UTILIZADO NA NAV-TOP*/
 
@@ -35,7 +51,6 @@ html {
     padding: 3px;
     background-color: #EDCEBA;
     border-radius: 50%;
-    -webkit-box-shadow: 0 1px 24px 8px rgba(0, 0, 0, 0.25);
     height: 5vh;
 
 }
@@ -43,7 +58,7 @@ html {
 /*CLIPING-MASK'S DAS DIV'S E DA NAV-TOP*/
 
 .clip-me-header {
-    background: linear-gradient(180deg, rgba(101,66,60,1) 11%, rgba(119,88,69,1) 40%);
+    background: linear-gradient(0deg, rgba(101, 66, 60, 1) 11%, rgba(119, 88, 69, 1) 70%);
     z-index: 3;
     position: absolute;
     width: 100%;
@@ -60,11 +75,11 @@ html {
 .clip-me-div {
 
     z-index: 0;
-    background: linear-gradient(180deg, rgba(119,88,69,1) 0%, rgba(56, 20, 39, 1)19%);
+    background: linear-gradient(180deg, rgba(119, 88, 69, 1) 0%, rgba(56, 20, 39, 1) 19%);
     position: absolute;
     padding-top: 15vh !important;
     width: 100%;
-    height:89%;
+    height: 89%;
     left: 0;
     right: 0;
     clip-path: ellipse(130% 100% at 50% 0%);
@@ -73,13 +88,14 @@ html {
     animation-duration: 1s;
 }
 
-/*ESTADO INICIAL DO DAS DIV INFO*/
+.clip-me-div-2 {
 
-.begin {
+    z-index: 0;
+    background:#EFD0BC;
+    color: rgba(56, 20, 39, 1) ;
+    clip-path: ellipse(120% 100% at 50% 0%);
 
-    display: none;
 }
-
 
 
 /*ANIMAÇÃO INICIAL DE DEXER TODOS OS ELEMENTOS*/
@@ -95,24 +111,6 @@ html {
     }
 
 }
-
-/*ANIMAÇÃO DE DEXER AS DIV INFO*/
-
-@keyframes animation1 {
-
-    0% {
-        position: relative;
-        display: block;
-        opacity: 0;
-        top: -10%;
-    }
-
-    100% {
-        opacity: 1;
-        top: 0;
-    }
-}
-
 
 
 /*CSS DO LOADER*/
@@ -172,45 +170,58 @@ html {
     animation: open_close 7s infinite;
     animation-timing-function: linear;
 }
-.open_animation{
+
+.open_animation {
     padding-top: 15vh !important;
-    clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 88%, 0 60%);
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 91%, 0 75%);
     animation: open 7s;
     animation-timing-function: linear;
 }
 
 @keyframes open_close {
 
-    0% {clip-path: polygon(0 0, 100% 0, 50% 0%, 50% 88%, 50% 0%);}
-    5%{clip-path: polygon(0 0, 100% 0, 50% 0%, 50% 88%, 50% 0%);}
-    8% {clip-path: polygon(0 0, 100% 0, 100% 0%, 50% 88%, 0 0%);}
-    10% {clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 88%, 0 60%);}
-    90% {clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 88%, 0 60%);}
-    92% {clip-path: polygon(0 0, 100% 0, 100% 0%, 50% 88%, 0 0%);}
-    95%{clip-path: polygon(0 0, 100% 0, 50% 0%, 50% 88%, 50% 0%);}
-    100% {clip-path: polygon(0 0, 100% 0, 50% 0%, 50% 88%, 50% 0%);}
-
+    0% {
+        clip-path: polygon(0 0, 100% 0, 50% 0%, 50% 88%, 50% 0%);
+    }
+    5% {
+        clip-path: polygon(0 0, 100% 0, 50% 0%, 50% 88%, 50% 0%);
+    }
+    8% {
+        clip-path: polygon(0 0, 100% 0, 100% 0%, 50% 88%, 0 0%);
+    }
+    10% {
+        clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 88%, 0 60%);
+    }
+    90% {
+        clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 88%, 0 60%);
+    }
+    92% {
+        clip-path: polygon(0 0, 100% 0, 100% 0%, 50% 88%, 0 0%);
+    }
+    95% {
+        clip-path: polygon(0 0, 100% 0, 50% 0%, 50% 88%, 50% 0%);
+    }
+    100% {
+        clip-path: polygon(0 0, 100% 0, 50% 0%, 50% 88%, 50% 0%);
+    }
 
 
 }
 
 @keyframes open {
 
-    0% {clip-path: polygon(0 0, 100% 0, 50% 0%, 50% 88%, 50% 0%);}
-    5%{clip-path: polygon(0 0, 100% 0, 50% 0%, 50% 88%, 50% 0%);}
-    8% {clip-path: polygon(0 0, 100% 0, 100% 0%, 50% 88%, 0 0%);}
-    10% {clip-path: polygon(0 0, 100% 0, 100% 60%, 50% 88%, 0 60%);}
-}
-
-
-
-/* BACKGROUND COLORS */
-.bg-gradient-1 {
-
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(0deg, rgba(35, 15, 27, 1) 0%, rgba(56, 20, 39, 1) 27%);
-
+    0% {
+        clip-path: polygon(0 0, 100% 0, 50% 0%, 50% 88%, 50% 0%);
+    }
+    5% {
+        clip-path: polygon(0 0, 100% 0, 50% 0%, 50% 88%, 50% 0%);
+    }
+    8% {
+        clip-path: polygon(0 0, 100% 0, 100% 0%, 50% 88%, 0 0%);
+    }
+    10% {
+        clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 90%, 0 75%);
+    }
 }
 
 
@@ -232,9 +243,26 @@ html {
 }
 
 .info_contactos {
-    background: rgb(154,134,123);
-    background: linear-gradient(90deg, rgba(154,134,123,0.29735644257703087) 0%, rgba(154,134,123,1) 100%);
+    background: rgb(154, 134, 123);
+    background: linear-gradient(90deg, rgba(154, 134, 123, 0.2) 20%, rgba(154, 134, 123, 1) 100%);
     color: #E6CEBB;
+    border-radius: 0 40px 40px 0;
+}
+
+.info_contactos hr {
+
+    background-color: rgba(56, 20, 39, 1);
+    height: 3px;
+    border-radius: 50%;
+    width: 70%;
+
+
+}
+
+.info_contactos p:first-child{
+
+    font-size: 17px;
+
 }
 
 .circulo {
@@ -245,30 +273,33 @@ html {
 
 .contacto_baixo {
 
-    background: rgb(111,89,72);
-    background: linear-gradient(90deg, rgba(111,89,72,1) 0%, rgba(230,206,187,1) 100%);
+    background: rgb(111, 89, 72);
+    background: linear-gradient(90deg, rgba(111, 89, 72, 1) 0%, rgba(230, 206, 187, 1) 100%);
     color: #23151F;
 }
+
 a {
     text-decoration: none;
 }
 
-.home-casa {
+.bottom_app {
     background-color: #33192A;
+    border-radius: 50px 50px 0 0;
+    color: #E6CEBB;
 }
-
-.casa {
+.bottom_jogo {
+    background-color: #33192A;
+    border-radius: 50px 50px 0 0;
     color: #E6CEBB;
 }
 
-.p-t-0{
-
-    padding-top: 10vh!important;
-}
 
 
 .circulo2 {
-    background-color:#efd0bc;
+    -webkit-box-shadow: 0 1px 24px 8px rgba(0, 0, 0, 0.25);
+    position: relative;
+    border-radius: 50px!important;
+    background-color: #efd0bc;
     color: #230f1b;
     top: -20px;
     font-size: 30px;
@@ -276,28 +307,178 @@ a {
 
 .border {
     border-radius: 20px;
-    border: solid #efd0bc 5px!important;
+    border: solid #efd0bc 5px !important;
 }
 
-.border_3 {
-    border-radius: 12px;
-    border: solid rgba(56, 20, 39, 1) 4px!important;
-    background-color: #a2857b;
-}
+
+
 .border_2 {
     border-radius: 20px;
-    border: solid #a2857b 8px!important;
-}
-
-.coracao {
-    border-radius: 50px;
-    padding: 12px!important;
-    background-color:#a2857b;
-    color: #efd0bc;
-    font-size: 30px;
+    border: solid  #efd0bc 8px !important;
+    background-color: #efd0bc;
     -webkit-box-shadow: 0 1px 24px 8px rgba(0, 0, 0, 0.25);
+
 }
 
 
+.titulo_jogo{
+
+    font-size: 16pt;
+    border-radius: 20px 20px 0 0;
+    background-color: #230F1B;
+}
+.div-content-jogo{
+    background-color: #230F1B;
+
+}
+.jogo_header {
+
+    background-color: #A78A7B;
+    color: #381427;
+    border-radius: 15px;
+    font-size: 13px;
+}
+
+.jogo_header .progress {
+
+    height: 10px;
+    background-color: #EFD0BC;
+    z-index: 1;
+}
+
+.jogo_header .progress-bar {
+
+    background-color: #542D44;
+}
+
+.counter {
+    font-weight: bold;
+    font-size: 12px;
+    background-color: #EFD0BC;
+    color: #381427;
+    border-radius: 5px;
+    padding: 3px 5px 2px 3px;
+}
+
+.jogo_header .lantern-icon {
+    right: -15px;
+    top:2px;
+    z-index: 3
+}
+
+.container_flip_card {
+    width: 206px;
+    height: 300px;
+    position: relative;
+    -webkit-perspective: 800px;
+    -moz-perspective: 800px;
+    -o-perspective: 800px;
+    perspective: 800px;
+}
+
+.card {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    -o-transition: -o-transform 1s;
+    transition: transform 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50%;
+}
+
+.card div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 260px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 140px;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.card .back {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.card.flipped {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+.liked_obra {
+
+    color: white;
+}
+
+.unliked_obra {
+
+    color: black;
+}
+
+#full_obra {
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 100;
+    top: 0;
+    display: none;
+}
+
+.card {
+    background-color: none !important;
+}
+.form-control{
+    padding: 25px 0px 25px 15px!important;
+    border: solid #E6CEBB 4px;
+    border-radius: 20px;
+    background-color: #8B6C69!important;
+    color:  rgba(56, 20, 39, 1) !important;
+}
+
+.search_bar{
+    padding: 10px!important;
+    border: solid #E6CEBB 4px;
+    border-radius: 10px!important;
+    background-color: #8B6C69!important;
+    color:  rgba(56, 20, 39, 1) !important;
+    font-weight: normal;!important;
+}
+a.forgot-password {
+
+    text-decoration: none;
+    color: #E6CEBB!important;
+
+}
+
+.button-log{
+
+    border-radius: 20px;
+    background-color: #E6CEBB;
+    color:  rgba(56, 20, 39, 1) ;
+}
+.form-control::-webkit-input-placeholder { color: #E6CEBB; }
+.form-control:-moz-placeholder { color: #E6CEBB; }
+.form-control::-moz-placeholder { color: #E6CEBB; }
+.form-control:-ms-input-placeholder { color: #E6CEBB; }
+.form-control::-ms-input-placeholder { color: #E6CEBB; }
 
 

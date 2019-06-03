@@ -17,8 +17,10 @@
 <body class="container-fluid p-0 m-0" scroll="no" style="overflow: hidden" >
 
 <?php
-include_once "components/info_obra.php";
 
+include_once "components/header_app.php";
+include_once "components/menu_app.php";
+include_once "components/bottom_app.php";
 include_once "helpers/js.php";
 
 ?>

@@ -2,7 +2,7 @@
 </div>
 <section class=" w-100 h-100 open_animation bg-ligth-lantern position-absolute " style="padding: 0!important;">
 
-    <div class="row justify-content-center pt-5">
+    <div class="row justify-content-center pt-3">
         <div class="col-4">
             <img src="images/logo.png" class="img-fluid">
         </div>
@@ -12,7 +12,7 @@
                     <label for="inputEmailForm" class="sr-only form-control-label">Username</label>
                     <div class="mx-auto">
                         <input type="text" class="form-control" id="inputEmailForm" name="username"
-                               placeholder="Username"
+                               placeholder="Nome de Utilizador"
                                required="required">
                     </div>
                 </div>
@@ -24,7 +24,7 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <div class="mx-auto my-2">
+                    <div class="mx-auto my-2 ">
                         <div class="text-center">
                             <a href="components/user_password_recover.php" tabindex="5"
                                class="forgot-password"><p>Forgot Password?</p></a>
@@ -33,14 +33,14 @@
                 </div>
 
                 <div class="form-group" >
-                    <div class="mx-auto  my-2 col-5 mt-4 ">
-                        <button type="submit" class="btn  btn-block py-1 button-log">LOG-IN
+                    <div class="my-3">
+                        <button type="submit" class="btn  btn-block py-1 button-log py-3">LOG-IN
                         </button>
                     </div>
                 </div>
                 <div class="form-group ">
-                    <div class="mx-auto my-2 col-5">
-                        <button type="button" class="btn btn-block py-1 button-log">SIGN-IN
+                    <div class="my-3 my-3">
+                        <button type="button" class="btn btn-block py-1 button-log py-3">SIGN-IN
                         </button>
                     </div>
                 </div>
@@ -52,7 +52,7 @@
     </div>
 </section>
 <div class="row justify-content-center fixed-bottom">
-    <div class="col-3">
+    <div class="col-2">
         <img src="images/lantern.png" class="img-fluid">
     </div>
 </div>
@@ -65,17 +65,22 @@
         padding: 25px 0px 25px 15px!important;
         border: solid #E6CEBB 4px;
         border-radius: 20px;
-        background-color: #452533!important;
+        background-color: #8B6C69!important;
+        color:  rgba(56, 20, 39, 1) !important;
+    }
+    
+    a.forgot-password {
+
+        text-decoration: none;
+        color: #E6CEBB!important;
+        
     }
 
     .button-log{
 
-        border-radius: 10px;
+        border-radius: 20px;
         background-color: #E6CEBB;
         color:  rgba(56, 20, 39, 1) ;
-    }
-    ::placeholder {
-        color: #23151F;
     }
     .form-control::-webkit-input-placeholder { color: #E6CEBB; }
     .form-control:-moz-placeholder { color: #E6CEBB; }
