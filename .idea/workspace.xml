@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d71ba43-f9be-40ef-982f-72219111cf29" name="Default Changelist" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/js/botao.js" />
+    <list default="true" id="7d71ba43-f9be-40ef-982f-72219111cf29" name="Default Changelist" comment="added cenas">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Nova pasta/Administrador_Interface/adicionar.tarefa.html" afterPath="$PROJECT_DIR$/Nova pasta/Administrador_Interface/adicionar.tarefa.html" />
       <change beforePath="$PROJECT_DIR$/Nova pasta/Administrador_Interface/adicionar.vestuario.html" afterPath="$PROJECT_DIR$/Nova pasta/Administrador_Interface/adicionar.vestuario.html" />
       <change beforePath="$PROJECT_DIR$/Nova pasta/Administrador_Interface/css/sb-admin-2.css" afterPath="$PROJECT_DIR$/Nova pasta/Administrador_Interface/css/sb-admin-2.css" />
-      <change beforePath="$PROJECT_DIR$/Nova pasta/Administrador_Interface/listagem_vestuario.html" afterPath="$PROJECT_DIR$/Nova pasta/Administrador_Interface/listagem_vestuario.html" />
-      <change beforePath="$PROJECT_DIR$/Nova pasta/Administrador_Interface/tgt.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/Nova pasta/Administrador_Interface/ttgt.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change beforePath="$PROJECT_DIR$/Nova pasta/Administrador_Interface/index.html" afterPath="$PROJECT_DIR$/Nova pasta/Administrador_Interface/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,8 +19,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Nova pasta/Administrador_Interface/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="625">
+              <caret line="222" column="7" lean-forward="false" selection-start-line="222" selection-start-column="7" selection-end-line="222" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -34,42 +29,20 @@
       <file leaf-file-name="adicionar.vestuario.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Nova pasta/Administrador_Interface/adicionar.vestuario.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="118" column="47" lean-forward="false" selection-start-line="118" selection-start-column="47" selection-end-line="118" selection-end-column="47" />
+            <state relative-caret-position="-250">
+              <caret line="14" column="95" lean-forward="false" selection-start-line="14" selection-start-column="95" selection-end-line="14" selection-end-column="95" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="listagem_vestuario.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Nova pasta/Administrador_Interface/listagem_vestuario.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-150">
-              <caret line="78" column="0" lean-forward="true" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
-              <folding>
-                <element signature="n#style#0;n#i#0;n#a#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="adicionar.tarefa.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Nova pasta/Administrador_Interface/adicionar.tarefa.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="151" column="0" lean-forward="true" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sb-admin-2.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="sb-admin-2.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Nova pasta/Administrador_Interface/css/sb-admin-2.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1472">
-              <caret line="12219" column="24" lean-forward="true" selection-start-line="12219" selection-start-column="24" selection-end-line="12219" selection-end-column="24" />
+            <state relative-caret-position="241">
+              <caret line="12277" column="24" lean-forward="false" selection-start-line="12277" selection-start-column="24" selection-end-line="12277" selection-end-column="24" />
               <folding>
-                <element signature="e#245026#245705#1" expanded="true" />
+                <element signature="e#245057#245736#1" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -86,10 +59,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>coraca</find>
-      <find>clip</find>
-      <find>circulo</find>
-      <find>CLIP</find>
       <find>open</find>
       <find>info_o</find>
       <find>scroll</find>
@@ -115,7 +84,11 @@
       <find>div-w-</find>
       <find>label</find>
       <find>transform-origin</find>
+      <find>inp</find>
       <find>lista</find>
+      <find>helvetica</find>
+      <find>popp</find>
+      <find>poppins</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -171,10 +144,11 @@
         <option value="$PROJECT_DIR$/evento_individual.php" />
         <option value="$PROJECT_DIR$/css/css.css" />
         <option value="$PROJECT_DIR$/components/evento_individual.php" />
-        <option value="$PROJECT_DIR$/Nova pasta/Administrador_Interface/adicionar.vestuario.html" />
         <option value="$PROJECT_DIR$/Nova pasta/Administrador_Interface/listagem_vestuario.html" />
-        <option value="$PROJECT_DIR$/Nova pasta/Administrador_Interface/css/sb-admin-2.css" />
         <option value="$PROJECT_DIR$/Nova pasta/Administrador_Interface/adicionar.tarefa.html" />
+        <option value="$PROJECT_DIR$/Nova pasta/Administrador_Interface/index.html" />
+        <option value="$PROJECT_DIR$/Nova pasta/Administrador_Interface/adicionar.vestuario.html" />
+        <option value="$PROJECT_DIR$/Nova pasta/Administrador_Interface/css/sb-admin-2.css" />
       </list>
     </option>
   </component>
@@ -215,32 +189,6 @@
             <path>
               <item name="trotonetes" type="b2602c69:ProjectViewProjectNode" />
               <item name="trotonetes" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="trotonetes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trotonetes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Nova pasta" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="trotonetes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trotonetes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Nova pasta" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Administrador_Interface" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="trotonetes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trotonetes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Nova pasta" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Administrador_Interface" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="trotonetes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="trotonetes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Nova pasta" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Administrador_Interface" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="sb-admin-2.css" type="620a8d5e:NestingTreeNode" />
             </path>
           </expand>
           <select />
@@ -315,7 +263,7 @@
       <workItem from="1559470760904" duration="4921000" />
       <workItem from="1559572121296" duration="1662000" />
       <workItem from="1559642619116" duration="208000" />
-      <workItem from="1559642947862" duration="8751000" />
+      <workItem from="1559642947862" duration="14382000" />
     </task>
     <task id="LOCAL-00001" summary="hello trotonetes!">
       <created>1557954611171</created>
@@ -492,21 +440,28 @@
       <option name="project" value="LOCAL" />
       <updated>1559226129306</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="added cenas">
+      <created>1559818379792</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1559818379794</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171772000" />
+    <option name="totallyTimeSpent" value="177403000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18972974" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18972974" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32735962" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32855436" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3266979" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -520,7 +475,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Database Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290398" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -576,7 +530,8 @@
     <MESSAGE value="added include" />
     <MESSAGE value="added info_obra" />
     <MESSAGE value="added caderneta" />
-    <option name="LAST_COMMIT_MESSAGE" value="added caderneta" />
+    <MESSAGE value="added cenas" />
+    <option name="LAST_COMMIT_MESSAGE" value="added cenas" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -801,22 +756,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Nova pasta/Administrador_Interface/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Nova pasta/Administrador_Interface/adicionar.vestuario.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="118" column="47" lean-forward="false" selection-start-line="118" selection-start-column="47" selection-end-line="118" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Nova pasta/Administrador_Interface/ttgt.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -833,31 +772,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Nova pasta/Administrador_Interface/css/sb-admin-2.css">
+    <entry file="file://$PROJECT_DIR$/Nova pasta/Administrador_Interface/adicionar.tarefa.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1472">
-          <caret line="12219" column="24" lean-forward="true" selection-start-line="12219" selection-start-column="24" selection-end-line="12219" selection-end-column="24" />
-          <folding>
-            <element signature="e#245026#245705#1" expanded="true" />
-          </folding>
+        <state relative-caret-position="225">
+          <caret line="133" column="57" lean-forward="true" selection-start-line="133" selection-start-column="57" selection-end-line="133" selection-end-column="57" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Nova pasta/Administrador_Interface/listagem_vestuario.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-150">
-          <caret line="78" column="0" lean-forward="true" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+        <state relative-caret-position="225">
+          <caret line="96" column="47" lean-forward="false" selection-start-line="96" selection-start-column="47" selection-end-line="96" selection-end-column="47" />
           <folding>
-            <element signature="n#style#0;n#i#0;n#a#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#h2#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Nova pasta/Administrador_Interface/adicionar.tarefa.html">
+    <entry file="file://$PROJECT_DIR$/Nova pasta/Administrador_Interface/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="151" column="0" lean-forward="true" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+        <state relative-caret-position="625">
+          <caret line="222" column="7" lean-forward="false" selection-start-line="222" selection-start-column="7" selection-end-line="222" selection-end-column="7" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Nova pasta/Administrador_Interface/adicionar.vestuario.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-250">
+          <caret line="14" column="95" lean-forward="false" selection-start-line="14" selection-start-column="95" selection-end-line="14" selection-end-column="95" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Nova pasta/Administrador_Interface/css/sb-admin-2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="12277" column="24" lean-forward="false" selection-start-line="12277" selection-start-column="24" selection-end-line="12277" selection-end-column="24" />
+          <folding>
+            <element signature="e#245057#245736#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
