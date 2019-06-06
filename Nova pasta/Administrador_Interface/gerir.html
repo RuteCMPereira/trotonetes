@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 - Dashboard</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+          rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+<!-- Page Wrapper -->
+<div id="wrapper">
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+        <!-- Main Content -->
+        <div id="content">
+
+            <!-- Topbar -->
+            <nav class="navbar navbar-expand navbar-light bg-white topbar  static-top shadow">
+
+
+                <!-- Topbar Navbar -->
+                <div class="align-items-center mx-auto align-content-center">
+
+                    <h1 class="">MUSEU DE AVEIRO</h1>
+
+                </div>
+
+
+                <!-- Nav Item - User Information -->
+                <div class="nav-item dropdown no-arrow align-content-end align-content-end">
+                    <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="mr-2 d-none d-lg-inline text-gray-600 small">Admnistrador</span>
+                        <img class="img-profile rounded-circle" src="businessman_863430.png">
+                    </a>
+                    <!-- Dropdown - User Information -->
+                    <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                         aria-labelledby="userDropdown">
+                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                            <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                            Logout
+                        </a>
+                    </div>
+                </div>
+
+
+            </nav>
+            <!-- End of Topbar -->
+
+            <!-- Begin Page Content -->
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="d-sm-flex align-items-center justify-content-between my-4">
+                    <h1 class="h3 mb-0 text-gray-800"><a href="inicial.html" id="aaa">Gestão da App</a></h1>
+                </div>
+
+                <!-- Content Row -->
+                <div class="row">
+
+                    <!-- Game -->
+                    <div class="col-xl-12 col-md-6 mb-4">
+                        <div class=" caixa1 card border-left-primary shadow h-100 py-2">
+                            <div class="card-body">
+                                <a href="jogo_gerir.html">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="titulo text-xl-center font-weight-bold text-primary text-uppercase">
+                                            Jogo
+                                        </div>
+                                    </div>
+
+                                </div></a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Eventos -->
+                    <div class="col-xl-4 col-md-6 mb-4">
+                        <div class=" caixa2 card border-left-success shadow h-100 py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div  class=" titulo text-xl-center font-weight-bold text-success text-uppercase">
+                                            <small>gerir</small>
+                                            <br><a href="listagem_eventos.html">Eventos</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Obras-->
+                    <div class="col-xl-4 col-md-6 mb-4">
+                        <div class=" caixa3 card border-left-info shadow h-100 py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div  class=" titulo text-xl-center font-weight-bold text-info text-uppercase mb-1">
+                                            <small>gerir</small>
+                                            <br><a href="listagem_obras.html">Obras</a>
+                                        </div>
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col-auto">
+                                            </div>
+                                            <div class="col">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-auto">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Salas-->
+                    <div class="col-xl-4 col-md-6 mb-4">
+                        <div class=" caixa4 card border-left-warning shadow h-100 py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class=" titulo text-xl-center font-weight-bold text-warning text-uppercase mb-1">
+                                            <small>gerir</small>
+                                            <br><a href="listagem_salas.html">Salas</a></div>
+                                    </div>
+                                    <div class="col-auto">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog ">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form">
+                                        <div class="form-group float-label-control">
+                                            <label for="">Username</label>
+                                            <input type="email" class="form-control" placeholder="Username">
+                                        </div>
+                                        <div class="form-group float-label-control">
+                                            <label for="">Password</label>
+                                            <input type="password" class="form-control" placeholder="Password">
+                                        </div>
+                                        <div class="form-group float-label-control">
+                                            <label for="">Textarea</label>
+                                            <textarea class="form-control" placeholder="Textarea" rows="1"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Aplicar</button>
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Moda2 -->
+                    <div class="modal fade" id="myModa2" role="dialog">
+                        <div class="modal-dialog ">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="moda2">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form">
+                                        <div class="form-group float-label-control">
+                                            <label for="">Username</label>
+                                            <input type="email" class="form-control" placeholder="Username">
+                                        </div>
+                                        <div class="form-group float-label-control">
+                                            <label for="">Password</label>
+                                            <input type="password" class="form-control" placeholder="Password">
+                                        </div>
+                                        <div class="form-group float-label-control">
+                                            <label for="">Textarea</label>
+                                            <textarea class="form-control" placeholder="Textarea" rows="1"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Aplicar</button>
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Moda3 -->
+                    <div class="modal fade" id="myModa3" role="dialog">
+                        <div class="modal-dialog ">
+
+                            <!-- Modal content-->
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="moda3">&times;</button>
+                                </div>
+                                <div class="modal-body">
+                                    <form role="form">
+                                        <div class="form-group float-label-control">
+                                            <label for="">Username</label>
+                                            <input type="email" class="form-control" placeholder="Username">
+                                        </div>
+                                        <div class="form-group float-label-control">
+                                            <label for="">Password</label>
+                                            <input type="password" class="form-control" placeholder="Password">
+                                        </div>
+                                        <div class="form-group float-label-control">
+                                            <label for="">Textarea</label>
+                                            <textarea class="form-control" placeholder="Textarea" rows="1"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Aplicar</button>
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Utilizadores -->
+                    <div class="col-xl-12 col-md-6 mb-4 p-0">
+                        <div class=" caixa5 card border-left-primary shadow h-100 py-2">
+                            <div class="card-body">
+                                <div class="row no-gutters align-items-center">
+                                    <div class="col mr-2">
+                                        <div class="titulo text-xl-center font-weight-bold text-primary text-uppercase"><a href="users.html">Utilizadores</a></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+    <!-- /.container-fluid -->
+
+</div>
+
+
+<!-- End of Main Content -->
+
+<!-- Footer -->
+<footer class="sticky-footer bg-white col-12">
+    <div class="container my-auto">
+        <div class="copyright text-center my-auto">
+            <span>Copyright &copy; Your Website 2019</span>
+        </div>
+    </div>
+</footer>
+<!-- End of Footer -->
+
+
+</div>
+<!-- End of Content Wrapper -->
+
+</div>
+<!-- End of Page Wrapper -->
+
+<!-- Scroll to Top Button-->
+<a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+</a>
+
+<!-- Logout Modal-->
+<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                <a class="btn btn-primary" href="login.html">Logout</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap core JavaScript-->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Core plugin JavaScript-->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom scripts for all pages-->
+<script src="js/sb-admin-2.min.js"></script>
+
+<!-- Page level plugins -->
+<script src="vendor/chart.js/Chart.min.js"></script>
+
+<!-- Page level custom scripts -->
+<script src="js/demo/chart-area-demo.js"></script>
+<script src="js/demo/chart-pie-demo.js"></script>
+
+</body>
+
+</html>

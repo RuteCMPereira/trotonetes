@@ -1,15 +1,14 @@
 <section class="clip-me-div">
 
     <section class="row mt-2 justify-content-center">
-        <div class="col-10 text-center titulo_contactos">
+        <div class="col-11 text-center titulo_contactos">
             <p>SOBRE O MUSEU...</p>
         </div>
     </section>
 
-
-    <section class="row p-0 justify-content-center div-w-scroll-2 mx-5 bg-light ">
-        <div class="col-12 pb-4">
-            <img src="images/museu-2.jpg" class="img-fluid">
+    <section class="row p-0 justify-content-center div-w-scroll-2 clip-me-div-2 mx-4">
+        <div class="col-12 pb-2 px">
+            <img src="images/museu-3.jpg" class="img-fluid">
         </div>
         <div class="col-12 px-3">
             <p>
@@ -27,10 +26,10 @@
 
             </p>
         </div>
-        <div class="col-12 py-5">
+        <div class="col-12 my-4">
             <img src="images/museu-2.jpg" class="img-fluid">
         </div>
-        <div class="col-12 px-3">
+        <div class="col-12 px-3 ">
             <p>
 
                 Digna de nota é a Igreja de Jesus, decorada com uma sumptuosa talha dourada e azulejos portugueses,

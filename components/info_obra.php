@@ -1,54 +1,48 @@
-<!--Ir buscar a informação sobre a obra que é passada apartir do metodo post, o post das-nos a conhecer o id da obra em questao, este post é proveniente
-da página das obras que redireciona para esta pagina, não esquecer das opções onde o id não existe (OBRA NAO ECONTRADA) e o post esta icorreto (PAGINA NÃO ENCONTRADA)-->
-<div class="row w-100 h-100 position-absolute align-middle  my-auto" id="full_obra" style="background-color: rgba(0, 0, 0, 0.65); z-index: 3">
-    <section class="col-11 mt-5 pt-5 mx-auto ">
-        <img src="images/museu.jpg" class="img-fluid border_2 my-auto align-middle">
-        <div class="text-center">Nome da Imagem</div>
-    </section>
-</div>
-<section class="clip-me-div">
-
-    <section class="row my-2 justify-content-center">
-        <div class="col-8 text-center titulo_contactos">
-            <p>NOME DA OBRA</p>
-        </div>
-    </section>
-
-    <section class="div-w-scroll">
-
+<script type="text/javascript" src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
+<section class="row justify-content-center">
+    <div CLASS="col-10 text-center p-2 titulo_jogo">
+        <p>NOME DA OBRA</p>
+    </div>
+</section>
+<section class=" w-100 h-100 position-absolute div-content-jogo pt-4 ">
+    <section class="justify-content-around div-w-scroll-3 div-content-jogo mx-3">
         <section class="row  justify-content-center position-relative">
-            <section class="container">
-                <div class="card" id="press_obra">
-                    <div class="front"><img class=" border_2 img-fluid" src="images/santa_joana.jpg"></div>
-                    <div class="back bg-light border_2">
-                        <div class="border_3"></div>
+
+            <section class="container_flip_card">
+                <div class="card">
+                    <div class="front"><img class=" border_2 img-fluid" id="press_obra" src="images/santa_joana.jpg">
+                    </div>
+                    <div class="back border_2 text-center">
+
+                        <div style="clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);border-radius: 40px" class="pt-3 pb-2">
+
+                            <video id="preview" class="position-relative" style="height: 95%;"></video>
+                        </div>
                     </div>
                 </div>
             </section>
+
         </section>
-        <section class="row justify-content-center  position-relative " style="top: -5vh;">
+        <section class="row justify-content-center  position-relative " style="top: -3vh;">
+
             <div class="col-3  text-center ">
                 <button onclick="flip()">
-                    <i class="fas fa-reply fa-flip-horizontal coracao position-relative"></i>
+                    <a> <img src="images/scan.png" class="circulo2" height="60"></a>
                 </button>
-
             </div>
 
             <form role="form" class="col-3 text-center" action="scripts/check_like.php" method="post">
-                <!--Esta action vai para um script que verifica o estado da relação se existir passa a nao existir e vice-versa, no final redireciona para esta pagina que se adpata consoante a relação, ou a falta dela.-->
-                <div class="form-group">
-                    <div class="mx-auto">
-                        <button type="submit" class="btn  button-log">
-                            <!--Verificação se a obra foi gostada pelo utilizador, se existe uma relação entre a obra e o utilizador (as classes unliked_obra e liked_obra vão ser utilizados consoante o resultado de esta verificação)-->
-                            <i class="fas fa-heart coracao position-relative unliked_obra"
-                               id="heart_button"></i>
-                        </button>
-                    </div>
+                <div class="form-group mx-auto">
+
+                    <button type="submit" class="btn">
+                        <a> <img src="images/heart_icon.png" class="circulo2" height="60"></a>
+                    </button>
+
                 </div>
             </form>
 
-
         </section>
+
         <div class="row justify-content-center">
             <div class="col-10">
                 <p>
@@ -75,7 +69,6 @@ da página das obras que redireciona para esta pagina, não esquecer das opçõe
 
             <div class="col-3 align-middle my-auto p-2">
                 <img src="images/John-thumbnail.png" class="img-fluid" style="border-radius: 15px">
-
             </div>
             <div class="col-7 p-1 my-auto align-middle">
                 <p>
@@ -87,89 +80,25 @@ da página das obras que redireciona para esta pagina, não esquecer das opçõe
 
         </div>
 
-
     </section>
-
 </section>
-
-
-<style>
-    .container {
-        width: 206px;
-        height: 300px;
-        position: relative;
-        -webkit-perspective: 800px;
-        -moz-perspective: 800px;
-        -o-perspective: 800px;
-        perspective: 800px;
-    }
-
-    .card {
-        background-color: transparent;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        -webkit-transition: -webkit-transform 1s;
-        -moz-transition: -moz-transform 1s;
-        -o-transition: -o-transform 1s;
-        transition: transform 1s;
-        -webkit-transform-style: preserve-3d;
-        -moz-transform-style: preserve-3d;
-        -o-transform-style: preserve-3d;
-        transform-style: preserve-3d;
-        -webkit-transform-origin: 50% 50%;
-    }
-
-    .card div {
-        display: block;
-        height: 100%;
-        width: 100%;
-        line-height: 260px;
-        text-align: center;
-        font-weight: bold;
-        font-size: 140px;
-        position: absolute;
-        -webkit-backface-visibility: hidden;
-        -moz-backface-visibility: hidden;
-        -o-backface-visibility: hidden;
-        backface-visibility: hidden;
-    }
-
-    .card .back {
-        -webkit-transform: rotateY(180deg);
-        -moz-transform: rotateY(180deg);
-        -o-transform: rotateY(180deg);
-        transform: rotateY(180deg);
-    }
-
-    .card.flipped {
-        -webkit-transform: rotateY(180deg);
-        -moz-transform: rotateY(180deg);
-        -o-transform: rotateY(180deg);
-        transform: rotateY(180deg);
-    }
-
-    button {
-        background-color: transparent;
-        border: none;
-    }
-
-    .liked_obra {
-
-        color: white;
-    }
-
-    .unliked_obra {
-
-        color: black;
-    }
-
-    #full_obra {
-
-        display: none;
-    }
-
-</style>
+<script>
+    let scanner = new Instascan.Scanner(
+        {
+            video: document.getElementById('preview')
+        }
+    );
+    scanner.addListener('scan', function (content) {
+        window.location = content;
+    });
+    Instascan.Camera.getCameras().then(cameras => {
+        if (cameras.length > 0) {
+            scanner.start(cameras[0]);
+        } else {
+            console.error("Não existe câmera no dispositivo!");
+        }
+    });
+</script>
 <script>
 
     function flip() {
@@ -239,4 +168,22 @@ da página das obras que redireciona para esta pagina, não esquecer das opçõe
         console.log("pressHold event fired!");
     }
 
+</script>
+<script type="text/javascript">
+    let scanner = new Instascan.Scanner({video: document.getElementById('preview')});
+    scanner.addListener('scan', function (content) {
+
+        window.location.href = content;
+
+    });
+    Instascan.Camera.getCameras().then(function (cameras) {
+        if (cameras.length > 0) {
+            scanner.start(cameras[0]);
+
+        } else {
+            console.error('No cameras found.');
+        }
+    }).catch(function (e) {
+        console.error(e);
+    });
 </script>

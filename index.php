@@ -7,7 +7,6 @@
 
     include_once "helpers/meta.php";
     include_once "helpers/css.php";
-
     ?>
   <title>Agency - Start Bootstrap Theme</title>
 
@@ -18,8 +17,9 @@
 
 <?php
 
-include_once "components/header_nav.php";
-include_once "components/bottom_nav.php";
+include_once "components/header_app.php";
+include_once "components/menu_app.php";
+include_once "components/bottom_app.php";
 include_once "helpers/js.php";
 
 ?>
