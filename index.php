@@ -7,7 +7,6 @@
 
     include_once "helpers/meta.php";
     include_once "helpers/css.php";
-
     ?>
   <title>Agency - Start Bootstrap Theme</title>
 
