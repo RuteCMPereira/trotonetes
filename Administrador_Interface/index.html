@@ -19,9 +19,11 @@
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.css" rel="stylesheet">
 
+
 </head>
 
 <body id="page-top">
+
 <!-- Page Wrapper -->
 <div id="wrapper">
 
@@ -64,7 +66,7 @@
                         <a class="nav-link dropdown-toggle p-0" href="#" id="userDropdown" role="button"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <span class="mr-3 d-none d-lg-inline text-gray-600 small">Admnistrador</span>
-                            <img class="img-profile rounded-circle" src="businessman_863430.png">
+                            <img class="img-profile rounded-circle" src="img/businessman_863430.png">
                         </a>
                         <!-- Dropdown - User Information -->
                         <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -82,63 +84,91 @@
             <!-- End of Topbar -->
 
             <!-- Begin Page Content -->
-            <div class="container-fluid">
+            <section class="container-fluid">
 
                 <!-- Page Heading -->
-                <div class="d-sm-flex col-12 align-items-center justify-content-end">
-                    <div id="wrap">
-                        <form action="" autocomplete="on">
-                            <input id="search" name="search" type="text" placeholder="Pesquisa"><input id="search_submit" value="Rechercher" type="submit">
-                        </form>
-                    </div>
+                <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                    <h1 class="h3 mb-0 mb-4 text-gray-800">Gestão da App</h1>
                 </div>
 
 
-                <!-- Content Row -->
-                <div class="row">
+                <section class="container-fluid mb-5">
+                    <div class="row">
 
-                    <!-- Game -->
-                    <div class="col-xl-12 col-md-6 mb-4">
-                        <div class=" caixa2 card border-left-primary shadow h-100 py-2">
-                            <div class="card-body">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="col mr-2">
-                                        <div class="titulo text-xl-center font-weight-bold text-primary text-uppercase">
-                                            Lista de Obras
-                                            <div class="row justify-content-center">
-                                                <h2 class="mt-2 mb-0 pt-1 pb-1 adicionar col-2 homepage1">
-                                                    <a href="adicionar.obra.html"> Adicionar  <i class="fas fa-plus fa-1x " style="color:white"></i>
-                                                    </a>
-                                                </h2>
-                                            </div>
-                                        </div>
-                                    </div>
-
+                        <!-- Game -->
+                        <article class="col-xl-3 col-6 container">
+                            <a href="jogo.html">
+                                <img src="img/jogo.png" class="img-fluid circulo image ">
+                                <div class="titulo jogo">JOGO</div>
+                                <div class="overlay">
+                                    <i class="fas fa-plus fa-2x text" style="color: #381327"></i>
                                 </div>
-                            </div>
-                        </div>
+                            </a>
+                        </article>
+
+
+                        <!-- Eventos -->
+                        <article class="col-xl-3 col-6 container">
+                            <a href="listagem_eventos.html">
+                                <img src="img/evento.png" class="img-fluid circulo image ">
+                                <div class="titulo jogo1">EVENTOS</div>
+                                <div class="overlay">
+                                    <i class="fas fa-plus fa-2x text" style="color: #381327"></i>
+                                </div>
+                            </a>
+                        </article>
+
+                        <!-- Eventos -->
+                        <article class="col-xl-3 col-6 container">
+                            <a href="listagem_salas.html">
+                                <img src="img/sala.png" class="img-fluid circulo ">
+                                <div class="titulo jogo2">SALAS</div>
+                                <div class="overlay">
+                                    <i class="fas fa-plus fa-2x text" style="color: #381327"></i>
+                                </div>
+                            </a>
+                        </article>
+
+
+                        <!-- Utilizadores -->
+                        <article class="col-xl-3 col-6 container">
+                            <a href="users.html">
+                                <img src="img/utilizadores.png" class="img-fluid circulo image ">
+                                <div class="titulo jogo3">UTILIZADORES</div>
+                                <div class="overlay">
+                                    <i class="fas fa-plus fa-2x text" style="color: #381327"></i>
+                                </div>
+                            </a>
+                        </article>
+
+
                     </div>
 
-                    <div class="row col-12 justify-content-center text-center">
-                        <ul style="list-style-type:none; font-size: 20px;" class="lista px-3">
+                </section>
 
-                            <li>Obra 1 <a href="editar.obra.html"> <i class="fas fa-pencil-alt fa-1x text-black-50 text-white ml-3"></i></a></li>
-                            <li>Obra 2 <a href="editar.obra.html"> <i class="fas fa-pencil-alt fa-1x text-black-50 text-white ml-3"></i></a></li>
-                            <li>Obra 3 <a href="editar.obra.html"> <i class="fas fa-pencil-alt fa-1x text-black-50 text-white ml-3"></i></a></li>
-                            <li>Obra 4 <a href="editar.obra.html"> <i class="fas fa-pencil-alt fa-1x text-black-50 text-white ml-3"></i></a></li>
-                            <li>Obra 5 <a href="editar.obra.html"> <i class="fas fa-pencil-alt fa-1x text-black-50 text-white ml-3"></i></a></li>
-                            <li>Obra 6 <a href="editar.obra.html"> <i class="fas fa-pencil-alt fa-1x text-black-50 text-white ml-3"></i></a></li>
-                        </ul>
+            </section>
 
-                        <!-- Footer -->
-                        <footer class="sticky-footer bg-gray-100 fixed-bottom col-12">
-                            <div class="container my-auto ">
-                                <div class="copyright text-center my-auto">
-                                    <span class="footer">Copyright &copy; Your Website 2019</span>
-                                </div>
-                            </div>
-                        </footer>
-                        <!-- End of Footer -->
+        </div>
+    </div>
+
+</div>
+<!-- /.container-fluid -->
+
+</div>
+
+
+<!-- End of Main Content -->
+
+<!-- Footer -->
+<footer class="sticky-footer bg-gray-100 fixed-bottom col-12">
+    <div class="container my-auto ">
+        <div class="copyright text-center my-auto">
+            <span class="footer">Copyright &copy; Your Website 2019</span>
+        </div>
+    </div>
+</footer>
+<!-- End of Footer -->
+
 
 </div>
 <!-- End of Content Wrapper -->

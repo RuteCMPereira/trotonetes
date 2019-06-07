@@ -1,5 +1,5 @@
 
-    <section class="row justify-content-center m-2 p-1 jogo_header">
+    <section class="row justify-content-center m-2 p-1 jogo_header anime_fade">
 
         <section class="col-7 m-0">
             <section class=" row mt-2 ">

@@ -1,4 +1,3 @@
-/*TIRAR TODAS AS MARGENS E PADINGS DOS ELEMENTOS E PROPRIEDADES BASE DO HTML*/
 
 * {
     margin: 0 !important;
@@ -11,13 +10,35 @@ body {
     font-family: 'Barlow', sans-serif;
     font-size: 11pt !important;
     color: #efd0bc;
+
 }
+
+
+.background_1{
+    background-image: url("../images/background.png");
+    background-size: 59vh;
+    background-repeat: no-repeat;
+    background-position: center 0;
+}
+
+.background_2{
+    background-image: linear-gradient(0deg, rgba(119, 88, 69, 1) 0%, rgba(56, 20, 39, 1) 40%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 
 html {
     scroll-behavior: smooth;
 }
 
-/*PROPRIEDADES DE DIV'S COM SCROLL*/
+.butoon_2{
+
+    background-color: #23151F;
+    color: #E6CEBB!important;
+    border-radius: 10px;
+    font-weight: normal;
+}
 
 .div-w-scroll {
 
@@ -27,24 +48,24 @@ html {
     padding-bottom: 28vh !important;
 
 }
+
 .div-w-scroll-2 {
     position: absolute;
     max-height: 85%;
     overflow: auto;
-    padding-bottom: 15vh !important;}
+    padding-bottom: 15vh !important;
+}
+
 .div-w-scroll-3 {
     position: absolute;
     max-height: 100%;
     overflow: auto;
     padding-bottom: 35vh !important;
     max-width: 100% !important;
-    overflow-x: hidden!important;
+    overflow-x: hidden !important;
 
 }
 
-
-
-/*ICONS DE FUNDO CLARO UTILIZADO NA NAV-TOP*/
 
 .icon {
 
@@ -54,8 +75,6 @@ html {
     height: 5vh;
 
 }
-
-/*CLIPING-MASK'S DAS DIV'S E DA NAV-TOP*/
 
 .clip-me-header {
     background: linear-gradient(0deg, rgba(101, 66, 60, 1) 11%, rgba(119, 88, 69, 1) 70%);
@@ -79,7 +98,7 @@ html {
     position: absolute;
     padding-top: 15vh !important;
     width: 100%;
-    height: 89%;
+    height: 90.5%;
     left: 0;
     right: 0;
     clip-path: ellipse(130% 100% at 50% 0%);
@@ -91,14 +110,11 @@ html {
 .clip-me-div-2 {
 
     z-index: 0;
-    background:#EFD0BC;
-    color: rgba(56, 20, 39, 1) ;
+    background: #EFD0BC;
+    color: rgba(56, 20, 39, 1);
     clip-path: ellipse(120% 100% at 50% 0%);
 
 }
-
-
-/*ANIMAÇÃO INICIAL DE DEXER TODOS OS ELEMENTOS*/
 
 @keyframes fall {
 
@@ -112,10 +128,6 @@ html {
 
 }
 
-
-/*CSS DO LOADER*/
-
-/* LOADING DOTS*/
 .spinner {
     margin: 100px auto 0;
     width: 70px;
@@ -171,10 +183,103 @@ html {
     animation-timing-function: linear;
 }
 
+.get_big {
+
+    animation: op_get_big 1s;
+    animation-timing-function: linear;
+}
+
+.anime_fade {
+    animation: fade_animation 1.4s;
+    animation-timing-function: linear;
+}
+
+.anime_slide_up {
+    animation: up_slide_bottom 1.2s;
+    animation-timing-function: ease-in-out;
+}
+
+
+
+.anime_slide_left {
+    left: -20px;
+    animation: slide_left 1.2s;
+    animation-timing-function: ease-in-out;
+}
+
+
+@keyframes slide_left {
+
+    0% {
+        left: -800px;
+        opacity: 0;
+    }
+
+    50%{
+
+        opacity: 0;
+    }
+
+    80% {
+
+        left: 0;
+    }
+
+
+    100% {
+
+        left: -20px;
+        opacity: 1;
+    }
+
+}
+
+@keyframes up_slide_bottom {
+
+    0% {
+        bottom: -400px;
+
+    }
+
+    50% {
+        bottom: -400px;
+
+    }
+
+
+    100% {
+
+        bottom: 0;
+    }
+
+}
+
+
+@keyframes fade_animation {
+
+    0% {
+        opacity: 0;
+
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+
+        opacity: 1;
+
+    }
+
+}
+
+
 .open_animation {
     padding-top: 15vh !important;
     clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 91%, 0 75%);
     animation: open 7s;
+    animation-delay: 1s;
     animation-timing-function: linear;
 }
 
@@ -207,6 +312,27 @@ html {
 
 
 }
+
+@keyframes op_get_big {
+
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 0.5;
+    }
+    92% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+}
+
 
 @keyframes open {
 
@@ -253,13 +379,13 @@ html {
 
     background-color: rgba(56, 20, 39, 1);
     height: 3px;
-    border-radius: 50%;
+    border-radius: 200px;
     width: 70%;
 
 
 }
 
-.info_contactos p:first-child{
+.info_contactos p:first-child {
 
     font-size: 17px;
 
@@ -287,6 +413,7 @@ a {
     border-radius: 50px 50px 0 0;
     color: #E6CEBB;
 }
+
 .bottom_jogo {
     background-color: #33192A;
     border-radius: 50px 50px 0 0;
@@ -294,11 +421,10 @@ a {
 }
 
 
-
 .circulo2 {
     -webkit-box-shadow: 0 1px 24px 8px rgba(0, 0, 0, 0.25);
     position: relative;
-    border-radius: 50px!important;
+    border-radius: 50px !important;
     background-color: #efd0bc;
     color: #230f1b;
     top: -20px;
@@ -311,26 +437,27 @@ a {
 }
 
 
-
 .border_2 {
     border-radius: 20px;
-    border: solid  #efd0bc 8px !important;
+    border: solid #efd0bc 8px !important;
     background-color: #efd0bc;
     -webkit-box-shadow: 0 1px 24px 8px rgba(0, 0, 0, 0.25);
 
 }
 
 
-.titulo_jogo{
+.titulo_jogo {
 
     font-size: 16pt;
     border-radius: 20px 20px 0 0;
     background-color: #230F1B;
 }
-.div-content-jogo{
+
+.div-content-jogo {
     background-color: #230F1B;
 
 }
+
 .jogo_header {
 
     background-color: #A78A7B;
@@ -362,7 +489,7 @@ a {
 
 .jogo_header .lantern-icon {
     right: -15px;
-    top:2px;
+    top: 2px;
     z-index: 3
 }
 
@@ -446,39 +573,57 @@ button {
 .card {
     background-color: none !important;
 }
-.form-control{
-    padding: 25px 0px 25px 15px!important;
+
+.form-control {
+    padding: 25px 0px 25px 15px !important;
     border: solid #E6CEBB 4px;
     border-radius: 20px;
-    background-color: #8B6C69!important;
-    color:  rgba(56, 20, 39, 1) !important;
+    background-color: #8B6C69 !important;
+    color: rgba(56, 20, 39, 1) !important;
 }
 
-.search_bar{
-    padding: 10px!important;
+.search_bar {
+    padding: 10px !important;
     border: solid #E6CEBB 4px;
-    border-radius: 10px!important;
-    background-color: #8B6C69!important;
-    color:  rgba(56, 20, 39, 1) !important;
-    font-weight: normal;!important;
+    border-radius: 10px !important;
+    background-color: #8B6C69 !important;
+    color: rgba(56, 20, 39, 1) !important;
+    font-weight: normal;
+!important;
 }
+
 a.forgot-password {
 
     text-decoration: none;
-    color: #E6CEBB!important;
+    color: #E6CEBB !important;
 
 }
 
-.button-log{
+.button-log {
 
     border-radius: 20px;
     background-color: #E6CEBB;
-    color:  rgba(56, 20, 39, 1) ;
+    color: rgba(56, 20, 39, 1);
 }
-.form-control::-webkit-input-placeholder { color: #E6CEBB; }
-.form-control:-moz-placeholder { color: #E6CEBB; }
-.form-control::-moz-placeholder { color: #E6CEBB; }
-.form-control:-ms-input-placeholder { color: #E6CEBB; }
-.form-control::-ms-input-placeholder { color: #E6CEBB; }
+
+.form-control::-webkit-input-placeholder {
+    color: #E6CEBB;
+}
+
+.form-control:-moz-placeholder {
+    color: #E6CEBB;
+}
+
+.form-control::-moz-placeholder {
+    color: #E6CEBB;
+}
+
+.form-control:-ms-input-placeholder {
+    color: #E6CEBB;
+}
+
+.form-control::-ms-input-placeholder {
+    color: #E6CEBB;
+}
 
 

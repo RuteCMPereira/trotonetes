@@ -56,37 +56,4 @@
         <img src="images/lantern.png" class="img-fluid">
     </div>
 </div>
-<style>
 
-    .card {
-        background-color: none !important;
-    }
-    .form-control{
-        padding: 25px 0px 25px 15px!important;
-        border: solid #E6CEBB 4px;
-        border-radius: 20px;
-        background-color: #8B6C69!important;
-        color:  rgba(56, 20, 39, 1) !important;
-    }
-    
-    a.forgot-password {
-
-        text-decoration: none;
-        color: #E6CEBB!important;
-        
-    }
-
-    .button-log{
-
-        border-radius: 20px;
-        background-color: #E6CEBB;
-        color:  rgba(56, 20, 39, 1) ;
-    }
-    .form-control::-webkit-input-placeholder { color: #E6CEBB; }
-    .form-control:-moz-placeholder { color: #E6CEBB; }
-    .form-control::-moz-placeholder { color: #E6CEBB; }
-    .form-control:-ms-input-placeholder { color: #E6CEBB; }
-    .form-control::-ms-input-placeholder { color: #E6CEBB; }
-
-
-</style>
