@@ -12402,5 +12402,7 @@ option:hover {background-color: red!important;}
 #fileToUpload {
 font-size: 1.3rem;
 }
-
+.botao-filtro {
+    margin-left: 88%;
+}
 .forminho {margin-bottom: 150px;}
