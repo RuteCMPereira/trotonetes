@@ -251,7 +251,7 @@ if (isset($_GET["listagem"])) {
 
 
                             if ($x == "tarefas") {
-                                $query = "SELECT Tarefas_id	, Tarefas_nome,	Tarefas_tempo,	Tarefas_dinheiro,	Tarefas_pontos,	Imagens_Imagens_id FROM tarefas";
+                                $query = "SELECT Tarefas_id	, Tarefas_nome,	Tarefas_tempo,	Tarefas_dinheiro,	Tarefas_pontos,	Imagens_Imagens_id FROM tarefast";
                                 if (mysqli_stmt_prepare($stmt, $query)) { // Prepare the statement
                                     mysqli_stmt_execute($stmt);
                                     mysqli_stmt_bind_result($stmt, $id, $nome, $tempo, $dinheiro, $pontos, $imagem); // Bind results
