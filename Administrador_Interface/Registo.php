@@ -7,28 +7,76 @@
         <div class="logo text-center">
             <h1 class="p-4"><a href="Log_IN.php"><img src="img/logo.png" height="75px"></a></h1>
         </div>
-        <form action="something.php" class="text-center" method="post">
+        <form action="Registo_check.php" class="text-center" method="post">
             <input type="text" placeholder="Nome" name="utilizador" autocomplete="off" required>
             <input type="date" placeholder="Data de nascimento" name="nascimento" autocomplete="off" required>
             <input type="email" placeholder="Email" name="email" autocomplete="off" required>
             <input type="password" placeholder="Palavra-Passe" name="password" autocomplete="off" required>
 
+
+
              <div class="custom-select w-75 my-5" >
 
                 <select name="genero">
                     <option value="0">GÉNERO :</option>
-                    <option value="1">Femenino</option>
-                    <option value="2">Masculino</option>
-                    <option value="3">Outros</option>
+
+                    <?php
+
+                    require_once("connections/connection.php"); // We need the function!
+
+                    $link = new_db_connection(); // Create a new DB connection
+
+                    $stmt = mysqli_stmt_init($link); // create a prepared statement
+
+                    $query = "SELECT Géneros_id, Géneros_nome FROM géneros"; // Define the query
+
+                    if (mysqli_stmt_prepare($stmt, $query)) { // Prepare the statement
+                        mysqli_stmt_execute($stmt); // Execute the prepared statement
+
+                        mysqli_stmt_bind_result($stmt, $id, $genero); // Bind results
+
+                        while (mysqli_stmt_fetch($stmt)) { // Fetch values
+                            echo "<option value='".$id."'>".$genero."</option>";
+                        }
+                        mysqli_stmt_close($stmt); // Close statement
+                    }
+                    mysqli_close($link); // Close connection
+
+
+                    ?>
+
                 </select>
             </div>
             <div class="custom-select w-75 my-5" >
 
                 <select name="nacionalidade">
                     <option value="0">NACIONALIDADE :</option>
-                    <option value="1">Femenino</option>
-                    <option value="2">Masculino</option>
-                    <option value="3">Outros</option>
+
+                    <?php
+
+                    require_once("connections/connection.php"); // We need the function!
+
+                    $link = new_db_connection(); // Create a new DB connection
+
+                    $stmt = mysqli_stmt_init($link); // create a prepared statement
+
+                    $query = "SELECT Nacionalidades_id, Nacionalidades_nome FROM nacionalidades"; // Define the query
+
+                    if (mysqli_stmt_prepare($stmt, $query)) { // Prepare the statement
+                        mysqli_stmt_execute($stmt); // Execute the prepared statement
+
+                        mysqli_stmt_bind_result($stmt, $id, $nacionalidades); // Bind results
+
+                        while (mysqli_stmt_fetch($stmt)) { // Fetch values
+                            echo "<option value='".$id."'>".$nacionalidades."</option>";
+                        }
+                        mysqli_stmt_close($stmt); // Close statement
+                    }
+                    mysqli_close($link); // Close connection
+
+
+                    ?>
+
                 </select>
             </div>
 
