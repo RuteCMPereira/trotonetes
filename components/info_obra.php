@@ -14,7 +14,8 @@
                     </div>
                     <div class="back border_2 text-center">
 
-                        <div style="clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);border-radius: 40px" class="pt-3 pb-2">
+                        <div style="clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);border-radius: 40px"
+                             class="pt-3 pb-2">
 
                             <video id="preview" class="position-relative" style="height: 95%;"></video>
                         </div>
@@ -65,40 +66,33 @@
             </div>
 
         </div>
-        <div class="row justify-content-center my-auto">
+        <div class="row justify-content-center my-auto px-4 py-2">
 
-            <div class="col-3 align-middle my-auto p-2">
+            <div class="col-3 align-middle my-auto">
                 <img src="images/John-thumbnail.png" class="img-fluid" style="border-radius: 15px">
             </div>
-            <div class="col-7 p-1 my-auto align-middle">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consequat a nibh in
-                    sollicitudin.
-                </p>
+            <div class="col-9 p-1 my-auto align-middle text-center">
+                <b>
+                    NOME DO AUTOR
+                </b>
             </div>
+        </div>
+
+        <div class="col-12 px-4 anime_fade pb-3">
+            <p>
+
+                O Museu de Aveiro está instalado desde 1911 no antigo Convento de Jesus da Ordem Dominicana feminina.
+                Este convento, um dos mais antigos de Aveiro, remonta à segunda metade do século XV, fundado por D.
+                Brites Leitão e por D. Mecia Pereira.
+
+            </p>
+        </div>
 
 
         </div>
 
     </section>
 </section>
-<script>
-    let scanner = new Instascan.Scanner(
-        {
-            video: document.getElementById('preview')
-        }
-    );
-    scanner.addListener('scan', function (content) {
-        window.location = content;
-    });
-    Instascan.Camera.getCameras().then(cameras => {
-        if (cameras.length > 0) {
-            scanner.start(cameras[0]);
-        } else {
-            console.error("Não existe câmera no dispositivo!");
-        }
-    });
-</script>
 <script>
 
     function flip() {
@@ -107,65 +101,45 @@
 
 </script>
 <script>
-    // The item (or items) to press and hold on
-    var item = document.querySelector("#press_obra");
 
+    var item = document.querySelector("#press_obra");
     var timerID;
     var counter = 0;
-
     var pressHoldEvent = new CustomEvent("pressHold");
-
-    // Increase or decreae value to adjust how long
-    // one should keep pressing down before the pressHold
-    // event fires
-    var pressHoldDuration = 50;
-
-    // Listening for the mouse and touch events
+    var pressHoldDuration = 80;
     item.addEventListener("mousedown", pressingDown, false);
     item.addEventListener("mouseup", notPressingDown, false);
     item.addEventListener("mouseleave", notPressingDown, false);
-
     item.addEventListener("touchstart", pressingDown, false);
     item.addEventListener("touchend", notPressingDown, false);
-
-    // Listening for our custom pressHold event
     item.addEventListener("pressHold", doSomething, false);
 
     function pressingDown(e) {
-        document.getElementById("full_obra").style.display = "block";
+
         requestAnimationFrame(timer);
-
         e.preventDefault();
-
-        console.log("Pressing!");
 
     }
 
     function notPressingDown(e) {
+
         document.getElementById("full_obra").style.display = "none";
         cancelAnimationFrame(timerID);
         counter = 0;
 
-        console.log("Not pressing!");
     }
 
-    //
-    // Runs at 60fps when you are pressing down
-    //
     function timer() {
-        console.log("Timer tick!");
 
+        if (counter > 5) {
+            document.getElementById("full_obra").style.display = "block";
+        }
         if (counter < pressHoldDuration) {
             timerID = requestAnimationFrame(timer);
             counter++;
         } else {
-            console.log("Press threshold reached!");
             item.dispatchEvent(pressHoldEvent);
         }
-    }
-
-    function doSomething(e) {
-        console.log("pressHold event fired!");
     }
 
 </script>

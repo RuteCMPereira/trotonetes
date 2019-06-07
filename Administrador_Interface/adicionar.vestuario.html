@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Adicionar Obra</title>
+    <title>Adicionar Vestuário</title>
+
     <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
           rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.css" rel="stylesheet">
+
+
 </head>
 <body id="page-top">
 
@@ -59,7 +63,7 @@
                         <a class="nav-link dropdown-toggle p-0" href="#" id="userDropdown" role="button"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <span class="mr-3 d-none d-lg-inline text-gray-600 small">Admnistrador</span>
-                            <img class="img-profile rounded-circle" src="businessman_863430.png">
+                            <img class="img-profile rounded-circle" src="img/businessman_863430.png">
                         </a>
                         <!-- Dropdown - User Information -->
                         <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -90,7 +94,7 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="titulo text-xl-center font-weight-bold text-primary text-uppercase">
-                                               Adicionar Obra
+                                                Adicionar Vestuário
                                             </div>
                                         </div>
 
@@ -101,6 +105,51 @@
                     </div>
                 </section>
             </section>
+
+
+
+            <form action="#" autocomplete="off" method="post" enctype="multipart/form-data" >
+                <fieldset class="mb-4">
+                    <input id="first" type="text" name="first" class="inputform" required>
+                    <label for="first">Nome Vestuário</label>
+                    <div class="after"></div>
+                </fieldset>
+
+                    <select id="last"  name="last"  class=" mb-4 drop" required>
+                        <option value="" disabled selected hidden>Tipo Vestuário</option>
+                        <option for="last" class="escolha">Camisola</option>
+                        <option for="last" class="escolha">Calças</option>
+                        <option for="last" class="escolha">Calçado</option>
+                    </select>
+
+                <fieldset class=" ">
+                    <label for="first">Preço</label><br>
+                    Sim <input id="first" type="radio" name="first" value="Sim" class="mr-4" required>
+                    Não <input id="first" type="radio" name="first" value="Não" required>
+
+                </fieldset>
+
+                <fieldset class="mb-4">
+                    <input id="last" type="text" name="last" class="inputform" required>
+                    <label for="last">Rerefência Vestuário</label>
+                    <div class="after"></div>
+                </fieldset>
+
+                <fieldset class="mb-4">
+                    <input type="file" name="fileToUpload" id="fileToUpload">
+                </fieldset>
+
+
+                <fieldset>
+                    <button>Adicionar</button>
+                </fieldset>
+            </form>
+
+
+
+
+
+
 
 
             <!-- Footer -->
@@ -159,6 +208,7 @@
     <!-- Page level custom scripts -->
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
-
+    <script src="form.js"></script>
+</div>
 </body>
 </html>

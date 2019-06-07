@@ -14,12 +14,13 @@
 
 </head>
 
-<body class="container-fluid p-0 m-0" scroll="no" style="overflow: hidden" >
+<body class="container-fluid p-0 m-0 background_1" scroll="no" style="overflow: hidden" >
 
 <?php
 
 include_once "components/header_app.php";
 include_once "components/contactos.php";
+include_once "components/bottom_app.php";
 include_once "helpers/js.php";
 
 ?>
