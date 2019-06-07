@@ -10,8 +10,8 @@ $query = "SELECT ref_id_roles, password_hash FROM users WHERE username LIKE ?";
 
 if (mysqli_stmt_prepare($stmt, $query)) {
     mysqli_stmt_bind_param($stmt, 's', $username);
-    $username = $_POST['username'];
-    $password = $_POST['password'];
+    $username = $_POST['nome'];
+    $password = $_POST['palavra passe'];
     mysqli_stmt_execute($stmt);
     mysqli_stmt_bind_result($stmt, $perfil, $password_hash);
 
