@@ -4,9 +4,9 @@ error_reporting(E_ALL);
 function new_db_connection()
 {
     // Variables for the database connection
-    $hostname = "localhost:3000";
-    $username = "root";
-    $password = "";
+    $hostname = "labmm.clients.ua.pt";
+    $username = "deca_18L4_18_web";
+    $password = "nW96xx";
     $dbname = "deca_18l4_18";
 
 
@@ -25,5 +25,3 @@ function new_db_connection()
     return $local_link;
 
 }
-
-new_db_connection();

@@ -1,21 +1,25 @@
-<section class="clip-me-div">
+<section class="clip-me-div ">
 
-    <section class="row mt-2 justify-content-center">
+    <section class="row my-2 justify-content-center get_big">
         <div class="col-11 text-center titulo_contactos">
             <p>NOME DO EVENTO</p>
         </div>
     </section>
 
-    <section class="row p-0 justify-content-center div-w-scroll-2 clip-me-div-2 mx-4">
-        <div class="col-12 pb-2 px">
+    <div class="div-w-scroll-2">
+        <div class="col-12 pb-2 px get_big">
             <img src="images/museu-3.jpg" class="img-fluid">
         </div>
-        <div class="row justify-content-around w-100 position-relative" style="top: -3vh;">
-            <div class="col-4 p-2 bg-danger text-center">RESERVAR</div>
-            <div class="col-4 p-2 bg-danger text-center">140 RESERVAS</div>
+        <div class="row justify-content-around w-100 position-relative get_big" style="top: -3vh;">
+            <form role="form" class="col-5" action="scripts/check_like.php" method="post">
+                    <button type="submit" class="butoon_2 w-100 h-100">
+                        <p>RESERVAR</p>
+                    </button>
+            </form>
+            <div class="col-5 p-2 text-center butoon_2">140 RESERVAS</div>
 
         </div>
-        <div class="col-12 px-3">
+        <div class="col-12 px-4 anime_fade">
             <p>
 
                 O Museu de Aveiro está instalado desde 1911 no antigo Convento de Jesus da Ordem Dominicana feminina.
@@ -31,25 +35,26 @@
 
             </p>
         </div>
-        <div class="row justify-content-center my-auto">
+        <div class="row justify-content-center my-auto px-4 py-2">
 
-            <div class="col-3 align-middle my-auto p-2">
+            <div class="col-3 align-middle my-auto">
                 <img src="images/John-thumbnail.png" class="img-fluid" style="border-radius: 15px">
             </div>
-            <div class="col-9 p-1 my-auto align-middle">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consequat a nibh in
-                    sollicitudin.
-                </p>
+            <div class="col-9 p-1 my-auto align-middle text-center">
+                <b>
+                   NOME DO AUTOR
+                </b>
             </div>
-
-
         </div>
 
-    </section>
+        <div class="col-12 px-4 anime_fade pb-3">
+            <p>
 
+                O Museu de Aveiro está instalado desde 1911 no antigo Convento de Jesus da Ordem Dominicana feminina.
+                Este convento, um dos mais antigos de Aveiro, remonta à segunda metade do século XV, fundado por D.
+                Brites Leitão e por D. Mecia Pereira.
 
-
-
+            </p>
+        </div>
+    </div>
 </section>
-
