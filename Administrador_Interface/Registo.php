@@ -1,13 +1,21 @@
 <head>
-    <link rel="stylesheet" type="text/css" href="LogInRegisto.css">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>À Noite no Museu - Registo" </title>
+    <link rel="stylesheet" type="text/css" href="css/LogIn_Registo.css">
 </head>
 
 <div class="container">
+    <?php include_once "scripts/Redirect_Log_In_Registo.php"?>
     <div class="main mainregisto">
         <div class="logo text-center">
-            <h1 class="p-4"><a href="Log_IN.php"><img src="img/logo.png" height="75px"></a></h1>
+            <h1 class="p-4"><a href="Log_In.php"><img src="img/logo.png" height="75px"></a></h1>
         </div>
-        <form action="Registo_check.php" class="text-center" method="post">
+        <form action="scripts/Registo_check.php" class="text-center" method="post">
             <input type="text" placeholder="Nome" name="utilizador" autocomplete="off" required>
             <input type="date" placeholder="Data de nascimento" name="nascimento" autocomplete="off" required>
             <input type="email" placeholder="Email" name="email" autocomplete="off" required>
@@ -49,7 +57,7 @@
             </div>
             <div class="custom-select w-75 my-5" >
 
-                <select name="nacionalidade">
+                <select name="nacionalidade" >
                     <option value="0">NACIONALIDADE :</option>
 
                     <?php
@@ -79,6 +87,29 @@
 
                 </select>
             </div>
+
+
+            <?php
+            session_start();
+
+            if (isset($_SESSION['registo_concluido'])){
+
+                if ($_SESSION['registo_concluido']==1){
+
+                   echo "<div>Executou o registo com sucesso</div>";
+                   session_destroy();
+                }
+                if ($_SESSION['registo_concluido']==0){
+
+                    echo "<div>Não executou o Registo com sucesso</div>";
+                    session_destroy();
+
+                }
+
+
+            }
+
+            ?>
 
 
             <input type="submit" value="Criar Conta">
