@@ -303,6 +303,13 @@ input[type="month"] {
     -webkit-appearance: listbox;
 }
 
+
+input[type="date"]{
+
+    background-color: transparent!important;
+    opacity: 0.7;
+}
+
 textarea {
     overflow: auto;
     resize: vertical;
@@ -13375,4 +13382,11 @@ button:hover {
     position: absolute!important;
     right: 3vw;
     top: 0.5vh;
+}
+
+.resposta{
+    -webkit-box-shadow: 0px 0px 41px 17px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 41px 17px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 41px 17px rgba(0,0,0, 0.15);
+
 }

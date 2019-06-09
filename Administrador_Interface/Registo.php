@@ -10,7 +10,6 @@
 </head>
 
 <div class="container">
-    <?php include_once "scripts/Redirect_Log_In_Registo.php"?>
     <div class="main mainregisto">
         <div class="logo text-center">
             <h1 class="p-4"><a href="Log_In.php"><img src="img/logo.png" height="75px"></a></h1>

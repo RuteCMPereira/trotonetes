@@ -10,7 +10,6 @@
 </head>
 
 <body>
-<?php include_once "scripts/Redirect_Log_In_Registo.php"?>
 <div class="container">
     <div class="main mainentrar">
         <div class="logo text-center">

@@ -19,11 +19,12 @@
 <body id="page-top">
 <div id="wrapper">
 
-    <div id="content-wrapper" class="d-flex flex-column">
+    <div id="content-wrapper" class="d-flex flex-column" style="height: 800px;">
 
         <div id="content">
             <?php include_once "componentes/nav_bar.php" ?>
-            <?php include_once "componentes/add_form.php" ?>
+            <div style="top: 10vh;position: relative">
+            <?php include_once "componentes/add_form.php" ?></div>
             <?php include_once "componentes/footer.php" ?>
         </div>
     </div>
