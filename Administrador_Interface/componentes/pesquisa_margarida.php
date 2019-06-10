@@ -16,10 +16,13 @@
 <!-- Código PHP que realiza a busca no banco e lista o resultado -->
 
 <?php
+
   if(isset($_POST['Enviar'])){
     $Pesquisar = $_POST['Pesquisar'];
+
     if($Pesquisar != NULL) {
         $request = mysql_query("SELECT * FROM 'banco'.'tabela' WHERE nome = '$Pesquisar' ");
+        
         echo "
         <div id= 'Produto'>
           <!--  Conteúdo  -->
