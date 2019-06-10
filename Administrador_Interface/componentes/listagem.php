@@ -61,7 +61,7 @@ if (isset($_GET["listagem"])) {
 
                     echo " <div class=\"row justify-content-around text-center m-3 \">
 
-                                            <section class='col-1 p-2 listagemdecenas hoveri text-dark'><a href='Editar.php?obra=" . $id . "' class='text-dark'>EDITAR</a></section>
+                                            <section class='col-1 p-2 listagemdecenas hoveri text-dark'><a href='Editar.php?sala=" . $id . "' class='text-dark'>EDITAR</a></section>
                                             <section class='col-1 p-2 listagemdecenas hoveri text-dark'><a href='Editar.php?elimina_obra=" . $id . "' class='text-dark'>ELIMINAR</a></section>                                            <section class='col-1 p-2 listagemdecenas'>" . $id . "</section>
                                             <section class='col-4 listagemdecenas p-2'>" . $nome . "</section> 
                                             <section class='col-4 p-2 listagemdecenas'>" . $descricao . "</section>
