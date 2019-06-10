@@ -102,7 +102,7 @@ if (count($_FILES['upload']['name']) > 0) {
                         while (mysqli_stmt_fetch($stmt)) {
 
                             $_SESSION['id_imagem'] = $id_imagem;
-                            include_once "Relacionar.php";
+                            include "Relacionar.php";
 
 
                         }
