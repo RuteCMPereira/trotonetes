@@ -1,20 +1,11 @@
-<?php
 
-include_once "connections/connection.php";
-
-if ($_GET['listagem']=='eventos'){
-
-    $action = "Listagem.php?listagem=".$_GET['listagem']."&page=".$_GET['page'];
-}
-
-?>
 
 <div class="container-fluid">
     <div class="d-sm-flex col-12 align-items-center justify-content-end pesquisa px-5">
         <div id="wrap">
-            <form action='<?= $action?>' method="get">
-                <input id="search" name="pesquisa" type="text" placeholder="Pesquisa">
-                <input id="search_submit" value="Rechercher" type="submit">
+            <form action="ooo" method="get">
+                <input  type="text" placeholder="Pesquisa">
+                <input type="submit">
             </form>
         </div>
         <div><img src="img/filter.svg" onclick="openNav()" class="px-3 filter" height="50px"
@@ -24,7 +15,7 @@ if ($_GET['listagem']=='eventos'){
 
     <?php
 
-if(isset($_POST['pesquisar']) && $_POST['pesquisar']!=''){
+/*if(isset($_POST['pesquisar']) && $_POST['pesquisar']!=''){
     $pesquisar = $_POST["pesquisar"];
     $hostname = "labmm.clients.ua.pt";
     $username = "deca_18L4_18_web";
@@ -39,6 +30,6 @@ if(isset($_POST['pesquisar']) && $_POST['pesquisar']!=''){
     $result_eventos = mysqli_query($local_link, $resultado_eventos);
 }
 
-?>
+*/?>
 
 
