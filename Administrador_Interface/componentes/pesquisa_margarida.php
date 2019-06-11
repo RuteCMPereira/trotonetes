@@ -22,10 +22,11 @@
 
     if($Pesquisar != NULL) {
         $request = mysql_query("SELECT * FROM 'banco'.'tabela' WHERE nome = '$Pesquisar' ");
-        
+
         echo "
         <div id= 'Produto'>
           <!--  Conteúdo  -->
         </div> ";
+    }
       }
 ?>
