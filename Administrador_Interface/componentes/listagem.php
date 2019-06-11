@@ -5,7 +5,7 @@ if (isset($_GET['page'])) {
     $page = $_GET['page'];
     $previous = $page - 1;
     $next = $page + 1;
-    $limit = 2;
+    $limit = 5;
     $offset = ($page - 1) * $limit;
 
     if ($page < 1) {
@@ -27,6 +27,7 @@ if (isset($_GET["listagem"])) {
     switch ($x) {
 
         case "eventos":
+            $ultima_pagina = 0;
             if (isset($_GET["ordenar"])) {
                 if ($_GET["ordenar"] == "data") {
                     $y = "SELECT Eventos_id,	Eventos_nome, Eventos_data_inicio, Eventos_data_fim, Eventos_decrição_curta, Eventos_descrição_longa FROM eventos ORDER BY Eventos_data_inicio DESC";
@@ -61,7 +62,11 @@ if (isset($_GET["listagem"])) {
                                            </div>";
 
 
+                $x = 0;
+
                 while (mysqli_stmt_fetch($stmt)) {
+
+                    $x++;
 
 
                     echo " <div class=\"row justify-content-around text-center m-3 \">
@@ -74,12 +79,18 @@ if (isset($_GET["listagem"])) {
 
 
                 }
+                if ($x < $limit) {
+                    $ultima_pagina = 1;
+                }
+
+
 
                 mysqli_stmt_close($stmt);
             }
 
             break;
         case "salas":
+            $ultima_pagina = 0;
 
             if (isset($_GET["ordenar"])) {
                 if ($_GET["ordenar"] == "pisoasc") {
@@ -120,7 +131,11 @@ if (isset($_GET["listagem"])) {
                                            </div>";
 
 
+                $x = 0;
+
                 while (mysqli_stmt_fetch($stmt)) {
+
+                    $x++;
 
                     echo " <div class=\"row justify-content-around text-center m-3 \">
 
@@ -131,12 +146,18 @@ if (isset($_GET["listagem"])) {
                                                         <section class='col-2 p-2 listagemdecenas'>" . $piso . "</section>
                                            </div>";
                 }
+                if ($x < $limit) {
+                    $ultima_pagina = 1;
+                }
+
+
 
                 mysqli_stmt_close($stmt);
             }
 
             break;
         case"utilizadores" :
+            $ultima_pagina = 0;
 
             if (isset($_GET["ordenar"])) {
                 if ($_GET["ordenar"] == "perfil") {
@@ -168,7 +189,11 @@ if (isset($_GET["listagem"])) {
                                         
                                            </div>";
 
+                $x = 0;
+
                 while (mysqli_stmt_fetch($stmt)) {
+
+                    $x++;
 
                     echo " <div class=\"row justify-content-around text-center m-3 \">
 
@@ -181,6 +206,11 @@ if (isset($_GET["listagem"])) {
                                            </div>";
                 }
 
+                if ($x < $limit) {
+                    $ultima_pagina = 1;
+                }
+
+
                 mysqli_stmt_close($stmt);
             }
 
@@ -189,6 +219,7 @@ if (isset($_GET["listagem"])) {
 
 
         case "vestuario":
+            $ultima_pagina = 0;
 
             if (isset($_GET["ordenar"])) {
                 if ($_GET["ordenar"] == "precoasc") {
@@ -230,7 +261,11 @@ if (isset($_GET["listagem"])) {
                                            </div>";
 
 
+                $x = 0;
+
                 while (mysqli_stmt_fetch($stmt)) {
+
+                    $x++;
 
                     echo " <div class=\"row justify-content-around text-center  m-3 \">
 
@@ -249,6 +284,7 @@ if (isset($_GET["listagem"])) {
 
 
         case "obras":
+            $ultima_pagina = 0;
 
             if (isset($_GET["ordenar"])) {
                 if ($_GET["ordenar"] == "dataasc") {
@@ -288,7 +324,11 @@ if (isset($_GET["listagem"])) {
                                            
                                            </div>";
 
+                $x = 0;
+
                 while (mysqli_stmt_fetch($stmt)) {
+
+                    $x++;
 
                     echo " <div class=\"row justify-content-around text-center  m-3 \">
                                             <section class='col-1 p-2 listagemdecenas hoveri text-dark'><a href='Editar.php?obra=" . $id . "' class='text-dark'><i class=\"fas fa-pen\"></i></a></section>
@@ -299,11 +339,17 @@ if (isset($_GET["listagem"])) {
                 }
             }
 
+            if ($x < $limit) {
+                $ultima_pagina = 1;
+            }
+
+
             mysqli_stmt_close($stmt);
 
             break;
 
         case "lanternas":
+            $ultima_pagina = 0;
 
             if (isset($_GET["ordenar"])) {
                 if ($_GET["ordenar"] == "intensidadeasc") {
@@ -342,7 +388,11 @@ if (isset($_GET["listagem"])) {
                                         
                                            </div>";
 
+                $x = 0;
+
                 while (mysqli_stmt_fetch($stmt)) {
+
+                    $x++;
 
 
                     echo " <div class=\"row justify-content-around text-center  m-3 \">
@@ -355,11 +405,19 @@ if (isset($_GET["listagem"])) {
 
             }
 
+            if ($x < $limit) {
+                $ultima_pagina = 1;
+            }
+
+
+
             mysqli_stmt_close($stmt);
 
             break;
 
         case "conquistas" :
+
+            $ultima_pagina = 0;
 
             if (isset($_GET["ordenar"])) {
                 if ($_GET["ordenar"] == "pontosasc") {
@@ -398,7 +456,11 @@ if (isset($_GET["listagem"])) {
                                             <section class='col-1 p-2 listagemdecenas1'><h4 class='mt-2' style='font-weight: bold'>PONTOS</h4></section>
                                            </div>";
 
+                $x = 0;
+
                 while (mysqli_stmt_fetch($stmt)) {
+
+                    $x++;
 
 
                     echo " <div class=\"row justify-content-around text-center m-3 \">
