@@ -921,8 +921,3 @@ mysqli_close($link)
 ?>
 
 
-
-
-
-
-<?php include_once "scripts/Delete.php"?>
