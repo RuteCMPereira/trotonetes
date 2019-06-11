@@ -19,6 +19,16 @@ if (isset($_GET["listagem"])) {
     switch ($x) {
 
         case "eventos":
+            if (isset($_GET["ordenar"])) {
+                if ($_GET["ordenar"]=="data") {
+                    $y = "SELECT Eventos_id,	Eventos_nome, Eventos_data_inicio, Eventos_data_fim, Eventos_decrição_curta, Eventos_descrição_longa FROM eventos ORDER BY Eventos_data_inicio DESC ";
+                }
+
+
+
+            }else {
+                $y = "SELECT Eventos_id,	Eventos_nome, Eventos_data_inicio, Eventos_data_fim, Eventos_decrição_curta, Eventos_descrição_longa FROM eventos";
+            }
 
             echo "<div class=\"row justify-content-center caixa4  m-3 p-3\">
                                             <section class=\"col-10 text-center p-0 m-0\">
@@ -28,8 +38,8 @@ if (isset($_GET["listagem"])) {
                                                 <b style=\" color: white\">ADICIONAR <i class=\"fas fa-plus fa-1x \"style=\"color:white\"></i></b></a>
                                             </section>
                                          </div>";
+            $query=$y;
 
-            $query = "SELECT Eventos_id,	Eventos_nome, Eventos_data_inicio, Eventos_data_fim, Eventos_decrição_curta, Eventos_descrição_longa FROM eventos";
             if (mysqli_stmt_prepare($stmt, $query)) { // Prepare the statement
                 mysqli_stmt_execute($stmt);
                 mysqli_stmt_bind_result($stmt, $id, $nome, $data_inicio, $data_fim, $descricao_curta, $descricao_longa); // Bind results
@@ -50,6 +60,21 @@ if (isset($_GET["listagem"])) {
 
             break;
         case "salas":
+
+            if (isset($_GET["ordenar"])) {
+                if ($_GET["ordenar"]=="pisoasc") {
+                    $y = "SELECT Salas_id, Salas_nome, Salas_descrição, Salas_posição_jogo, Salas_posição_mapa, Salas_piso FROM salas ORDER BY Salas_piso ASC";
+                }
+                if ($_GET["ordenar"]=="pisodesc") {
+                    $y = "SELECT Salas_id, Salas_nome, Salas_descrição, Salas_posição_jogo, Salas_posição_mapa, Salas_piso FROM salas ORDER BY Salas_piso DESC";
+                }
+
+
+
+            }else {
+                $y = "SELECT Salas_id, Salas_nome, Salas_descrição, Salas_posição_jogo, Salas_posição_mapa, Salas_piso FROM salas";
+            }
+
             echo "<div class=\"row justify-content-center caixa4 m-3 p-3\">
                                             <section class=\"col-10 text-center p-0 m-0\">
                                                 <h1>Listagem de Salas</h1>
@@ -59,7 +84,7 @@ if (isset($_GET["listagem"])) {
                                             </section>
                                          </div>";
 
-            $query = "SELECT Salas_id, Salas_nome, Salas_descrição, Salas_posição_jogo,	Salas_posição_mapa,	Salas_piso FROM salas";
+            $query = $y;
             if (mysqli_stmt_prepare($stmt, $query)) { // Prepare the statement
                 mysqli_stmt_execute($stmt);
                 mysqli_stmt_bind_result($stmt, $id, $nome, $descricao, $posicao_jogo, $posicao_mapa, $piso); // Bind results
@@ -78,11 +103,23 @@ if (isset($_GET["listagem"])) {
 
             break;
         case"utilizadores" :
+
+            if (isset($_GET["ordenar"])) {
+                if ($_GET["ordenar"]=="perfil") {
+                    $y = "SELECT 	Utilizadores_id, Utilizadores_nome, Utilizadores_email,Perfis_id FROM utilizadores ORDER BY Perfis_id ASC";
+                }
+
+
+
+            }else {
+                $y = "SELECT 	Utilizadores_id, Utilizadores_nome, Utilizadores_email,Perfis_id FROM utilizadores";
+            }
+
             echo "<div class=\"row justify-content-center caixa4 m-3 p-3\">
                                             <section class=\"col-10 text-center p-0 m-0\">
                                                 <h1>Listagem de Utilizadores</h1> </div>";
 
-            $query = "SELECT 	Utilizadores_id, Utilizadores_nome, Utilizadores_email,Perfis_id FROM utilizadores";
+            $query = $y;
             if (mysqli_stmt_prepare($stmt, $query)) { // Prepare the statement
                 mysqli_stmt_execute($stmt);
                 mysqli_stmt_bind_result($stmt, $id, $nome, $email, $perfil); // Bind results
@@ -98,24 +135,40 @@ if (isset($_GET["listagem"])) {
                                             
                                            </div>";
                 }
+                mysqli_stmt_close($stmt);
             }
 
-            mysqli_stmt_close($stmt);
+
 
             break;
 
 
         case "vestuario":
+
+            if (isset($_GET["ordenar"])) {
+                if ($_GET["ordenar"]=="precoasc") {
+                    $y = "SELECT Itens_id, Itens_nome, Itens_preço, Itens_venda, Itens_descrição, Itens_ref_3D, Tipos_Tipos_id FROM itens ORDER BY Itens_preço ASC";
+                }
+                if ($_GET["ordenar"]=="precodesc") {
+                    $y = "SELECT Itens_id, Itens_nome, Itens_preço, Itens_venda, Itens_descrição, Itens_ref_3D, Tipos_Tipos_id FROM itens ORDER BY Itens_preço DESC";
+                }
+
+
+
+            }else {
+                $y = "SELECT Itens_id, Itens_nome, Itens_preço, Itens_venda, Itens_descrição, Itens_ref_3D, Tipos_Tipos_id FROM itens";
+            }
+
             echo "<div class=\"row justify-content-center caixa4 m-3 p-3\">
                                             <section class=\"col-10 text-center p-0 m-0\">
-                                                <h1>Listagem de Vestuário</h1>
+                                                <h1>Listagem de Itens</h1>
                                              </section>
                                             <section class=\"col-7 text-center p-0 m-0\"><a href=\"Adicionar.php?add=item\" class=\"w-100  adicionar px-4\">
                                                 <b style=\" color: white\">ADICIONAR <i class=\"fas fa-plus fa-1x \"style=\"color:white\"></i></b></a>
                                             </section>
                                          </div>";
 
-            $query = "SELECT Itens_id, Itens_nome, Itens_preço, Itens_venda, Itens_descrição, Itens_ref_3D, Tipos_Tipos_id FROM itens";
+            $query = $y;
 
             if (mysqli_stmt_prepare($stmt, $query)) { // Prepare the statement
                 mysqli_stmt_execute($stmt);
@@ -139,6 +192,21 @@ if (isset($_GET["listagem"])) {
 
         case "obras":
 
+            if (isset($_GET["ordenar"])) {
+                if ($_GET["ordenar"]=="dataasc") {
+                    $y = "SELECT Obras_id,	Obras_nome,	Obras_descrição,	Obras_data,	Imagens_Imagens_id FROM obras ORDER BY Obras_data ASC";
+                }
+                if ($_GET["ordenar"]=="datadesc") {
+                    $y = "SELECT Obras_id,	Obras_nome,	Obras_descrição,	Obras_data,	Imagens_Imagens_id FROM obras ORDER BY Obras_data DESC";
+                }
+
+
+
+            }else {
+                $y = "SELECT Obras_id,	Obras_nome,	Obras_descrição,	Obras_data,	Imagens_Imagens_id FROM obras";
+            }
+
+
             echo "<div class=\"row justify-content-center caixa4 m-3 p-3\">
                                             <section class=\"col-10 text-center p-0 m-0\">
                                                 <h1>Listagem de Obras</h1>
@@ -148,7 +216,7 @@ if (isset($_GET["listagem"])) {
                                             </section>
                                          </div> ";
 
-            $query = "SELECT Obras_id,	Obras_nome,	Obras_descrição,	Obras_data,	Imagens_Imagens_id FROM obras";
+            $query = $y;
             if (mysqli_stmt_prepare($stmt, $query)) { // Prepare the statement
                 mysqli_stmt_execute($stmt);
                 mysqli_stmt_bind_result($stmt, $id, $nome, $descricao, $data, $imagem); // Bind results
@@ -168,6 +236,20 @@ if (isset($_GET["listagem"])) {
 
         case "lanternas":
 
+            if (isset($_GET["ordenar"])) {
+                if ($_GET["ordenar"]=="intensidadeasc") {
+                    $y = "SELECT Lanternas_id,	Lanternas_nome,	Lanternas_ref_3D,	Lanternas_descrição,	Lanternas_cor,	Lanternas_raio,	Lanternas_intensidade FROM lanternas ORDER BY Lanternas_intensidade ASC";
+                }
+                if ($_GET["ordenar"]=="intensidadedesc") {
+                    $y = "SELECT Lanternas_id,	Lanternas_nome,	Lanternas_ref_3D,	Lanternas_descrição,	Lanternas_cor,	Lanternas_raio,	Lanternas_intensidade FROM lanternas ORDER BY Lanternas_intensidade DESC";
+                }
+
+
+
+            }else {
+                $y = "SELECT Lanternas_id,	Lanternas_nome,	Lanternas_ref_3D,	Lanternas_descrição,	Lanternas_cor,	Lanternas_raio,	Lanternas_intensidade FROM lanternas";
+            }
+
             echo "<div class=\"row justify-content-center caixa4 m-3 p-3\">
                                             <section class=\"col-10 text-center p-0 m-0\">
                                                 <h1>Listagem de Lanternas</h1>
@@ -177,7 +259,7 @@ if (isset($_GET["listagem"])) {
                                             </section>
                                          </div>";
 
-            $query = "SELECT Lanternas_id,	Lanternas_nome,	Lanternas_ref_3D,	Lanternas_descrição,	Lanternas_cor,	Lanternas_raio,	Lanternas_intensidade FROM lanternas";
+            $query = $y;
             if (mysqli_stmt_prepare($stmt, $query)) { // Prepare the statement
                 mysqli_stmt_execute($stmt);
                 mysqli_stmt_bind_result($stmt, $id, $nome, $red_3D, $descricao, $cor, $raio, $intensidade); // Bind results
@@ -197,6 +279,20 @@ if (isset($_GET["listagem"])) {
 
         case "conquistas" :
 
+            if (isset($_GET["ordenar"])) {
+                if ($_GET["ordenar"]=="pontosasc") {
+                    $y = "SELECT Conquistas_id,	Conquistas_nome,	Conquistas_descrição,	Conquistas_pontos,	Imagens_Imagens_id FROM conquistas ORDER BY Conquistas_pontos ASC";
+                }
+                if ($_GET["ordenar"]=="pontosdesc") {
+                    $y = "SELECT Conquistas_id,	Conquistas_nome,	Conquistas_descrição,	Conquistas_pontos,	Imagens_Imagens_id FROM conquistas ORDER BY Conquistas_pontos DESC";
+                }
+
+
+
+            }else {
+                $y = "SELECT Conquistas_id,	Conquistas_nome,	Conquistas_descrição,	Conquistas_pontos,	Imagens_Imagens_id FROM conquistas";
+            }
+
             echo "<div class=\"row justify-content-center caixa4 m-3 p-3\">
                                             <section class=\"col-10 text-center p-0 m-0\">
                                                 <h1>Listagem de Conquistas</h1>
@@ -206,7 +302,7 @@ if (isset($_GET["listagem"])) {
                                             </section>
                                          </div>";
 
-            $query = "SELECT Conquistas_id,	Conquistas_nome,	Conquistas_descrição,	Conquistas_pontos,	Imagens_Imagens_id FROM conquistas";
+            $query = $y;
             if (mysqli_stmt_prepare($stmt, $query)) { // Prepare the statement
                 mysqli_stmt_execute($stmt);
                 mysqli_stmt_bind_result($stmt, $id, $nome, $descricao, $pontos, $imagem); // Bind results
@@ -229,6 +325,33 @@ if (isset($_GET["listagem"])) {
 
         case "tarefas":
 
+            if (isset($_GET["ordenar"])) {
+                if ($_GET["ordenar"]=="tempoasc") {
+                    $y = "SELECT Tarefas_id	, Tarefas_nome,	Tarefas_tempo,	Tarefas_dinheiro,	Tarefas_pontos,	Imagens_Imagens_id FROM tarefas ORDER BY Tarefas_tempo ASC";
+                }
+                if ($_GET["ordenar"]=="tempodesc") {
+                    $y = "SELECT Tarefas_id	, Tarefas_nome,	Tarefas_tempo,	Tarefas_dinheiro,	Tarefas_pontos,	Imagens_Imagens_id FROM tarefas ORDER BY Tarefas_tempo DESC";
+                }
+                if ($_GET["ordenar"]=="precoasc") {
+                    $y = "SELECT Tarefas_id	, Tarefas_nome,	Tarefas_tempo,	Tarefas_dinheiro,	Tarefas_pontos,	Imagens_Imagens_id FROM tarefas ORDER BY Tarefas_dinheiro ASC";
+                }
+                if ($_GET["ordenar"]=="precodesc") {
+                    $y = "SELECT Tarefas_id	, Tarefas_nome,	Tarefas_tempo,	Tarefas_dinheiro,	Tarefas_pontos,	Imagens_Imagens_id FROM tarefas ORDER BY Tarefas_dinheiro DESC";
+                }
+                if ($_GET["ordenar"]=="pontosasc") {
+                    $y = "SELECT Tarefas_id	, Tarefas_nome,	Tarefas_tempo,	Tarefas_dinheiro,	Tarefas_pontos,	Imagens_Imagens_id FROM tarefas ORDER BY Tarefas_pontos ASC";
+                }
+                if ($_GET["ordenar"]=="pontosdesc") {
+                    $y = "SELECT Tarefas_id	, Tarefas_nome,	Tarefas_tempo,	Tarefas_dinheiro,	Tarefas_pontos,	Imagens_Imagens_id FROM tarefas ORDER BY Tarefas_pontos DESC";
+                }
+
+
+
+            }else {
+                $y = "SELECT Tarefas_id	, Tarefas_nome,	Tarefas_tempo,	Tarefas_dinheiro,	Tarefas_pontos,	Imagens_Imagens_id FROM tarefas";
+            }
+
+
             echo "<div class=\"row justify-content-center caixa4 m-3 p-3\">
                                             <section class=\"col-10 text-center p-0 m-0\">
                                                 <h1>Listagem de Tarefas</h1>
@@ -239,7 +362,7 @@ if (isset($_GET["listagem"])) {
                                          </div>";
 
 
-            $query = "SELECT Tarefas_id	, Tarefas_nome,	Tarefas_tempo,	Tarefas_dinheiro,	Tarefas_pontos,	Imagens_Imagens_id FROM tarefast";
+            $query = $y;
             if (mysqli_stmt_prepare($stmt, $query)) { // Prepare the statement
                 mysqli_stmt_execute($stmt);
                 mysqli_stmt_bind_result($stmt, $id, $nome, $tempo, $dinheiro, $pontos, $imagem); // Bind results
@@ -249,7 +372,7 @@ if (isset($_GET["listagem"])) {
                                             <section class='col-1 p-2 listagemdecenas hoveri text-dark'><a href='Editar.php?tarefa=" . $id . "' class='text-dark'>EDITAR</a></section>
                                             <section class='col-1 p-2 listagemdecenas hoveri text-dark'><a href='Editar.php?elimina_tarefa=" . $id . "' class='text-dark'>ELIMINAR</a></section>                                            <section class='col-1 p-2 listagemdecenas'>" . $id . "</section>
                                             <section class='col-4 listagemdecenas p-2'>" . $nome . "</section> 
-                                            <section class='col-4 p-2 listagemdecenas'>" . $imagem . "</section>
+                                            <section class='col-4 p-2 listagemdecenas'>" . $dinheiro . "</section>
                                            </div>";
                 }
                 mysqli_stmt_close($stmt);
