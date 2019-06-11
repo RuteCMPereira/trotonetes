@@ -1,4 +1,10 @@
 <?php
+if (isset($_GET['page'])){
+
+    $page = $_GET['page'];
+    $limit = 10;
+    $offset = ($page - 1)*10;
+
 if (isset($_GET["listagem"])) {
 
     $x = $_GET["listagem"];
@@ -390,7 +396,7 @@ if (isset($_GET["listagem"])) {
 
 } else {
     echo "Aconteceu algo de errado";
-}
+}}
 
 ?>
 
