@@ -51,16 +51,5 @@ $sql_utilizadores = "SELECT Utilizadores_id, Utilizadores_nome, Utilizadores_pas
 //$pega_nivel = mysqli_query($connection, $sql_nivel);
 
 
-////////////////////////////////TRAZ AS QUESTÕES DE ACORDO COM O CRITÉRIO/////
-if (!empty($_POST['bt_enviar'])) {
-    $disciplina = (empty($_POST['Disciplina'])) ? 'null' : $_POST['Disciplina'];
-    $banca = (empty($_POST['Banca'])) ? 'null' : $_POST['Banca'];
-    $instituicao = (empty($_POST['Instituicao'])) ? 'null' : $_POST['Instituicao'];
-    $cargo = (empty($_POST['Cargo'])) ? 'null' : $_POST['Cargo'];
-    $ano = (empty($_POST['Ano'])) ? 'null' : $_POST['Ano'];
-    $nivel = (empty($_POST['Nivel'])) ? 'null' : $_POST['Nivel'];
-    $sql_questao = "SELECT * FROM tabela_questao WHERE ( id_disciplina = $disciplina OR $disciplina = 0) AND (id_banca = $banca OR $banca = 0) AND (id_ano = $ano OR $ano = 0) AND (id_nivel = $nivel OR $nivel = 0) AND (id_instituicao = $instituicao OR $instituicao = 0) AND (id_cargo = $cargo OR $cargo = 0)";
-    $seleciona_questao = mysqli_query($connection, $sql_questao);
-}
-?>
+
 

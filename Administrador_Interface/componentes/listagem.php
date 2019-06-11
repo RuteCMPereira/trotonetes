@@ -72,7 +72,7 @@ if (isset($_GET["listagem"])) {
                     echo " <div class=\"row justify-content-around text-center m-3 \">
 
                                             <section class='col-1 p-2 listagemdecenas hoveri text-dark'><a href='Editar.php?evento=" . $id . "' class='text-dark'><i class=\"fas fa-pen\"></i></a></section>
-                                            <section class='col-1 p-2 listagemdecenas hoveri text-dark'><a href='Editar.php?elimina_evento=" . $id . "' class='text-dark'><i class=\"fas fa-trash\"></i></a></section>                                            <section class='col-1 p-2 listagemdecenas'>" . $id . "</section>
+                                            <section class='col-1 p-2 listagemdecenas hoveri text-dark'><a href='scripts/Delete.php?evento=" . $id . "' class='text-dark'><i class=\"fas fa-trash\"></i></a></section>                                            <section class='col-1 p-2 listagemdecenas'>" . $id . "</section>
                                             <section class='col-4 listagemdecenas p-2'>" . $nome . "</section> 
                                             <section class='col-4 p-2 listagemdecenas'>" . $data_inicio . "</section>
                                            </div>";
@@ -140,7 +140,7 @@ if (isset($_GET["listagem"])) {
                     echo " <div class=\"row justify-content-around text-center m-3 \">
 
                                             <section class='col-1 p-2 listagemdecenas hoveri text-dark'><a href='Editar.php?sala=" . $id . "' class='text-dark'><i class=\"fas fa-pen\"></i></a></section>
-                                            <section class='col-1 p-2 listagemdecenas hoveri text-dark'><a href='Editar.php?elimina_obra=" . $id . "' class='text-dark'><i class=\"fas fa-trash\"></i></a></section>                                            <section class='col-1 p-2 listagemdecenas'>" . $id . "</section>
+                                            <section class='col-1 p-2 listagemdecenas hoveri text-dark'><a href='scripts/Delete.php?sala=" . $id . "' class='text-dark'><i class=\"fas fa-trash\"></i></a></section>                                            <section class='col-1 p-2 listagemdecenas'>" . $id . "</section>
                                             <section class='col-3 listagemdecenas p-2'>" . $nome . "</section> 
                                             <section class='col-3 p-2 listagemdecenas'>" . $descricao . "</section>
                                                         <section class='col-2 p-2 listagemdecenas'>" . $piso . "</section>
@@ -198,7 +198,7 @@ if (isset($_GET["listagem"])) {
                     echo " <div class=\"row justify-content-around text-center m-3 \">
 
                                             <section class='col-1 p-2 listagemdecenas hoveri text-dark'><a href='Editar.php?utilizador=" . $id . "' class='text-dark'><i class=\"fas fa-pen\"></i></a></section>
-                                            <section class='col-1 p-2 listagemdecenas hoveri text-dark'><a href='Editar.php?elimina_utilizador=" . $id . "' class='text-dark'><i class=\"fas fa-trash\"></i></a></section>                                            <section class='col-1 p-2 listagemdecenas'>" . $id . "</section>
+                                            <section class='col-1 p-2 listagemdecenas hoveri text-dark'><a href='scripts/Delete.php?utilizador=" . $id . "' class='text-dark'><i class=\"fas fa-trash\"></i></a></section>                                            <section class='col-1 p-2 listagemdecenas'>" . $id . "</section>
                                             <section class='col-3 listagemdecenas p-2'>" . $nome . "</section> 
                                             <section class='col-4 p-2 listagemdecenas'>" . $email . "</section>
                                             <section class='col-1 p-2 listagemdecenas'>" . $perfil . "</section>
@@ -270,7 +270,7 @@ if (isset($_GET["listagem"])) {
                     echo " <div class=\"row justify-content-around text-center  m-3 \">
 
                                             <section class='col-1 p-2 listagemdecenas hoveri text-dark'><a href='Editar.php?item=" . $id . "' class='text-dark'><i class=\"fas fa-pen\"></i></a></section>
-                                            <section class='col-1 p-2 listagemdecenas hoveri text-dark'><a href='Editar.php?elimina_item=" . $id . "' class='text-dark'><i class=\"fas fa-trash\"></i></a></section>                                            <section class='col-1 p-2 listagemdecenas'>" . $id . "</section>
+                                            <section class='col-1 p-2 listagemdecenas hoveri text-dark'><a href='scripts/Delete.php?item=" . $id . "' class='text-dark'><i class=\"fas fa-trash\"></i></a></section>                                            <section class='col-1 p-2 listagemdecenas'>" . $id . "</section>
                                             <section class='col-4 listagemdecenas p-2'>" . $nome . "</section> 
                                             <section class='col-2 p-2 listagemdecenas'>" . $preco . "</section>
                                             <section class='col-2 p-2 listagemdecenas'>" . $tipo_id . "</section>
@@ -332,7 +332,7 @@ if (isset($_GET["listagem"])) {
 
                     echo " <div class=\"row justify-content-around text-center  m-3 \">
                                             <section class='col-1 p-2 listagemdecenas hoveri text-dark'><a href='Editar.php?obra=" . $id . "' class='text-dark'><i class=\"fas fa-pen\"></i></a></section>
-                                            <section class='col-1 p-2 listagemdecenas hoveri text-dark'><a href='Editar.php?elimina_obra=" . $id . "' class='text-dark'><i class=\"fas fa-trash\"></i></a></section>                                            <section class='col-1 p-2 listagemdecenas'>" . $id . "</section>
+                                            <section class='col-1 p-2 listagemdecenas hoveri text-dark'><a href='scripts/Delete.php?obra=" . $id . "' class='text-dark'><i class=\"fas fa-trash\"></i></a></section>                                            <section class='col-1 p-2 listagemdecenas'>" . $id . "</section>
                                             <section class='col-4 listagemdecenas p-2'>" . $nome . "</section> 
                                             <section class='col-4 p-2 listagemdecenas'>" . $data . "</section>
                                            </div>";
@@ -397,7 +397,7 @@ if (isset($_GET["listagem"])) {
 
                     echo " <div class=\"row justify-content-around text-center  m-3 \">
                                             <section class='col-1 p-2 listagemdecenas hoveri text-dark'><a href='Editar.php?lanterna=" . $id . "' class='text-dark'><i class=\"fas fa-pen\"></i></a></section>
-                                            <section class='col-1 p-2 listagemdecenas hoveri text-dark'><a href='Editar.php?elimina_lanterna=" . $id . "' class='text-dark'><i class=\"fas fa-trash\"></i></a></section>                                            <section class='col-1 p-2 listagemdecenas'>" . $id . "</section>
+                                            <section class='col-1 p-2 listagemdecenas hoveri text-dark'><a href='scripts/Delete.php?lanterna=" . $id . "' class='text-dark'><i class=\"fas fa-trash\"></i></a></section>                                            <section class='col-1 p-2 listagemdecenas'>" . $id . "</section>
                                             <section class='col-4 listagemdecenas p-2'>" . $nome . "</section> 
                                             <section class='col-4 p-2 listagemdecenas'>" . $descricao . "</section>
                                            </div>";
@@ -465,7 +465,7 @@ if (isset($_GET["listagem"])) {
 
                     echo " <div class=\"row justify-content-around text-center m-3 \">
                                             <section class='col-1 p-2 listagemdecenas hoveri text-dark'><a href='Editar.php?conquista=" . $id . "' class='text-dark'><i class=\"fas fa-pen\"></i></a></section>
-                                            <section class='col-1 p-2 listagemdecenas hoveri text-dark'><a href='Editar.php?elimina_conquista=" . $id . "' class='text-dark'><i class=\"fas fa-trash\"></i></a></section>
+                                            <section class='col-1 p-2 listagemdecenas hoveri text-dark'><a href='scripts/Delete.php?conquista=" . $id . "' class='text-dark'><i class=\"fas fa-trash\"></i></a></section>
                                             <section class='col-1 p-2 listagemdecenas'>" . $id . "</section>
                                             <section class='col-3 listagemdecenas p-2'>" . $nome . "</section> 
                                             <section class='col-4 p-2 listagemdecenas'>" . $descricao . "</section>
@@ -542,7 +542,7 @@ if (isset($_GET["listagem"])) {
                     echo " <div class=\"row justify-content-around text-center m-3 \">
 
                                             <section class='col-1 p-2 listagemdecenas hoveri text-dark'><a href='Editar.php?tarefa=" . $id . "' class='text-dark'><i class=\"fas fa-pen\"></i></a></section>
-                                            <section class='col-1 p-2 listagemdecenas hoveri text-dark'><a href='Editar.php?elimina_tarefa=" . $id . "' class='text-dark'><i class=\"fas fa-trash\"></i></a></section>                                            <section class='col-1 p-2 listagemdecenas'>" . $id . "</section>
+                                            <section class='col-1 p-2 listagemdecenas hoveri text-dark'><a href='scripts/Delete.php?tarefa=" . $id . "' class='text-dark'><i class=\"fas fa-trash\"></i></a></section>                                            <section class='col-1 p-2 listagemdecenas'>" . $id . "</section>
                                             <section class='col-2 listagemdecenas p-2'>" . $nome . "</section> 
                                             <section class='col-2 p-2 listagemdecenas'>" . $dinheiro . "</section>
                                             <section class='col-2 listagemdecenas p-2'>" . $tempo . "</section> 
