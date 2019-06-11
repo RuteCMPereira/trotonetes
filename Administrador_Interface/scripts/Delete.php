@@ -1,5 +1,5 @@
 <?php
-
+$ultima_pagina=0;
 include_once "../connections/connection.php";
 
 if (isset($_GET['item'])) {
