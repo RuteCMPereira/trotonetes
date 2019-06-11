@@ -1,9 +1,4 @@
 <?php
-if (isset($_GET['page'])){
-
-    $page = $_GET['page'];
-    $limit = 10;
-    $offset = ($page - 1)*10;
 
 if (isset($_GET["listagem"])) {
 
@@ -21,7 +16,7 @@ if (isset($_GET["listagem"])) {
         case "eventos":
             if (isset($_GET["ordenar"])) {
                 if ($_GET["ordenar"]=="data") {
-                    $y = "SELECT Eventos_id,	Eventos_nome, Eventos_data_inicio, Eventos_data_fim, Eventos_decrição_curta, Eventos_descrição_longa FROM eventos ORDER BY Eventos_data_inicio DESC ";
+                    $y = "SELECT Eventos_id,	Eventos_nome, Eventos_data_inicio, Eventos_data_fim, Eventos_decrição_curta, Eventos_descrição_longa FROM eventos ORDER BY Eventos_data_inicio DESC";
                 }
 
 
@@ -38,7 +33,6 @@ if (isset($_GET["listagem"])) {
                                                 <b style=\" color: white\">ADICIONAR <i class=\"fas fa-plus fa-1x \"style=\"color:white\"></i></b></a>
                                             </section>
                                          </div>";
-
             $query=$y;
 
             if (mysqli_stmt_prepare($stmt, $query)) { // Prepare the statement
@@ -57,8 +51,6 @@ if (isset($_GET["listagem"])) {
 
                 }
                 mysqli_stmt_close($stmt);
-            }else{
-                echo mysqli_stmt_error($stmt);
             }
 
             break;
@@ -396,7 +388,7 @@ if (isset($_GET["listagem"])) {
 
 } else {
     echo "Aconteceu algo de errado";
-}}
+}
 
 ?>
 
