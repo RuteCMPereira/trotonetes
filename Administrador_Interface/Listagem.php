@@ -19,34 +19,7 @@
 
 <?php include_once "scripts/Registo_Admin_Check.php" ?>
 
-<?php
 
-include_once "connections/connection.php";
-new_db_connection();
-
-$current_page=1;
-if(isset($_GET['page'])& !empty($_GET['page'])){
-    $current_page=$_GET['page'];
-}
-$items_per_page=2;
-
-$start= ($current_page * $items_per_page) - $items_per_page;
-
-$resu= "SELECT COUNT(*) FROM  eventos";
-$count=0;
-
-if(mysqli_stmt_prepare($stmt, $resu)) {
-    if(mysqli_stmt_execute($stmt)){
-        mysqli_stmt_bind_result($stmt, $count);
-        mysqli_stmt_fetch($stmt);
-    }
-}
-
-$end_page= ceil($count/$items_per_page);
-$start_page=1;
-$next_page= $current_page+1;
-$previous_page= $current_page -1;
-?>
 
 <div id="wrapper">
 

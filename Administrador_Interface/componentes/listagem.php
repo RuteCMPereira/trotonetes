@@ -32,6 +32,7 @@ if (isset($_GET["listagem"])) {
                                                 <b style=\" color: white\">ADICIONAR <i class=\"fas fa-plus fa-1x \"style=\"color:white\"></i></b></a>
                                             </section>
                                          </div>";
+
             $query=$y;
 
             if (mysqli_stmt_prepare($stmt, $query)) { // Prepare the statement
@@ -50,6 +51,8 @@ if (isset($_GET["listagem"])) {
 
                 }
                 mysqli_stmt_close($stmt);
+            }else{
+                echo mysqli_stmt_error($stmt);
             }
 
             break;
