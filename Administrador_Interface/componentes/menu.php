@@ -36,7 +36,7 @@
                     </article>
 
                     <article class="col-xl-2 col-5 container p-0 my-5 image_back_2">
-                        <a href="Listagem.php?listagem=salas" class="w-100 text-center p-0 m-0">
+                        <a href="Listagem.php?listagem=salas&page=1" class="w-100 text-center p-0 m-0">
                             <div class="text-center w-100 h-100 d-flex align-middle justify-content-center align-items-center align-content-center">
                                 <b>SALAS</b></div>
                             <div class="overlay p-0 m-0 h-100 w-100 text-center d-flex align-middle justify-content-center align-items-center align-content-center">
@@ -46,7 +46,7 @@
                     </article>
 
                     <article class="col-xl-2 col-5 container p-0 my-5 image_back_3">
-                        <a href="Listagem.php?listagem=utilizadores" class="w-100 text-center p-0 m-0">
+                        <a href="Listagem.php?listagem=utilizadores&page=1" class="w-100 text-center p-0 m-0">
                             <div class="text-center w-100 h-100 d-flex align-middle justify-content-center align-items-center align-content-center">
                                 <b>UTILIZADORES</b></div>
                             <div class="overlay p-0 m-0 h-100 w-100 text-center d-flex align-middle justify-content-center align-items-center align-content-center">
