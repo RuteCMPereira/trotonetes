@@ -4,7 +4,7 @@
 
             <form action="" autocomplete="on">
                 <input id="search" type="text" placeholder="Pesquisa">
-                <input type="submit">
+                <input type="submit" style="z-index: 0">
             </form>
         </div>
         <div><img src="img/filter.svg" onclick="openNav()" class="px-3 filter" height="50px"

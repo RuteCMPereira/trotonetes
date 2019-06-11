@@ -5,7 +5,7 @@ if (isset($_GET['page'])){
 $page = $_GET['page'];
 $previous=$page -1;
 $next= $page +1;
-$limit = 10;
+$limit = 5;
 $offset = ($page - 1)*$limit;
 
 if($page<1){
@@ -51,6 +51,17 @@ if (isset($_GET["listagem"])) {
             if (mysqli_stmt_prepare($stmt, $query)) { // Prepare the statement
                 mysqli_stmt_execute($stmt);
                 mysqli_stmt_bind_result($stmt, $id, $nome, $data_inicio, $data_fim, $descricao_curta, $descricao_longa); // Bind results
+
+                echo " <div class=\"row justify-content-around text-center m-3 my-4 mt-5\">
+
+                                            <section class='col-1 p-2 listagemdecenas1 text-dark' style='font-weight: bold'><h4 class='mt-2' style='font-weight: bold'>EDITAR</h4></section>
+                                            <section class='col-1 p-2 listagemdecenas text-dark'><h4 class='mt-2' style='font-weight: bold'>ELIMINAR</h4></section>                                           
+                                            <section class='col-1 p-2 listagemdecenas'><h4 class='mt-2' style='font-weight: bold'>ID</h4></section>
+                                            <section class='col-4 listagemdecenas p-2'><h4 class='mt-2' style='font-weight: bold'>NOME</h4></section> 
+                                            <section class='col-4 listagemdecenas p-2'><h4 class='mt-2' style='font-weight: bold'>DATA</h4></section>
+                                           </div>";
+
+
                 if (isset($_GET['lastpage'])){
 
                     echo "<p class='ml-5 py-3' style='font-weight: bold'>Não Foram encontrados mais resultados</p>";
@@ -105,6 +116,20 @@ if (isset($_GET["listagem"])) {
             if (mysqli_stmt_prepare($stmt, $query)) { // Prepare the statement
                 mysqli_stmt_execute($stmt);
                 mysqli_stmt_bind_result($stmt, $id, $nome, $descricao, $posicao_jogo, $posicao_mapa, $piso); // Bind results
+
+                echo " <div class=\"row justify-content-around text-center m-3 my-4 mt-5\">
+
+                                            <section class='col-1 p-2 listagemdecenas1 text-dark' style='font-weight: bold'><h4 class='mt-2' style='font-weight: bold'>EDITAR</h4></section>
+                                            <section class='col-1 p-2 listagemdecenas text-dark'><h4 class='mt-2' style='font-weight: bold'>ELIMINAR</h4></section>                                           
+                                            <section class='col-1 p-2 listagemdecenas'><h4 class='mt-2' style='font-weight: bold'>ID</h4></section>
+                                            <section class='col-3 listagemdecenas p-2'><h4 class='mt-2' style='font-weight: bold'>NOME</h4></section> 
+                                            <section class='col-3 p-2 listagemdecenas'><h4 class='mt-2' style='font-weight: bold'>DESCRIÇÃO</h4></section>
+                                            <section class='col-2 listagemdecenas p-2'><h4 class='mt-2' style='font-weight: bold'>PISO</h4></section> 
+                                        
+                                           </div>";
+
+
+
                 if (isset($_GET['lastpage'])){
 
                     echo "<p class='ml-5 py-3' style='font-weight: bold'>Não Foram encontrados mais resultados</p>";
@@ -114,8 +139,9 @@ if (isset($_GET["listagem"])) {
 
                                             <section class='col-1 p-2 listagemdecenas hoveri text-dark'><a href='Editar.php?sala=" . $id . "' class='text-dark'><i class=\"fas fa-pen\"></i></a></section>
                                             <section class='col-1 p-2 listagemdecenas hoveri text-dark'><a href='Editar.php?elimina_obra=" . $id . "' class='text-dark'><i class=\"fas fa-trash\"></i></a></section>                                            <section class='col-1 p-2 listagemdecenas'>" . $id . "</section>
-                                            <section class='col-4 listagemdecenas p-2'>" . $nome . "</section> 
-                                            <section class='col-4 p-2 listagemdecenas'>" . $descricao . "</section>
+                                            <section class='col-3 listagemdecenas p-2'>" . $nome . "</section> 
+                                            <section class='col-3 p-2 listagemdecenas'>" . $descricao . "</section>
+                                                        <section class='col-2 p-2 listagemdecenas'>" . $piso . "</section>
                                            </div>";
                 }
                 if(!isset($id)){
@@ -147,6 +173,18 @@ if (isset($_GET["listagem"])) {
             if (mysqli_stmt_prepare($stmt, $query)) { // Prepare the statement
                 mysqli_stmt_execute($stmt);
                 mysqli_stmt_bind_result($stmt, $id, $nome, $email, $perfil); // Bind results
+
+                echo " <div class=\"row justify-content-around text-center m-3 my-4 mt-5\">
+
+                                            <section class='col-1 p-2 listagemdecenas1 text-dark' style='font-weight: bold'><h4 class='mt-2' style='font-weight: bold'>EDITAR</h4></section>
+                                            <section class='col-1 p-2 listagemdecenas text-dark'><h4 class='mt-2' style='font-weight: bold'>ELIMINAR</h4></section>                                           
+                                            <section class='col-1 p-2 listagemdecenas'><h4 class='mt-2' style='font-weight: bold'>ID</h4></section>
+                                            <section class='col-3 listagemdecenas p-2'><h4 class='mt-2' style='font-weight: bold'>NOME</h4></section> 
+                                            <section class='col-4 p-2 listagemdecenas'><h4 class='mt-2' style='font-weight: bold'>MAIL</h4></section>
+                                            <section class='col-1 listagemdecenas p-2'><h4 class='mt-2' style='font-weight: bold'>PERFIL</h4></section> 
+                                        
+                                           </div>";
+
                 if (isset($_GET['lastpage'])){
 
                     echo "<p class='ml-5 py-3' style='font-weight: bold'>Não Foram encontrados mais resultados</p>";
@@ -204,6 +242,19 @@ if (isset($_GET["listagem"])) {
             if (mysqli_stmt_prepare($stmt, $query)) { // Prepare the statement
                 mysqli_stmt_execute($stmt);
                 mysqli_stmt_bind_result($stmt, $id, $nome, $preco, $venda, $descricao, $ref_3D, $tipo_id); // Bind results
+
+                echo " <div class=\"row justify-content-around text-center m-3 my-4 mt-5\">
+
+                                            <section class='col-1 p-2 listagemdecenas1 text-dark' style='font-weight: bold'><h4 class='mt-2' style='font-weight: bold'>EDITAR</h4></section>
+                                            <section class='col-1 p-2 listagemdecenas text-dark'><h4 class='mt-2' style='font-weight: bold'>ELIMINAR</h4></section>                                           
+                                            <section class='col-1 p-2 listagemdecenas'><h4 class='mt-2' style='font-weight: bold'>ID</h4></section>
+                                            <section class='col-4 listagemdecenas p-2'><h4 class='mt-2' style='font-weight: bold'>NOME</h4></section> 
+                                            <section class='col-2 p-2 listagemdecenas'><h4 class='mt-2' style='font-weight: bold'>PREÇO</h4></section>
+                                            <section class='col-2 listagemdecenas p-2'><h4 class='mt-2' style='font-weight: bold'>TIPO</h4></section> 
+                                         
+                                           </div>";
+
+
                 if (isset($_GET['lastpage'])){
 
                     echo "<p class='ml-5 py-3' style='font-weight: bold'>Não Foram encontrados mais resultados</p>";
@@ -259,6 +310,17 @@ if (isset($_GET["listagem"])) {
             if (mysqli_stmt_prepare($stmt, $query)) { // Prepare the statement
                 mysqli_stmt_execute($stmt);
                 mysqli_stmt_bind_result($stmt, $id, $nome, $descricao, $data, $imagem); // Bind results
+
+                echo " <div class=\"row justify-content-around text-center m-3 my-4 mt-5\">
+
+                                            <section class='col-1 p-2 listagemdecenas1 text-dark' style='font-weight: bold'><h4 class='mt-2' style='font-weight: bold'>EDITAR</h4></section>
+                                            <section class='col-1 p-2 listagemdecenas text-dark'><h4 class='mt-2' style='font-weight: bold'>ELIMINAR</h4></section>                                           
+                                            <section class='col-1 p-2 listagemdecenas'><h4 class='mt-2' style='font-weight: bold'>ID</h4></section>
+                                            <section class='col-4 listagemdecenas p-2'><h4 class='mt-2' style='font-weight: bold'>NOME</h4></section> 
+                                            <section class='col-4 p-2 listagemdecenas'><h4 class='mt-2' style='font-weight: bold'>DATA</h4></section>
+                                           
+                                           </div>";
+
                 if (isset($_GET['lastpage'])){
 
                     echo "<p class='ml-5 py-3' style='font-weight: bold'>Não Foram encontrados mais resultados</p>";
@@ -306,11 +368,25 @@ if (isset($_GET["listagem"])) {
             if (mysqli_stmt_prepare($stmt, $query)) { // Prepare the statement
                 mysqli_stmt_execute($stmt);
                 mysqli_stmt_bind_result($stmt, $id, $nome, $red_3D, $descricao, $cor, $raio, $intensidade); // Bind results
-                while (mysqli_stmt_fetch($stmt)) {
-                    if (isset($_GET['lastpage'])){
 
-                        echo "<p class='ml-5 py-3' style='font-weight: bold'>Não Foram encontrados mais resultados</p>";
-                    }
+                echo " <div class=\"row justify-content-around text-center m-3 my-4 mt-5\">
+
+                                            <section class='col-1 p-2 listagemdecenas1 text-dark' style='font-weight: bold'><h4 class='mt-2' style='font-weight: bold'>EDITAR</h4></section>
+                                            <section class='col-1 p-2 listagemdecenas text-dark'><h4 class='mt-2' style='font-weight: bold'>ELIMINAR</h4></section>                                           
+                                            <section class='col-1 p-2 listagemdecenas'><h4 class='mt-2' style='font-weight: bold'>ID</h4></section>
+                                            <section class='col-4 listagemdecenas p-2'><h4 class='mt-2' style='font-weight: bold'>NOME</h4></section> 
+                                            <section class='col-4 p-2 listagemdecenas'><h4 class='mt-2' style='font-weight: bold'>INTENSIDADE</h4></section>
+                                        
+                                           </div>";
+
+                if (isset($_GET['lastpage'])){
+
+                    echo "<p class='ml-5 py-3' style='font-weight: bold'>Não Foram encontrados mais resultados</p>";
+                } while (mysqli_stmt_fetch($stmt)) {
+
+
+
+
                     echo " <div class=\"row justify-content-around text-center  m-3 \">
                                             <section class='col-1 p-2 listagemdecenas hoveri text-dark'><a href='Editar.php?lanterna=" . $id . "' class='text-dark'><i class=\"fas fa-pen\"></i></a></section>
                                             <section class='col-1 p-2 listagemdecenas hoveri text-dark'><a href='Editar.php?elimina_lanterna=" . $id . "' class='text-dark'><i class=\"fas fa-trash\"></i></a></section>                                            <section class='col-1 p-2 listagemdecenas'>" . $id . "</section>
@@ -357,6 +433,17 @@ if (isset($_GET["listagem"])) {
             if (mysqli_stmt_prepare($stmt, $query)) { // Prepare the statement
                 mysqli_stmt_execute($stmt);
                 mysqli_stmt_bind_result($stmt, $id, $nome, $descricao, $pontos, $imagem); // Bind results
+                echo " <div class=\"row justify-content-around text-center m-3 my-4 mt-5\">
+
+                                            <section class='col-1 p-2 listagemdecenas1 text-dark' style='font-weight: bold'><h4 class='mt-2' style='font-weight: bold'>EDITAR</h4></section>
+                                            <section class='col-1 p-2 listagemdecenas text-dark'><h4 class='mt-2' style='font-weight: bold'>ELIMINAR</h4></section>                                           
+                                            <section class='col-1 p-2 listagemdecenas'><h4 class='mt-2' style='font-weight: bold'>ID</h4></section>
+                                            <section class='col-3 listagemdecenas p-2'><h4 class='mt-2' style='font-weight: bold'>NOME</h4></section> 
+                                            <section class='col-4 p-2 listagemdecenas'><h4 class='mt-2' style='font-weight: bold'>DESCRIÇÃO</h4></section>
+                                            
+                                            <section class='col-1 p-2 listagemdecenas1'><h4 class='mt-2' style='font-weight: bold'>PONTOS</h4></section>
+                                           </div>";
+
                 if (isset($_GET['lastpage'])){
 
                     echo "<p class='ml-5 py-3' style='font-weight: bold'>Não Foram encontrados mais resultados</p>";
@@ -367,8 +454,9 @@ if (isset($_GET["listagem"])) {
                                             <section class='col-1 p-2 listagemdecenas hoveri text-dark'><a href='Editar.php?conquista=" . $id . "' class='text-dark'><i class=\"fas fa-pen\"></i></a></section>
                                             <section class='col-1 p-2 listagemdecenas hoveri text-dark'><a href='Editar.php?elimina_conquista=" . $id . "' class='text-dark'><i class=\"fas fa-trash\"></i></a></section>
                                             <section class='col-1 p-2 listagemdecenas'>" . $id . "</section>
-                                            <section class='col-4 listagemdecenas p-2'>" . $nome . "</section> 
+                                            <section class='col-3 listagemdecenas p-2'>" . $nome . "</section> 
                                             <section class='col-4 p-2 listagemdecenas'>" . $descricao . "</section>
+                                            <section class='col-1 p-2 listagemdecenas'>" . $pontos . "</section>
                                            </div>";
                 }
                 if(!isset($id)){
@@ -425,23 +513,31 @@ if (isset($_GET["listagem"])) {
             if (mysqli_stmt_prepare($stmt, $query)) { // Prepare the statement
                 mysqli_stmt_execute($stmt);
                 mysqli_stmt_bind_result($stmt, $id, $nome, $tempo, $dinheiro, $pontos, $imagem); // Bind results
-                if (isset($_GET['lastpage'])){
 
-                    echo "<p class='ml-5 py-3' style='font-weight: bold'>Não Foram encontrados mais resultados</p>";
-                }  while (mysqli_stmt_fetch($stmt)) {
+                echo " <div class=\"row justify-content-around text-center m-3 my-4 mt-5\">
+
+                                            <section class='col-1 p-2 listagemdecenas1 text-dark' style='font-weight: bold'><h4 class='mt-2' style='font-weight: bold'>EDITAR</h4></section>
+                                            <section class='col-1 p-2 listagemdecenas text-dark'><h4 class='mt-2' style='font-weight: bold'>ELIMINAR</h4></section>                                           
+                                            <section class='col-1 p-2 listagemdecenas'><h4 class='mt-2' style='font-weight: bold'>ID</h4></section>
+                                            <section class='col-2 listagemdecenas p-2'><h4 class='mt-2' style='font-weight: bold'>NOME</h4></section> 
+                                            <section class='col-2 p-2 listagemdecenas'><h4 class='mt-2' style='font-weight: bold'>DINHEIRO</h4></section>
+                                            <section class='col-2 listagemdecenas p-2'><h4 class='mt-2' style='font-weight: bold'>TEMPO</h4></section> 
+                                            <section class='col-2 p-2 listagemdecenas1'><h4 class='mt-2' style='font-weight: bold'>PONTOS</h4></section>
+                                           </div>";
+
+                while (mysqli_stmt_fetch($stmt)) {
 
                     echo " <div class=\"row justify-content-around text-center m-3 \">
 
                                             <section class='col-1 p-2 listagemdecenas hoveri text-dark'><a href='Editar.php?tarefa=" . $id . "' class='text-dark'><i class=\"fas fa-pen\"></i></a></section>
                                             <section class='col-1 p-2 listagemdecenas hoveri text-dark'><a href='Editar.php?elimina_tarefa=" . $id . "' class='text-dark'><i class=\"fas fa-trash\"></i></a></section>                                            <section class='col-1 p-2 listagemdecenas'>" . $id . "</section>
-                                            <section class='col-4 listagemdecenas p-2'>" . $nome . "</section> 
-                                            <section class='col-4 p-2 listagemdecenas'>" . $dinheiro . "</section>
+                                            <section class='col-2 listagemdecenas p-2'>" . $nome . "</section> 
+                                            <section class='col-2 p-2 listagemdecenas'>" . $dinheiro . "</section>
+                                            <section class='col-2 listagemdecenas p-2'>" . $tempo . "</section> 
+                                            <section class='col-2 p-2 listagemdecenas'>" . $pontos . "</section>
                                            </div>";
                 }
-                if(!isset($id)){
 
-                    header("location:Listagem.php?listagem=tarefas&page=".$previous."&lastpage=1");
-                }
 
                 mysqli_stmt_close($stmt);
             }

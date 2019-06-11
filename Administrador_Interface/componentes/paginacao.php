@@ -34,14 +34,33 @@ if(!isset($_GET['ordenar'])) {
             $link_previous="Listagem.php?listagem=vestuario&page=". $previous;
         }
 
-        if ($_GET['page'] == 1) {
+        if($_GET['listagem']== "tarefas"){
+            $link_next="Listagem.php?listagem=tarefas&page=". $next;
+            $link_previous="Listagem.php?listagem=tarefas&page=". $previous;
+        }
 
+        if($_GET['listagem']== "conquistas"){
+            $link_next="Listagem.php?listagem=conquistas&page=". $next;
+            $link_previous="Listagem.php?listagem=conquistas&page=". $previous;
+        }
+
+
+        if ($_GET['page'] == 1) {
+            if (isset($_GET['lastpage'])){
             echo "<section class=\"row justify-content-center mb-5\">
+    <div class=\"col-2 text-center justify-content-center align-content-center align-items-center\">
+    </div>
+</section>";}
+
+           else{echo "<section class=\"row justify-content-center mb-5\">
     <div class=\"col-2 text-center justify-content-center align-content-center align-items-center\">
         <a href=".$link_next." class=\"next round d-inline-block\">&#8250;<button class=\"w3-button w3-large w3-circle w3-light-grey\">›</button></a>
     </div>
 </section>";
-        } else {
+           }
+
+
+    } else {
 
             if (isset($_GET['lastpage'])){
                 echo "<section class=\"row justify-content-center mb-5\">

@@ -4,7 +4,7 @@
 
     <ul class="navbar-nav ml-0">
 
-        <h1 class="principal form-inline align-itens-center col-7"><a href="Homepage.php" class="titulo5">MUSEU
+        <h1 class="principal form-inline align-itens-center col-7"><a href="Homepage.php" class="titulo5 mt-2">MUSEU
                 DE AVEIRO</a></h1>
         <!-- Nav Item - User Information -->
         <li class="nav-item dropdown admin_log_out">
