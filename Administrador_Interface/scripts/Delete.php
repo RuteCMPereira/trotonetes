@@ -16,7 +16,7 @@ if (isset($_GET['item'])) {
 
         /* execute the prepared statement */
         if (mysqli_stmt_execute($stmt)) {
-            header("location:Listagem.php?listagem=vestuario&page=1");
+            header("location:../Listagem.php?listagem=vestuario&page=1");
         }
 
 
@@ -193,5 +193,140 @@ if (isset($_GET['evento'])) {
 
 
 ?>
+
+<?php
+
+include_once "../connections/connection.php";
+
+if (isset($_GET['obra'])) {
+
+    $query = "DELETE FROM obras WHERE Obras_id = ?";
+
+    $link = new_db_connection();
+    $stmt = mysqli_stmt_init($link);
+
+    $id = $_GET['obra'];
+    if (mysqli_stmt_prepare($stmt, $query)) {
+
+        mysqli_stmt_bind_param($stmt, 'i', $id);
+
+        /* execute the prepared statement */
+        if (mysqli_stmt_execute($stmt)) {
+            header("location:../Listagem.php?listagem=obras&page=1");
+        }
+
+
+        /* close statement */
+        mysqli_stmt_close($stmt);
+        mysqli_close($link);
+    } else {
+        echo "Error: " . mysqli_error($link);
+        mysqli_stmt_close($stmt);
+        mysqli_close($link);
+    }
+}
+
+
+?>
+
+<?php
+
+include_once "../connections/connection.php";
+
+if (isset($_GET['lanterna'])) {
+
+    $query = "DELETE FROM lanternas WHERE Lanternas_id = ?";
+
+    $link = new_db_connection();
+    $stmt = mysqli_stmt_init($link);
+
+    $id = $_GET['lanterna'];
+    if (mysqli_stmt_prepare($stmt, $query)) {
+
+        mysqli_stmt_bind_param($stmt, 'i', $id);
+
+        /* execute the prepared statement */
+        if (mysqli_stmt_execute($stmt)) {
+            header("location:../Listagem.php?listagem=lanternas&page=1");
+        }
+
+
+        /* close statement */
+        mysqli_stmt_close($stmt);
+        mysqli_close($link);
+    } else {
+        echo "Error: " . mysqli_error($link);
+        mysqli_stmt_close($stmt);
+        mysqli_close($link);
+    }
+}
+?>
+
+<?php
+
+include_once "../connections/connection.php";
+
+if (isset($_GET['conquista'])) {
+
+    $query = "DELETE FROM conquistas WHERE Conquistas_id = ?";
+
+    $link = new_db_connection();
+    $stmt = mysqli_stmt_init($link);
+
+    $id = $_GET['conquista'];
+    if (mysqli_stmt_prepare($stmt, $query)) {
+
+        mysqli_stmt_bind_param($stmt, 'i', $id);
+
+        /* execute the prepared statement */
+        if (mysqli_stmt_execute($stmt)) {
+            header("location:../Listagem.php?listagem=conquistas&page=1");
+        }
+
+
+        /* close statement */
+        mysqli_stmt_close($stmt);
+        mysqli_close($link);
+    } else {
+        echo "Error: " . mysqli_error($link);
+        mysqli_stmt_close($stmt);
+        mysqli_close($link);
+    }
+}
+?>
+
+<?php
+
+include_once "../connections/connection.php";
+
+if (isset($_GET['tarefa'])) {
+
+    $query = "DELETE FROM tarefas WHERE Tarefas_id = ?";
+
+    $link = new_db_connection();
+    $stmt = mysqli_stmt_init($link);
+
+    $id = $_GET['tarefa'];
+    if (mysqli_stmt_prepare($stmt, $query)) {
+
+        mysqli_stmt_bind_param($stmt, 'i', $id);
+
+        /* execute the prepared statement */
+        if (mysqli_stmt_execute($stmt)) {
+            header("location:../Listagem.php?listagem=tarefas&page=1");
+        }
+
+
+        /* close statement */
+        mysqli_stmt_close($stmt);
+        mysqli_close($link);
+    } else {
+        echo "Error: " . mysqli_error($link);
+        mysqli_stmt_close($stmt);
+        mysqli_close($link);
+    }
+}
+?>
+
 
 
