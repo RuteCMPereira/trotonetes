@@ -46,39 +46,36 @@ if(!isset($_GET['ordenar'])) {
 
 
         if ($_GET['page'] == 1) {
-            if (isset($_GET['lastpage'])){
-            echo "<section class=\"row justify-content-center mb-5\">
-    <div class=\"col-2 text-center justify-content-center align-content-center align-items-center\">
-    </div>
-</section>";}
-
-           else{echo "<section class=\"row justify-content-center mb-5\">
+           echo "<section class=\"row justify-content-center mb-5\">
     <div class=\"col-2 text-center justify-content-center align-content-center align-items-center\">
         <a href=".$link_next." class=\"next round d-inline-block\">&#8250;<button class=\"w3-button w3-large w3-circle w3-light-grey\">›</button></a>
     </div>
 </section>";
-           }
+
 
 
     } else {
 
-            if (isset($_GET['lastpage'])){
+            if ($ultima_pagina==1){
+
                 echo "<section class=\"row justify-content-center mb-5\">
     <div class=\"col-2 text-center justify-content-center align-content-center align-items-center\">
         <a href=".$link_previous." class=\"previous round d-inline-block\">&#8249;<button class=\"w3-button w3-large w3-circle w3-light-grey\">‹</button></a>
     </div>
 </section>";
+            }
 
-            }else{
             echo "<section class=\"row justify-content-center mb-5\">
     <div class=\"col-2 text-center justify-content-center align-content-center align-items-center\">
         <a href=".$link_previous." class=\"previous round d-inline-block\">&#8249;<button class=\"w3-button w3-large w3-circle w3-light-grey\">‹</button></a>
         <a href=".$link_next." class=\"next round d-inline-block\">&#8250;<button class=\"w3-button w3-large w3-circle w3-light-grey\">›</button></a>
     </div>
 </section>";}
-        }
 
     }
+
+
+
 
 }
 ?>
