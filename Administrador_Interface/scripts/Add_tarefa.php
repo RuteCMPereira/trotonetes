@@ -28,9 +28,6 @@ if (isset($_POST["nome"]) && isset($_POST["tempo"]) && isset($_POST["preco"])  &
             mysqli_stmt_close($stmt);
             mysqli_close($link);
 
-            $_SESSION['addsucess'] = 9;
-            header("location:../Adicionar.php?add=tarefa");
-
 
         } else {
             $_SESSION['addsucess'] = 0;

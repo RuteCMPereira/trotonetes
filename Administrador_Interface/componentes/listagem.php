@@ -5,7 +5,7 @@ if (isset($_GET['page'])) {
     $page = $_GET['page'];
     $previous = $page - 1;
     $next = $page + 1;
-    $limit = 2;
+    $limit = 5;
     $offset = ($page - 1) * $limit;
 
     if ($page < 1) {
@@ -79,10 +79,11 @@ if (isset($_GET["listagem"])) {
 
 
                 }
+                if (isset($limit)){
                 if ($x < $limit) {
                     $ultima_pagina = 1;
                 }
-
+                }
 
 
                 mysqli_stmt_close($stmt);
@@ -146,8 +147,10 @@ if (isset($_GET["listagem"])) {
                                                         <section class='col-2 p-2 listagemdecenas'>" . $piso . "</section>
                                            </div>";
                 }
-                if ($x < $limit) {
-                    $ultima_pagina = 1;
+                if (isset($limit)){
+                    if ($x < $limit) {
+                        $ultima_pagina = 1;
+                    }
                 }
 
 
@@ -206,8 +209,10 @@ if (isset($_GET["listagem"])) {
                                            </div>";
                 }
 
-                if ($x < $limit) {
-                    $ultima_pagina = 1;
+                if (isset($limit)){
+                    if ($x < $limit) {
+                        $ultima_pagina = 1;
+                    }
                 }
 
 
@@ -276,8 +281,10 @@ if (isset($_GET["listagem"])) {
                                             <section class='col-2 p-2 listagemdecenas'>" . $tipo_id . "</section>
                                             </div>";
                 }
-                if ($x < $limit) {
-                    $ultima_pagina = 1;
+                if (isset($limit)){
+                    if ($x < $limit) {
+                        $ultima_pagina = 1;
+                    }
                 }
 
 
@@ -344,10 +351,11 @@ if (isset($_GET["listagem"])) {
                 }
             }
 
-            if ($x < $limit) {
-                $ultima_pagina = 1;
+            if (isset($limit)){
+                if ($x < $limit) {
+                    $ultima_pagina = 1;
+                }
             }
-
 
             mysqli_stmt_close($stmt);
 
@@ -410,8 +418,10 @@ if (isset($_GET["listagem"])) {
 
             }
 
-            if ($x < $limit) {
-                $ultima_pagina = 1;
+            if (isset($limit)){
+                if ($x < $limit) {
+                    $ultima_pagina = 1;
+                }
             }
 
 
@@ -477,8 +487,10 @@ if (isset($_GET["listagem"])) {
                                             <section class='col-1 p-2 listagemdecenas'>" . $pontos . "</section>
                                            </div>";
                 }
-                if ($x < $limit) {
-                    $ultima_pagina = 1;
+                if (isset($limit)){
+                    if ($x < $limit) {
+                        $ultima_pagina = 1;
+                    }
                 }
 
 
@@ -561,8 +573,10 @@ if (isset($_GET["listagem"])) {
                 }
 
 
-                if ($x < $limit) {
-                    $ultima_pagina = 1;
+                if (isset($limit)){
+                    if ($x < $limit) {
+                        $ultima_pagina = 1;
+                    }
                 }
 
 

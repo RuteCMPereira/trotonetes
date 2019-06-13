@@ -859,7 +859,7 @@ if (isset($_GET["tarefa"])) {
 
 
             <section class="row " style="top: 10vh; position: relative; height: 800px">
-            <form role="form" method="post" action="scripts/Edit_tarefa.php" style="width:570px">
+            <form role="form" method="post" action="scripts/Edit_tarefa.php" enctype="multipart/form-data" style="width:570px">
             <div class="form-group">
                 <label>ID da Obra é <?= $tarefaid ?></label>
                 <p class="form-control-static"></p>
@@ -912,7 +912,8 @@ mysqli_close($link)
     ?>
 
     <img src="<?= $_SESSION['src_item'] ?>" height="100px" style="position: relative; left: 44%">
-    <button type="submit" name="submit">Adicionar</button>
+
+    <button type="submit" name="tarefa" value="tarefa">Adicionar</button>
     </form>
     </section>
     <?php
