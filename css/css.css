@@ -631,3 +631,9 @@ a.forgot-password {
 }
 
 
+.menujogo {background-color: #E6CEBB;
+           border-radius: 50%;
+    -webkit-box-shadow: 0 1px 24px 8px rgba(0, 0, 0, 0.25);
+           }
+
+.largura {width: 70%;}
