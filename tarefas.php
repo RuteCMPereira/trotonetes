@@ -23,8 +23,8 @@ include_once "components/image_full.php";
 <?php
 
 include_once "components/header_jogo.php";
-include_once "components/menu_jogo.php";
-include_once "components/bottom_app.php";
+
+include_once "components/bottom_jogo_2.php";
 
 ?>
 
