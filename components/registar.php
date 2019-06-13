@@ -8,7 +8,7 @@
         </div>
         <div class="col-9">
             <form id="login-form" class="py-2" role="form" action="scripts/user_login.php" method="post">
-                <div class="form-group my-2">
+                <div class="form-group my-2 col-12">
                     <label for="inputEmailForm" class="sr-only form-control-label">Username</label>
                     <div class="mx-auto">
                         <input type="text" class="form-control" id="inputEmailForm" name="username"
@@ -16,34 +16,50 @@
                                required="required">
                     </div>
                 </div>
-                <div class="form-group my-2">
+                <div class="form-group my-2 col-12">
+                    <label for="inputEmailForm" class="sr-only form-control-label">Password</label>
+                    <div class="mx-auto">
+                        <input type="email" class="form-control text-dark" id="inputPasswordForm" name="email"
+                               placeholder="Email" required="required">
+                    </div>
+                </div>
+                <div class="form-group my-2 col-5 p-0 m-0 d-inline-block">
+                    <label for="inputEmailForm" class="sr-only form-control-label">Género</label>
+                    <div class="mx-auto">
+                        <input type="text" class="form-control text-dark" id="inputEmailForm" name="genero"
+                               placeholder="Género" required="required">
+                    </div>
+                </div>
+                <div class="form-group my-2 col-5 p-0 m-0 d-inline-block">
+                    <label for="inputEmailForm" class="sr-only form-control-label">Género</label>
+                    <div class="mx-auto">
+                        <input type="text" class="form-control text-dark" id="inputEmailForm" name="datanascimento"
+                               placeholder="Data de Nascimento" required="required">
+                    </div>
+                </div>
+                <div class="form-group my-2 col-12">
                     <label for="inputPasswordForm" class="sr-only form-control-label">Password</label>
                     <div class="mx-auto">
                         <input type="password" class="form-control text-dark" id="inputPasswordForm" name="password"
-                               placeholder="Password" required="">
+                               placeholder="Password" required="required">
                     </div>
                 </div>
-                <div class="form-group">
-                    <div class="mx-auto my-2 ">
-                        <div class="text-center">
-                            <a href="components/user_password_recover.php" tabindex="5"
-                               class="forgot-password"><p>Forgot Password?</p></a>
-                        </div>
+                <div class="form-group my-2 col-12">
+                    <label for="inputPasswordForm" class="sr-only form-control-label">Password</label>
+                    <div class="mx-auto">
+                        <input type="password" class="form-control text-dark" id="inputPasswordForm" name="confirmarpassword"
+                               placeholder="Confirmar Password" required="required">
                     </div>
                 </div>
 
+
                 <div class="form-group" >
                     <div class="my-3">
-                        <button type="submit" class="btn  btn-block py-1 button-log py-3">LOG-IN
+                        <button type="submit" class="btn  btn-block py-1 button-log py-3">REGISTAR
                         </button>
                     </div>
                 </div>
-                <div class="form-group ">
-                    <div class="my-3 my-3">
-                        <button type="button" class="btn btn-block py-1 button-log py-3">SIGN-IN
-                        </button>
-                    </div>
-                </div>
+
 
             </form>
         </div>

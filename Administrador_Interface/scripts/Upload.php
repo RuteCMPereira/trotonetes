@@ -118,8 +118,20 @@ if (count($_FILES['upload']['name']) > 0) {
 
                     }
 
-                    $_SESSION['addsucess']=1;
-                    header("location:../Adicionar.php?add=evento");
+                    if ($_POST['submit']=="sala"){
+                        $_SESSION['addsucess']=1;
+
+
+                        header("location:../Adicionar.php?add=sala");
+
+                    }
+
+                    if ($_POST['submit']=="evento"){
+                        $_SESSION['addsucess']=4;
+
+                        header("location:../Adicionar.php?add=evento");
+
+                    }
 
 
                 }

@@ -27,6 +27,10 @@ body {
     background-attachment: fixed;
 }
 
+.background_3{
+    background-color:  rgba(56, 20, 39, 1);
+}
+
 
 html {
     scroll-behavior: smooth;
