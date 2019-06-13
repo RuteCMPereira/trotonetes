@@ -1,8 +1,8 @@
 <div class="col-12 hidden-md-down  position-absolute h-100 bg-gradient-1">
 </div>
 
-<section class="h-100 w-100 open_animation bg-ligth-lantern position-absolute">
-    <section class="row p-0 justify-content-start overflow-auto" style="max-height: 120%;">
+<section class=" h-100 w-100 open_animation bg-ligth-lantern position-absolute">
+    <section class="informacao row p-0 justify-content-start overflow-auto" style="max-height: 120%;">
 
 
         <div class="col-10 bg-danger p-2 justify-content-between d-flex mt-3 " style="border-radius: 0px 50px 50px 0px">
@@ -27,18 +27,9 @@
 
 
     </section>
-        <div class="row align-middle">
-            <div class="col-3  my-auto text-center">
+        <div class="icons row align-middle">
+            <div class="col-3 my-auto text-center">
                 <img src="images/back_icon.png" class="icon">
-            </div>
-            <div class="col-3  my-auto text-center">
-                <img src="images/back_icon.png" class="icon">
-            </div>
-            <div class="col-3  my-auto text-center">
-                <img src="images/edit.png" class="icon">
-            </div>
-            <div class="col-3  my-auto text-center">
-                <img src="images/perfil_icon.png" class="icon">
             </div>
         </div>
 
@@ -55,17 +46,11 @@
 
 <style>
 
-
-
-    .card {
-        background-color: none !important;
+    .icons {
+        padding: 80px 0px 100px 150px!important;
     }
-    .form-control{
-        padding: 25px 0px 25px 15px!important;
-        border: solid #0b2e13 4px;
-        border-radius: 20px;
-        background-color: #0c5460;
-        opacity: 0.8;
+    .informacao{
+        padding: 50px 0px 20px 0px!important;
     }
 
 </style>
