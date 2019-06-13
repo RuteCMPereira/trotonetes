@@ -1,7 +1,7 @@
 <?php
 
 
-if (isset($_SESSION['addsucess'])) {
+if (isset($_SESSION['addsucess']) ) {
 
 
     if ($_SESSION['addsucess'] == 1) {
