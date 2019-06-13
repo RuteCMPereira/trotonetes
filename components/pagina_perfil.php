@@ -35,9 +35,9 @@
 
 
     </section>
-        <div class="icons row align-middle">
-            <div class="col-3 my-auto text-center">
-                <img src="images/asset_7.png" class="icon">
+        <div class="row justify-content-center">
+            <div class="col-4 text-center ">
+                <div class="icon"><img src="images/asset_7.png" class="img-fluid p-1 icon" ></div>
             </div>
         </div>
 
@@ -47,7 +47,7 @@
 
 
 <div class="row justify-content-center fixed-bottom">
-    <div class="col-3">
+    <div class="col-3 text-center">
         <img src="images/lantern.png" class="img-fluid">
     </div>
 </div>
@@ -61,7 +61,7 @@
         padding: 50px 0px 20px 0px!important;
     }
     .icon{
-        padding: ;
+
     }
 
 </style>
