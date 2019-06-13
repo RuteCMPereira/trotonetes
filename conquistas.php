@@ -23,7 +23,7 @@ include_once "components/image_full.php";
 <?php
 
 include_once "components/header_jogo.php";
-
+include_once "components/conquistas.php";
 include_once "components/bottom_jogo_2.php";
 
 ?>
