@@ -14,7 +14,7 @@
 
 </head>
 
-<body class="container-fluid p-0 m-0 background_3" scroll="no" style="overflow: hidden" >
+<body class="container-fluid p-0 m-0" scroll="no" style="overflow: hidden" >
 
 <?php
 

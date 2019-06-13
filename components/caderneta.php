@@ -25,51 +25,51 @@
     <section class="row justify-content-around div-w-scroll-3 ">
         <article class="col-5 text-center">
             <img class=" border img-fluid" src="images/santa_joana.jpg">
-            <a><img src="images/arrow_icon.png" class="circulo2" height="40px"></a>
+            <a href="info_obra.php"><img src="images/arrow_icon.png" class="circulo2" height="40px"></a>
         </article>
         <article class="col-5 text-center">
             <img class=" border img-fluid" src="images/santa_joana.jpg">
-            <a><img src="images/arrow_icon.png" class="circulo2" height="40px"></a>
+            <a href="info_obra.php"><img src="images/arrow_icon.png" class="circulo2" height="40px"></a>
         </article>
         <article class="col-5 text-center">
             <img class=" border img-fluid" src="images/santa_joana.jpg">
-            <a><img src="images/arrow_icon.png" class="circulo2" height="40px"></a>
+            <a href="info_obra.php"><img src="images/arrow_icon.png" class="circulo2" height="40px"></a>
         </article>
         <article class="col-5 text-center">
             <img class=" border img-fluid" src="images/santa_joana.jpg">
-            <a><img src="images/arrow_icon.png" class="circulo2" height="40px"></a>
+            <a href="info_obra.php"><img src="images/arrow_icon.png" class="circulo2" height="40px"></a>
         </article>
         <article class="col-5 text-center">
             <img class=" border img-fluid" src="images/santa_joana.jpg">
-            <a><img src="images/arrow_icon.png" class="circulo2" height="40px"></a>
+            <a href="info_obra.php"><img src="images/arrow_icon.png" class="circulo2" height="40px"></a>
         </article>
         <article class="col-5 text-center">
             <img class=" border img-fluid" src="images/santa_joana.jpg">
-            <a><img src="images/arrow_icon.png" class="circulo2" height="40px"></a>
+            <a href="info_obra.php"><img src="images/arrow_icon.png" class="circulo2" height="40px"></a>
         </article>
         <article class="col-5 text-center">
             <img class=" border img-fluid" src="images/santa_joana.jpg">
-            <a><img src="images/arrow_icon.png" class="circulo2" height="40px"></a>
+            <a href="info_obra.php"><img src="images/arrow_icon.png" class="circulo2" height="40px"></a>
         </article>
         <article class="col-5 text-center">
             <img class=" border img-fluid" src="images/santa_joana.jpg">
-            <a><img src="images/arrow_icon.png" class="circulo2" height="40px"></a>
+            <a href="info_obra.php"><img src="images/arrow_icon.png" class="circulo2" height="40px"></a>
         </article>
         <article class="col-5 text-center">
             <img class=" border img-fluid" src="images/santa_joana.jpg">
-            <a><img src="images/arrow_icon.png" class="circulo2" height="40px"></a>
+            <a href="info_obra.php"><img src="images/arrow_icon.png" class="circulo2" height="40px"></a>
         </article>
         <article class="col-5 text-center">
             <img class=" border img-fluid" src="images/santa_joana.jpg">
-            <a><img src="images/arrow_icon.png" class="circulo2" height="40px"></a>
+            <a href="info_obra.php"><img src="images/arrow_icon.png" class="circulo2" height="40px"></a>
         </article>
         <article class="col-5 text-center">
             <img class=" border img-fluid" src="images/santa_joana.jpg">
-            <a><img src="images/arrow_icon.png" class="circulo2" height="40px"></a>
+            <a href="info_obra.php"><img src="images/arrow_icon.png" class="circulo2" height="40px"></a>
         </article>
         <article class="col-5 text-center">
             <img class=" border img-fluid" src="images/santa_joana.jpg">
-            <a><img src="images/arrow_icon.png" class="circulo2" height="40px"></a>
+            <a href="info_obra.php"><img src="images/arrow_icon.png" class="circulo2" height="40px"></a>
         </article>
     </section>
 </section>

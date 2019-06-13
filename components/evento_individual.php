@@ -7,10 +7,10 @@
     </section>
 
     <div class="div-w-scroll-2">
-        <div class="col-12 pb-2 px get_big">
+        <div class="col-12 pb-2 ">
             <img src="images/museu-3.jpg" class="img-fluid">
         </div>
-        <div class="row justify-content-around w-100 position-relative get_big" style="top: -3vh;">
+        <div class="row justify-content-around w-100 position-relative " style="top: -3vh;">
             <form role="form" class="col-5" action="scripts/check_like.php" method="post">
                     <button type="submit" class="butoon_2 w-100 h-100">
                         <p>RESERVAR</p>

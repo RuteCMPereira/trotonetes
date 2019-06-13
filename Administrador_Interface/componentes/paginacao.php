@@ -1,5 +1,5 @@
 <?php
-if(!isset($_GET['ordenar']) && !isset($_GET['pesquisa']) ) {
+if(!isset($_GET['ordenar']) ) {
 
 
     if (isset($_GET['page'])) {

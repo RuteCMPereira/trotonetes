@@ -13,7 +13,7 @@ if (isset($_GET['page'])) {
     }
 }
 
-if (isset($_GET["listagem"])) {
+if (isset($_GET["listagem"]) || isset($_GET['search'])) {
 
     $x = $_GET["listagem"];
 
