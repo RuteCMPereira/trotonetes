@@ -36,8 +36,9 @@
 
     </section>
         <div class="row justify-content-center">
-            <div class="col-4 text-center ">
-                <div class="icon"><img src="images/asset_7.png" class="img-fluid p-1 icon" ></div>
+            <div class="col-12 mt-5 text-center">
+                <img src="images/asset_7.png" class="icon" height="100px">
+
             </div>
         </div>
 
