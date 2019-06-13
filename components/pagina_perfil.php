@@ -8,20 +8,28 @@
         <div class="col-10 bg-danger p-2 justify-content-between d-flex mt-3 " style="border-radius: 0px 50px 50px 0px">
             <p class="m-0 pl-3">Nome</p>
             <a>
-                <i class="fas fa-plus bg-light p-2" style="border-radius: 50px"></i>
+                <i class="fas fa-pen bg-light p-2" style="border-radius: 50px"></i>
             </a>
         </div>
+
+        <div class="col-10 bg-danger p-2 justify-content-between d-flex mt-3 " style="border-radius: 0px 50px 50px 0px">
+            <p class="m-0 pl-3">Nome</p>
+            <a>
+                <i class="fas fa-pen bg-light p-2" style="border-radius: 50px"></i>
+            </a>
+        </div>
+
         <div class="col-10 bg-danger p-2 justify-content-between d-flex mt-3 " style="border-radius: 0px 50px 50px 0px">
             <p class="m-0 pl-3">Correio Eletrónico</p>
             <a>
-                <i class="fas fa-plus bg-light p-2" style="border-radius: 50px"></i>
+                <i class="fas fa-pen bg-light p-2" style="border-radius: 50px"></i>
             </a>
         </div>
 
         <div class="col-10 bg-danger p-2 justify-content-between d-flex mt-3 " style="border-radius: 0px 50px 50px 0px">
             <p class="m-0 pl-3">Password</p>
             <a>
-                <i class="fas fa-plus bg-light p-2" style="border-radius: 50px"></i>
+                <i class="fas fa-pen bg-light p-2" style="border-radius: 50px"></i>
             </a>
         </div>
 
@@ -29,7 +37,7 @@
     </section>
         <div class="icons row align-middle">
             <div class="col-3 my-auto text-center">
-                <img src="images/back_icon.png" class="icon">
+                <img src="images/asset_7.png" class="icon">
             </div>
         </div>
 
@@ -51,6 +59,9 @@
     }
     .informacao{
         padding: 50px 0px 20px 0px!important;
+    }
+    .icon{
+        padding: ;
     }
 
 </style>
