@@ -682,14 +682,14 @@ p.ranking_titulo{
 
 .ranking_sub1 {
     background-color:#E6CEBB;
-    color:#381427;
+    color:#23151F;
     border-radius: 7px;
 }
 
 .evento {
     width: 200px;
     margin: 86px !important;
-    margin-top: 135px !important;
+    margin-top: 20px !important;
     min-height: 50px;
     text-align: center;
     position: relative;
@@ -704,14 +704,15 @@ label {
     width: 100%;
     line-height: 50px;
     cursor: pointer;
-    background: #381427;
-    color: white;
+    background: #23151F;
+    color:#E6CEBB ;
     user-select: none;
     padding-right: 10px;
     z-index: 8;
+    font-size: 20px;
 }
 label:hover {
-    background: #381427;
+    background: #23151F;
     border-radius: 30px;
 }
 label:after {
@@ -734,12 +735,12 @@ label:after {
     overflow: hidden;
     transition: 0.3s linear;
     z-index: 0;
-    background: #fff;
+    background: #E6CEBB ;
     opacity: 0.9;
     border-radius: 10px;
     position: absolute;
     top: 1rem !important;
-    color:  #381427;
+    color:  #23151F;
 }
 li {
     padding: 3px 10px;
@@ -793,13 +794,42 @@ mes:last-child { padding-bottom: 15px; !important;
 
 .dataevento {
     width: 80%;
-    margin-top: 80px !important;
-    margin-left: 36px !important;
-    margin-right: -2px !important;
+    margin-top: 37px !important;
+    margin-left: 37px !important;
+    margin-right: -1px !important;
+    background-color: #E6CEBB ;
+    border-radius: 7px;
+}
+
+.p_descricao {
+    padding-top: 50px !important;
+    padding-bottom: 25px !important;
+    padding-left: 15px !important;
+    color: #23151F;
+    font-size: 17px;
+}
+
+.btn_reservar {
+    background-color: #23151F;
+    color: #E6CEBB;
+    margin-left: 90px !important;
+    border-radius: 10px;
+    padding: 12px !important;
+    top: -3.5vh !important;
+    position: relative;
+}
+
+.vermais {
+    margin-right: 75px !important;
+    margin-left: 3px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
 }
 
 
-}
+
+
+
 .genero{
     min-height: 50px;
     text-align: center;
