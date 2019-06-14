@@ -14,11 +14,11 @@
 
 </head>
 
-<body class="container-fluid p-0 m-0" scroll="no" style="overflow: hidden" >
+<body class="container-fluid p-0 m-0 background_3" scroll="no" style="overflow: hidden" >
 
 <?php
 
-include_once "components/log_in.php";
+include_once "components/registar.php";
 include_once "helpers/js.php";
 
 ?>
