@@ -689,7 +689,7 @@ p.ranking_titulo{
 .evento {
     width: 200px;
     margin: 86px !important;
-    margin-top: 150px !important;
+    margin-top: 135px !important;
     min-height: 50px;
     text-align: center;
     position: relative;
@@ -737,8 +737,8 @@ label:after {
     background: #fff;
     opacity: 0.9;
     border-radius: 10px;
-    top: -1.7rem;
-    position: relative;
+    position: absolute;
+    top: 1rem !important;
     color:  #381427;
 }
 li {
@@ -746,7 +746,7 @@ li {
 
 }
 .julho {
-    padding-top: 45px;
+    padding-top: 1rem !important;
     margin-top: 35px!important;
 }
 .dezembro {
@@ -772,9 +772,20 @@ mes:last-child { padding-bottom: 15px; !important;
  }
 
 .fotoevento {
+    width: 90%;
     align-content: center;
-    margin-left: 45px !important;
-    padding-left: 40px !important;
+    padding-left: 36px !important;
     position: fixed;
+    margin-top: -32px !important;
+}
+
+.dataevento {
+    width: 80%;
+    margin-top: 80px !important;
+    margin-left: 36px !important;
+    margin-right: -2px !important;
+}
+
+
 }
 
