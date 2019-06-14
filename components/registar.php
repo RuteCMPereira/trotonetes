@@ -23,20 +23,23 @@
                                placeholder="Email" required="required">
                     </div>
                 </div>
+
                 <div class="form-group my-2 col-5 p-0 m-0 d-inline-block">
                     <label for="inputEmailForm" class="sr-only form-control-label">Género</label>
                     <div class="mx-auto">
                         <input type="text" class="form-control text-dark" id="inputEmailForm" name="genero"
                                placeholder="Género" required="required">
+
                     </div>
                 </div>
                 <div class="form-group my-2 col-5 p-0 m-0 d-inline-block">
                     <label for="inputEmailForm" class="sr-only form-control-label">Género</label>
                     <div class="mx-auto">
-                        <input type="text" class="form-control text-dark" id="inputEmailForm" name="datanascimento"
+                        <input type="text" class="form-control text-dark datanasc" id="inputEmailForm" name="datanascimento"
                                placeholder="Data de Nascimento" required="required">
                     </div>
                 </div>
+
                 <div class="form-group my-2 col-12">
                     <label for="inputPasswordForm" class="sr-only form-control-label">Password</label>
                     <div class="mx-auto">
