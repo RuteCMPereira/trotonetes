@@ -639,6 +639,53 @@ a.forgot-password {
 .largura {width: 70%;}
 
 
+p.conquista_titulo {
+    font-size: 1.4rem!important;
+    background-color:#230f1b;
+    border-radius: 10px 10px 0px 0px;}
+
+.conquista_imagem{
+    border: 7px solid #E6CEBB;
+border-radius: 15px;
+}
+
+p.conquista_titulo1 {
+    font-size: 1.4rem!important;
+    background-color:#E6CEBB;
+    text-decoration: none;
+    color:#230f1b ;
+    border-radius: 10px 10px 0px 0px;}
+
+
+
+a:active {text-decoration: none;
+            color: none!important;}
+a:visited {text-decoration: none;}
+
+p.ranking_titulo{
+    background-color: #381427;
+    font-size: 1.3rem;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.ranking_imagem{
+    border: 7px solid #381427;
+    border-radius: 10px;
+}
+
+.ranking_sub {
+    color:#E6CEBB;
+    background-color:#381427;
+    border-radius: 7px;
+    }
+
+
+.ranking_sub1 {
+    background-color:#E6CEBB;
+    color:#381427;
+    border-radius: 7px;
+}
+
 .evento {
     width: 200px;
     margin: 86px !important;
