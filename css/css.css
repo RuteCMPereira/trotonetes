@@ -8,27 +8,27 @@ body {
     height: 100%;
     width: 100%;
     font-family: 'Barlow', sans-serif;
-    font-size: 13pt !important;
+    font-size: 11pt !important;
     color: #efd0bc;
 
 }
 
 
-.background_1 {
+.background_1{
     background-image: url("../images/background.png");
     background-size: 59vh;
     background-repeat: no-repeat;
     background-position: center 0;
 }
 
-.background_2 {
+.background_2{
     background-image: linear-gradient(0deg, rgba(119, 88, 69, 1) 0%, rgba(56, 20, 39, 1) 40%);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-.background_3 {
-    background-color: rgba(56, 20, 39, 1);
+.background_3{
+    background-color:  rgba(56, 20, 39, 1);
 }
 
 
@@ -36,10 +36,10 @@ html {
     scroll-behavior: smooth;
 }
 
-.butoon_2 {
+.butoon_2{
 
     background-color: #23151F;
-    color: #E6CEBB !important;
+    color: #E6CEBB!important;
     border-radius: 10px;
     font-weight: normal;
 }
@@ -74,7 +74,7 @@ html {
 .icon {
 
     padding: 3px;
-    background-color: #edceba;
+    background-color: #EDCEBA;
     border-radius: 50%;
     height: 5vh;
 
@@ -132,7 +132,6 @@ html {
     animation-timing-function: ease-in-out;
     animation-duration: 1.5s;
 }
-
 
 .clip-me-div-2 {
 
@@ -729,7 +728,7 @@ p.conquista_titulo1 {
     background-color: #E6CEBB;
     text-decoration: none;
     color: #230f1b;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 0 0;
 }
 
 
@@ -745,7 +744,7 @@ a:visited {
 p.ranking_titulo {
     background-color: #381427;
     font-size: 1.3rem;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 0 0;
 }
 
 .ranking_imagem {
@@ -769,7 +768,7 @@ p.ranking_titulo {
 .evento {
     width: 200px;
     margin: 86px !important;
-    margin-top: 150px !important;
+    margin-top: 20px !important;
     min-height: 50px;
     text-align: center;
     position: relative;
@@ -789,15 +788,16 @@ label {
     width: 100%;
     line-height: 50px;
     cursor: pointer;
-    background: #381427;
-    color: white;
+    background: #23151F;
+    color:#E6CEBB ;
     user-select: none;
     padding-right: 10px;
     z-index: 8;
+    font-size: 20px;
 }
 
 label:hover {
-    background: #381427;
+    background: #23151F;
     border-radius: 30px;
 }
 
@@ -822,12 +822,12 @@ label:after {
     overflow: hidden;
     transition: 0.3s linear;
     z-index: 0;
-    background: #fff;
+    background: #E6CEBB ;
     opacity: 0.9;
     border-radius: 10px;
-    top: -1.7rem;
-    position: relative;
-    color: #381427;
+    position: absolute;
+    top: 1rem !important;
+    color:  #23151F;
 }
 
 li {
@@ -836,8 +836,9 @@ li {
 }
 
 .julho {
-    padding-top: 45px;
-    margin-top: 35px !important;
+
+    padding-top: 1rem !important;
+    margin-top: 35px!important;
 }
 
 .dezembro {
@@ -867,12 +868,126 @@ mes:last-child {
     transition: max-height 1s ease-in;
     overflow: hidden;
 }
+#drop2 {
+    display: none;
+}
+#drop2:checked ~ .content {
+    height: auto;
+    width: 100%;
+    max-height: 900px;
+    transition: max-height 1s ease-in;
+    overflow: hidden;
+}
+
+#drop3 {
+    display: none;
+}
+#drop3:checked ~ .content {
+    height: auto;
+    width: 100%;
+    max-height: 900px;
+    transition: max-height 1s ease-in;
+    overflow: hidden;
+}
 
 .fotoevento {
+    width: 90%;
     align-content: center;
-    margin-left: 45px !important;
-    padding-left: 40px !important;
+    padding-left: 36px !important;
     position: fixed;
+    margin-top: -32px !important;
+}
+
+.dataevento {
+    width: 80%;
+    margin-top: 37px !important;
+    margin-left: 37px !important;
+    margin-right: -1px !important;
+    background-color: #E6CEBB ;
+    border-radius: 7px;
+}
+
+.p_descricao {
+    padding-top: 50px !important;
+    padding-bottom: 25px !important;
+    padding-left: 15px !important;
+    color: #23151F;
+    font-size: 17px;
+}
+
+.btn_reservar {
+    background-color: #23151F;
+    color: #E6CEBB;
+    margin-left: 90px !important;
+    border-radius: 10px;
+    padding: 12px !important;
+    top: -3.5vh !important;
+    position: relative;
+}
+
+.vermais {
+    margin-right: 75px !important;
+    margin-left: 3px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+}
+
+
+
+
+
+
+.genero{
+    min-height: 50px;
+    text-align: center;
+    position: relative;
+    z-index: 4;
+}
+.genero_content {
+    height: 0;
+    max-height: 0px;
+    margin: 0;
+    text-align: left;
+    overflow: hidden;
+    transition: 0.3s linear;
+    z-index: 0;
+    background: #fff;
+    opacity: 0.9;
+    border-radius: 10px;
+    top: -1.7rem;
+    position: relative;
+    color:  #381427;
+}
+
+.nacionalidade{
+    min-height: 50px;
+    text-align: center;
+    position: relative;
+    z-index: 4;
+}
+
+.nacionalidade_content{
+    height: 0;
+    max-height: 0px;
+    margin: 0;
+    text-align: left;
+    overflow: hidden;
+    transition: 0.3s linear;
+    z-index: 0;
+    background: #fff;
+    opacity: 0.9;
+    border-radius: 10px;
+    top: -1.7rem;
+    position: relative;
+    color:  #381427;
+}
+
+.registo_form {
+    padding: 15px 0px 25px 15px !important;
+    border: solid #E6CEBB 4px;
+    border-radius: 19px;
+    background-color: #8B6C69 !important;
+    color: rgba(56, 20, 39, 1) !important;
 }
 
 
