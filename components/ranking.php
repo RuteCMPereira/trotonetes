@@ -10,7 +10,9 @@
     </div>
 </section>
 
-<section class="row justify-content-center pt-3 " style="background-color: #230f1b;">
+<section style="height: 100vh;background-color: #230f1b;position: relative">
+
+<section class="row justify-content-center pt-3 ">
    <div class="col-12">
     <div class="col-7 mx-auto mt-2">
         <p class="ranking_titulo text-center">O TEU LUGAR É 527</p>
@@ -37,7 +39,7 @@
 
 
 
-<section class="row justify-content-center pt-2 " style="background-color: #230f1b;">
+<section class="row justify-content-center pt-2 ">
     <div class="col-3 d-inline-block ml-2">
         <p class="text-center ranking_sub1">345</p>
     </div>
@@ -47,7 +49,7 @@
     </div>
 </section>
 
-<section class="row justify-content-center pt-1 " style="background-color: #230f1b;">
+<section class="row justify-content-center pt-1 " >
     <div class="col-3 d-inline-block ml-2">
         <p class="text-center  ranking_sub1">764</p>
     </div>
@@ -55,4 +57,37 @@
     <div class="col-8 d-inline-block ml-1 pr-2">
         <p class="text-left pl-3 ranking_sub1">João Silva</p>
     </div>
+</section>
+
+<section class="row justify-content-center pt-2 ">
+    <div class="col-3 d-inline-block ml-2">
+        <p class="text-center ranking_sub1">345</p>
+    </div>
+
+    <div class="col-8 d-inline-block ml-1 pr-2">
+        <p class="text-left pl-3 ranking_sub1">Maria Oliveira</p>
+    </div>
+</section>
+
+<section class="row justify-content-center pt-1 ">
+    <div class="col-3 d-inline-block ml-2">
+        <p class="text-center  ranking_sub1">764</p>
+    </div>
+
+    <div class="col-8 d-inline-block ml-1 pr-2">
+        <p class="text-left pl-3 ranking_sub1">João Silva</p>
+    </div>
+</section>
+
+
+<section class="row justify-content-center pt-1 " >
+    <div class="col-3 d-inline-block ml-2">
+        <p class="text-center  ranking_sub1">764</p>
+    </div>
+
+    <div class="col-8 d-inline-block ml-1 pr-2">
+        <p class="text-left pl-3 ranking_sub1">João Silva</p>
+    </div>
+</section>
+
 </section>

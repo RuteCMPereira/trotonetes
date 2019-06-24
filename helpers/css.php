@@ -11,3 +11,4 @@
 <!-- Custom styles for this template -->
 <link href="css/bootstrap.css" rel="stylesheet">
 <link href="css/css.css" rel="stylesheet">
+<link href="css/media_querys.css" rel="stylesheet">

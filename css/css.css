@@ -8,27 +8,27 @@ body {
     height: 100%;
     width: 100%;
     font-family: 'Barlow', sans-serif;
-    font-size: 11pt !important;
+    font-size: 13pt !important;
     color: #efd0bc;
 
 }
 
 
-.background_1{
+.background_1 {
     background-image: url("../images/background.png");
     background-size: 59vh;
     background-repeat: no-repeat;
     background-position: center 0;
 }
 
-.background_2{
+.background_2 {
     background-image: linear-gradient(0deg, rgba(119, 88, 69, 1) 0%, rgba(56, 20, 39, 1) 40%);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-.background_3{
-    background-color:  rgba(56, 20, 39, 1);
+.background_3 {
+    background-color: rgba(56, 20, 39, 1);
 }
 
 
@@ -36,10 +36,10 @@ html {
     scroll-behavior: smooth;
 }
 
-.butoon_2{
+.butoon_2 {
 
     background-color: #23151F;
-    color: #E6CEBB!important;
+    color: #E6CEBB !important;
     border-radius: 10px;
     font-weight: normal;
 }
@@ -74,9 +74,31 @@ html {
 .icon {
 
     padding: 3px;
-    background-color: #EDCEBA;
+    background-color: #edceba;
     border-radius: 50%;
     height: 5vh;
+
+}
+
+
+.icon_2 {
+
+    padding: 3px;
+    background-color: #edceba;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 21px 5px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 21px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 21px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.icon_2.blocked {
+
+    opacity: 0.3;
+    -webkit-box-shadow: 0px 0px 21px 5px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 0px 21px 5px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 21px 5px rgba(0, 0, 0, 0.15);
 
 }
 
@@ -108,8 +130,9 @@ html {
     clip-path: ellipse(130% 100% at 50% 0%);
     animation-name: fall;
     animation-timing-function: ease-in-out;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
 }
+
 
 .clip-me-div-2 {
 
@@ -193,10 +216,37 @@ html {
     animation-timing-function: linear;
 }
 
+.get_big_2 {
+
+    animation: op_get_big_2 1.5s;
+    animation-timing-function: ease-in-out;
+}
+
 .anime_fade {
     animation: fade_animation 1.4s;
     animation-timing-function: linear;
 }
+
+.anime_fade_out {
+    animation: fade_out_animation 900ms;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fade_out_animation {
+
+    0% {
+        opacity: 1;
+
+    }
+
+    100% {
+
+        opacity: 0;
+
+    }
+
+}
+
 
 .anime_slide_up {
     animation: up_slide_bottom 1.2s;
@@ -204,10 +254,9 @@ html {
 }
 
 
-
 .anime_slide_left {
     left: -20px;
-    animation: slide_left 1.2s;
+    animation: slide_left 1.5s;
     animation-timing-function: ease-in-out;
 }
 
@@ -219,7 +268,7 @@ html {
         opacity: 0;
     }
 
-    50%{
+    50% {
 
         opacity: 0;
     }
@@ -282,8 +331,7 @@ html {
 .open_animation {
     padding-top: 15vh !important;
     clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 91%, 0 75%);
-    animation: open 7s;
-    animation-delay: 1s;
+    animation: open 8.4s;
     animation-timing-function: linear;
 }
 
@@ -337,6 +385,29 @@ html {
 
 }
 
+
+@keyframes op_get_big_2 {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 0.5;
+    }
+    92% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+}
 
 @keyframes open {
 
@@ -575,15 +646,15 @@ button {
 }
 
 .card {
-    background-color: none !important;
+    background-color: transparent !important;
 }
 
 .form-control {
-    padding: 25px 0px 25px 15px !important;
-    border: solid #E6CEBB 4px;
-    border-radius: 20px;
+    padding: 2vh 0px 2vh 15px !important;
+    border: solid #E6CEBB 2px;
+    border-radius: 12px;
     background-color: #8B6C69 !important;
-    color: rgba(56, 20, 39, 1) !important;
+    color: #E6CEBB!important;
 }
 
 .search_bar {
@@ -631,58 +702,67 @@ a.forgot-password {
 }
 
 
-.menujogo {background-color: #E6CEBB;
-           border-radius: 50%;
+.menujogo {
+    background-color: #E6CEBB;
+    border-radius: 50%;
     -webkit-box-shadow: 0 1px 24px 8px rgba(0, 0, 0, 0.25);
-           }
+}
 
-.largura {width: 70%;}
+.largura {
+    width: 70%;
+}
 
 
 p.conquista_titulo {
-    font-size: 1.4rem!important;
-    background-color:#230f1b;
-    border-radius: 10px 10px 0px 0px;}
+    font-size: 1.4rem !important;
+    background-color: #230f1b;
+    border-radius: 10px 10px 0px 0px;
+}
 
-.conquista_imagem{
+.conquista_imagem {
     border: 7px solid #E6CEBB;
-border-radius: 15px;
+    border-radius: 15px;
 }
 
 p.conquista_titulo1 {
-    font-size: 1.4rem!important;
-    background-color:#E6CEBB;
+    font-size: 1.4rem !important;
+    background-color: #E6CEBB;
     text-decoration: none;
-    color:#230f1b ;
-    border-radius: 10px 10px 0px 0px;}
+    color: #230f1b;
+    border-radius: 10px 10px 0px 0px;
+}
 
 
+a:active {
+    text-decoration: none;
+    color: transparent !important;
+}
 
-a:active {text-decoration: none;
-            color: none!important;}
-a:visited {text-decoration: none;}
+a:visited {
+    text-decoration: none;
+}
 
-p.ranking_titulo{
+p.ranking_titulo {
     background-color: #381427;
     font-size: 1.3rem;
     border-radius: 10px 10px 0px 0px;
 }
 
-.ranking_imagem{
+.ranking_imagem {
     border: 7px solid #381427;
     border-radius: 10px;
 }
 
 .ranking_sub {
-    color:#E6CEBB;
-    background-color:#381427;
+    color: #E6CEBB;
+    background-color: #381427;
     border-radius: 7px;
-    }
+}
 
 
 .ranking_sub1 {
-    background-color:#E6CEBB;
-    color:#381427;
+    background-color: #E6CEBB;
+    color: #381427;
     border-radius: 7px;
 }
 
@@ -695,8 +775,13 @@ p.ranking_titulo{
     position: relative;
     z-index: 4;
 }
-ul { list-style-type: none; padding: 0;
-    border-radius: 30px;}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    border-radius: 30px;
+}
+
 label {
     position: relative;
     border-radius: 30px;
@@ -710,22 +795,25 @@ label {
     padding-right: 10px;
     z-index: 8;
 }
+
 label:hover {
     background: #381427;
     border-radius: 30px;
 }
+
 label:after {
-     content: "\203A";
-     position: absolute;
-     width: 40px;
-     font-size: 32px;
-     right: 0;
-     padding-left: 0px;
-     top: 0;
-     bottom: 0;
-     transform: rotate(90deg);
-     border-radius: 30px;
- }
+    content: "\203A";
+    position: absolute;
+    width: 40px;
+    font-size: 32px;
+    right: 0;
+    padding-left: 0px;
+    top: 0;
+    bottom: 0;
+    transform: rotate(90deg);
+    border-radius: 30px;
+}
+
 .evento_content {
     height: 0;
     max-height: 0px;
@@ -739,37 +827,46 @@ label:after {
     border-radius: 10px;
     top: -1.7rem;
     position: relative;
-    color:  #381427;
+    color: #381427;
 }
+
 li {
     padding: 3px 10px;
 
 }
+
 .julho {
     padding-top: 45px;
-    margin-top: 35px!important;
+    margin-top: 35px !important;
 }
+
 .dezembro {
     padding-top: 35px;
-    margin-top: 15px!important;
+    margin-top: 15px !important;
     padding-bottom: 12px !important;
 }
+
 .mes:first-child {
     padding-top: 35px;
-    margin-top: 15px!important;
+    margin-top: 15px !important;
 }
-mes:last-child { padding-bottom: 15px; !important;
+
+mes:last-child {
+    padding-bottom: 15px;
+!important;
 }
+
 #drop {
     display: none;
 }
+
 #drop:checked ~ .content {
-     height: auto;
-     width: 100%;
-     max-height: 900px;
-     transition: max-height 1s ease-in;
-     overflow: hidden;
- }
+    height: auto;
+    width: 100%;
+    max-height: 900px;
+    transition: max-height 1s ease-in;
+    overflow: hidden;
+}
 
 .fotoevento {
     align-content: center;
@@ -778,3 +875,38 @@ mes:last-child { padding-bottom: 15px; !important;
     position: fixed;
 }
 
+
+.totu_back {
+    background-color: rgba(119, 88, 69, 1);
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 21px 5px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 0px 21px 5px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 21px 5px rgba(0, 0, 0, 0.15);
+}
+
+
+.skip_totu {
+    position: absolute;
+    top: 90vh;
+    opacity: 0.75;
+    font-weight: bolder;
+    background-color: #EFD0BC;
+    border-radius: 10px;
+    color: #381427;
+    -webkit-box-shadow: 0px 0px 21px 5px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 0px 21px 5px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 21px 5px rgba(0, 0, 0, 0.15);
+}
+.back_totu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 40;
+    background-color: rgba(56, 20, 39, 0.75)
+}
+.front_button_totu{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}

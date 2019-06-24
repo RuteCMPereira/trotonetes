@@ -1,0 +1,50 @@
+@media only screen and (min-height: 650px) {
+
+    #menu_buttons{
+
+        position: relative;
+        top: 8vh;
+    }
+    #image_logo{
+        position: relative;
+        top: 3vh;
+
+    }
+}
+
+@media only screen and (min-height: 700px) {
+
+    #menu_buttons{
+
+        position: relative;
+        top: 9vh;
+    }
+    #image_logo{
+        position: relative;
+        top: 7vh;
+
+    }
+}
+
+
+@media only screen and (min-height: 750px) {
+
+    #menu_buttons{
+
+        position: relative;
+        top: 17vw;
+    }
+}
+@media only screen and (min-height: 800px) {
+
+    #menu_buttons{
+
+        position: relative;
+        top: 15vh;
+    }
+    #image_logo{
+        position: relative;
+        top: 11vh;
+
+    }
+}

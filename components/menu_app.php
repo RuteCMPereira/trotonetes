@@ -1,11 +1,11 @@
 <section class=" container-fluid clip-me-div">
 
-    <div class="row mt-3 justify-content-center">
+    <div class="row mt-3 justify-content-center" id="image_logo">
         <div class="col-7 anime_fade">
             <img src="images/logo_index.png" style="width: 100%">
         </div>
     </div>
-   <div>
+   <div id="menu_buttons">
     <div class="row justify-content-center mx-2 position-relative mt-4">
         <div class="col-3 text-center get_big"><a href="mapa.php"><img src="images/mapa_icon.png"  height="75"></a></div>
     </div>

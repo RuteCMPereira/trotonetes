@@ -30,7 +30,7 @@ if (isset($_POST["utilizador"]) && isset($_POST["nascimento"]) && isset($_POST["
         } else {
 
             $_SESSION['registo_concluido'] = 0;
-            header("location:../Registo.php");
+           header("location:../Registo.php");
         }
 
     } else {
