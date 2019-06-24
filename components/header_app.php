@@ -1,4 +1,4 @@
-<section class="clip-me-header  p-0">
+<section class="clip-me-header  p-0 fixed-top">
     <div class="row h-100 align-middle ">
         <div class="col-4  my-auto text-center">
             <img src="images/back_icon.png" class="icon ">

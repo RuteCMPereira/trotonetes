@@ -2,7 +2,7 @@
 
     <section class="row my-2 justify-content-center ">
         <div class="col-11 text-center titulo_contactos">
-            <p>NOME DO EVENTO</p>
+            <p>SOBRE O MUSEU</p>
         </div>
     </section>
 
