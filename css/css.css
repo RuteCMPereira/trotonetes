@@ -7,28 +7,28 @@
 body {
     height: 100%;
     width: 100%;
-    font-family: 'Barlow', sans-serif;
+    font-family: 'Barlow', sans-serif !important;
     font-size: 11pt !important;
     color: #efd0bc;
 
 }
 
 
-.background_1{
+.background_1 {
     background-image: url("../images/background.png");
     background-size: 59vh;
     background-repeat: no-repeat;
     background-position: center 0;
 }
 
-.background_2{
+.background_2 {
     background-image: linear-gradient(0deg, rgba(119, 88, 69, 1) 0%, rgba(56, 20, 39, 1) 40%);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-.background_3{
-    background-color:  rgba(56, 20, 39, 1);
+.background_3 {
+    background-color: rgba(56, 20, 39, 1);
 }
 
 
@@ -36,10 +36,10 @@ html {
     scroll-behavior: smooth;
 }
 
-.butoon_2{
+.butoon_2 {
 
     background-color: #23151F;
-    color: #E6CEBB!important;
+    color: #E6CEBB !important;
     border-radius: 10px;
     font-weight: normal;
 }
@@ -329,7 +329,7 @@ html {
 
 .open_animation {
     padding-top: 15vh !important;
-    clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 91%, 0 75%);
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 91%, 0 80%);
     animation: open 8.4s;
     animation-timing-function: linear;
 }
@@ -469,6 +469,10 @@ html {
     border-radius: 50px;
     background-color: #23151F;
     color: #9A867B;
+}
+
+#form_heigth {
+    height: 65% !important;
 }
 
 .contacto_baixo {
@@ -653,7 +657,7 @@ button {
     border: solid #E6CEBB 2px;
     border-radius: 12px;
     background-color: #8B6C69 !important;
-    color: #E6CEBB!important;
+    color: #E6CEBB !important;
 }
 
 .search_bar {
@@ -675,9 +679,13 @@ a.forgot-password {
 
 .button-log {
 
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: #E6CEBB;
-    color: rgba(56, 20, 39, 1);
+    font-weight: bolder !important;
+    color: rgba(56, 20, 39, 1) !important;
+    font-size: 17px !important;
+    font-family: 'Barlow', sans-serif !important;
+
 }
 
 .form-control::-webkit-input-placeholder {
@@ -766,13 +774,12 @@ p.ranking_titulo {
 }
 
 .evento {
-    width: 200px;
-    margin: 86px !important;
-    margin-top: 20px !important;
-    min-height: 50px;
-    text-align: center;
-    position: relative;
-    z-index: 4;
+
+    background-color: #E6CEBB !important;
+    color: #230f1b!important;
+    border-radius: 0 0 15px 15px ;
+
+
 }
 
 ul {
@@ -789,7 +796,7 @@ label {
     line-height: 50px;
     cursor: pointer;
     background: #23151F;
-    color:#E6CEBB ;
+    color: #E6CEBB;
     user-select: none;
     padding-right: 10px;
     z-index: 8;
@@ -822,12 +829,12 @@ label:after {
     overflow: hidden;
     transition: 0.3s linear;
     z-index: 0;
-    background: #E6CEBB ;
+    background: #E6CEBB;
     opacity: 0.9;
     border-radius: 10px;
     position: absolute;
     top: 1rem !important;
-    color:  #23151F;
+    color: #23151F;
 }
 
 li {
@@ -838,7 +845,7 @@ li {
 .julho {
 
     padding-top: 1rem !important;
-    margin-top: 35px!important;
+    margin-top: 35px !important;
 }
 
 .dezembro {
@@ -868,9 +875,11 @@ mes:last-child {
     transition: max-height 1s ease-in;
     overflow: hidden;
 }
+
 #drop2 {
     display: none;
 }
+
 #drop2:checked ~ .content {
     height: auto;
     width: 100%;
@@ -882,6 +891,7 @@ mes:last-child {
 #drop3 {
     display: none;
 }
+
 #drop3:checked ~ .content {
     height: auto;
     width: 100%;
@@ -903,7 +913,7 @@ mes:last-child {
     margin-top: 37px !important;
     margin-left: 37px !important;
     margin-right: -1px !important;
-    background-color: #E6CEBB ;
+    background-color: #E6CEBB;
     border-radius: 7px;
 }
 
@@ -918,11 +928,15 @@ mes:last-child {
 .btn_reservar {
     background-color: #23151F;
     color: #E6CEBB;
-    margin-left: 90px !important;
     border-radius: 10px;
-    padding: 12px !important;
-    top: -3.5vh !important;
     position: relative;
+    top: -4vh;
+}
+
+.btn_reservar button {
+
+    color: #E6CEBB !important;
+
 }
 
 .vermais {
@@ -933,16 +947,13 @@ mes:last-child {
 }
 
 
-
-
-
-
-.genero{
+.genero {
     min-height: 50px;
     text-align: center;
     position: relative;
     z-index: 4;
 }
+
 .genero_content {
     height: 0;
     max-height: 0px;
@@ -956,17 +967,17 @@ mes:last-child {
     border-radius: 10px;
     top: -1.7rem;
     position: relative;
-    color:  #381427;
+    color: #381427;
 }
 
-.nacionalidade{
+.nacionalidade {
     min-height: 50px;
     text-align: center;
     position: relative;
     z-index: 4;
 }
 
-.nacionalidade_content{
+.nacionalidade_content {
     height: 0;
     max-height: 0px;
     margin: 0;
@@ -979,7 +990,7 @@ mes:last-child {
     border-radius: 10px;
     top: -1.7rem;
     position: relative;
-    color:  #381427;
+    color: #381427;
 }
 
 .registo_form {
@@ -1012,6 +1023,7 @@ mes:last-child {
     -moz-box-shadow: 0px 0px 21px 5px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 0px 21px 5px rgba(0, 0, 0, 0.15);
 }
+
 .back_totu {
     position: absolute;
     top: 0;
@@ -1021,7 +1033,81 @@ mes:last-child {
     z-index: 40;
     background-color: rgba(56, 20, 39, 0.75)
 }
-.front_button_totu{
+
+.front_button_totu {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
+}
+
+/* The container must be positioned relative: */
+.custom-select {
+    border: none;
+    background-color: transparent;
+    position: relative;
+}
+
+.custom-select select {
+    display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+    padding: 1vh 0 1vh 0 !important;
+    border: solid #E6CEBB 2px;
+    border-radius: 12px;
+    background-color: #8B6C69 !important;
+    color: #E6CEBB !important;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+    top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div, .select-selected {
+    padding: 8px 16px;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    color: #E6CEBB !important
+}
+
+/* Style items (options): */
+.select-items {
+    position: absolute;
+    padding: 5px !important;
+    margin-top: 10px !important;
+    border-radius: 10px;
+    background-color: #8B6C69;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+    display: none;
+}
+
+.select-items div {
+    color: rgba(56, 20, 39, 1) !important
+}
+
+.certo {
+    background-color: #465e2e !important;
+}
+
+.errado {
+    background-color: #5e2b2b !important;
 }

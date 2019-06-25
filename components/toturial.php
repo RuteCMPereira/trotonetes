@@ -15,9 +15,6 @@
         </section>
     </div>
 
-    <div class="col-5 text-center py-2 skip_totu  mb-5" id="skip">
-        IGNORAR TOUR
-    </div>
 
 
 </section>
@@ -41,21 +38,6 @@
 
         }
 
-        /*
-                CARREGAR NO BOTÃOD DE IGNORAR
-        */
-
-        document.getElementById("skip").onclick = function () {
-
-
-            mudardados();
-            document.getElementById("toturial").classList.add("anime_fade_out");
-            setTimeout(function () {
-                document.getElementById("toturial").style.display = "none";
-            }, 800)
-
-
-        };
 
         /*
                  CARREGAR NO BOTÃOD DE AVANÇAR

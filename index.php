@@ -12,6 +12,17 @@
 
 
 </head>
+
+<?php
+
+session_start();
+
+if (!isset($_SESSION['id_u'])) {
+
+    header("location:log_in.php");
+}
+
+?>
 <script>
     var tour = 1;
     var inner = [
@@ -23,7 +34,42 @@
 <body class="container-fluid p-0 m-0 background_1" scroll="no" style="overflow: hidden">
 
 <?php
-include_once "components/toturial.php";
+
+require_once "connections/connection.php";
+
+
+$link = new_db_connection();
+
+$stmt = mysqli_stmt_init($link);
+
+$email = $_SESSION['email_u'];
+
+$query = "SELECT Utilizadores_tour1 FROM utilizadores WHERE Utilizadores_email LIKE ?";
+
+if (mysqli_stmt_prepare($stmt, $query)) {
+
+    mysqli_stmt_bind_param($stmt, 's', $email);
+
+    if (mysqli_stmt_execute($stmt)) {
+
+        mysqli_stmt_bind_result($stmt, $tour_1);
+
+        if (mysqli_stmt_fetch($stmt)) {
+
+            if ($tour_1 == 0) {
+
+                include_once "components/toturial.php";
+
+            }
+
+        }
+        mysqli_stmt_close($stmt);
+        mysqli_close($link);
+    }
+
+}
+
+
 include_once "components/header_app.php";
 include_once "components/menu_app.php";
 include_once "helpers/js.php";
@@ -31,8 +77,6 @@ include_once "helpers/js.php";
 ?>
 
 </body>
-
-
 
 
 </html>

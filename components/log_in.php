@@ -6,22 +6,18 @@
         <div class="col-4 p-3">
             <img src="images/logo.png" class="img-fluid">
         </div>
-        <div class="col-12 p-5">
-            <form id="login-form" class="py-2" role="form" action="scripts/user_login.php" method="post">
+    </div>
+    <div class="row  justify-content-center align-content-center align-items-center" style="height: 60%!important;">
+        <div class="col-9">
+            <form id="login-form" class="py-2" role="form" action="scripts/Log_in_Check.php" method="post">
                 <div class="form-group my-2">
-                    <label for="inputEmailForm" class="sr-only form-control-label">Username</label>
-                    <div class="mx-auto">
-                        <input type="text" class="form-control" id="inputEmailForm" name="username"
-                               placeholder="Nome de Utilizador"
+                        <input type="email" class="form-control" id="inputEmailForm" name="email"
+                               placeholder="Correio Eletrônico "
                                required="required">
-                    </div>
                 </div>
                 <div class="form-group my-2">
-                    <label for="inputPasswordForm" class="sr-only form-control-label">Password</label>
-                    <div class="mx-auto">
                         <input type="password" class="form-control text-dark" id="inputPasswordForm" name="password"
-                               placeholder="Password" required="">
-                    </div>
+                               placeholder="Palavra-Passe" required="">
                 </div>
                 <div class="form-group">
                     <div class="mx-auto my-2 ">
@@ -32,24 +28,23 @@
                     </div>
                 </div>
 
-                <div class="form-group" >
+                <div class="form-group">
                     <div class="my-3">
-                        <button type="submit" class="btn  btn-block py-1 button-log py-3">LOG-IN
+                        <button type="submit" class="btn  btn-block py-1 button-log py-2">LOG-IN
                         </button>
                     </div>
                 </div>
                 <div class="form-group ">
                     <div class="my-3">
-                        <button type="button" class="btn btn-block py-1 button-log py-3">SIGN-IN
-                        </button>
+                        <a href="registar.php" class=" text-center btn-block py-1 button-log py-2">SIGN-IN
+                        </a>
                     </div>
                 </div>
 
             </form>
         </div>
-
-
     </div>
+
 </section>
 <div class="row justify-content-center fixed-bottom">
     <div class="col-2">

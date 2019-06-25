@@ -48,3 +48,17 @@
 
     }
 }
+
+
+@media only screen and (max-height: 620px) {
+
+    #logo_regis{
+
+        display: none!important;
+
+    }
+    #form_heigth{
+        height: 85% !important;
+    }
+
+}
