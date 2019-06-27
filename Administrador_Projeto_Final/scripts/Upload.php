@@ -24,7 +24,8 @@ if (count($_FILES['upload']['name']) > 0) {
         $extension = strtolower($extension);
 
         if (($extension != "jpg") && ($extension != "jpeg")
-            && ($extension != "png")) {
+            && ($extension != "png") && ($extension != "JPG") && ($extension != "JPEG")
+            && ($extension != "PNG") ) {
 
 
             if ($_POST['submit']=="sala"){$_SESSION['addsucess'] = 5; $go_back = "location:../Adicionar.php?add=sala";}

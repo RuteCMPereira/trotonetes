@@ -18,8 +18,15 @@
 
 <?php
 
+
+if (!isset($_SESSION['id_u'])) {
+
+    header("location:log_in.php");
+}
+
+
 include_once "components/header_app.php";
-include_once "components/contactos.php";
+include_once "components/informacao.php";
 include_once "components/bottom_app.php";
 include_once "helpers/js.php";
 

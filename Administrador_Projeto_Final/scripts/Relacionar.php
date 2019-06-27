@@ -18,8 +18,6 @@ if ($_POST['submit']=="sala"){
             mysqli_stmt_close($stmt);
             mysqli_close($link);
 
-            $_SESSION['addsucess']=4;
-            header("location:../Adicionar.php?add=sala");
 
         } else {
             mysqli_stmt_close($stmt);

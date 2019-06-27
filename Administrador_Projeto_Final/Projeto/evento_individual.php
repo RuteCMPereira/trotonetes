@@ -18,6 +18,12 @@
 
 <?php
 
+
+if (!isset($_SESSION['id_u'])) {
+
+    header("location:log_in.php");
+}
+
 include_once "components/header_app.php";
 include_once "components/evento_individual.php";
 include_once "components/bottom_app.php";

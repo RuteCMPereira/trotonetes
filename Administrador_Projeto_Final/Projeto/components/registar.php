@@ -21,15 +21,13 @@
 
                     ?>
                     <div class="row justify-content-center">
-                        <div class="col-12 p-3 text-center anime_fade"
-                             style="background-color: rgba(56, 20, 39, 1)!important; border-radius: 10px;font-size: 12px ">
+                        <div class="col-12 p-3 text-center anime_fade warning">
                             O Registo foi efectuado com sucesso
                         </div>
                     </div><?php }
                 if ($_SESSION['regisu'] == 0) { ?>
                     <div class="row justify-content-center">
-                        <div class="col-12 p-3 text-center anime_fade"
-                             style="background-color: rgba(56, 20, 39, 1)!important; border-radius: 10px;font-size: 12px ">
+                        <div class="col-12 p-3 text-center anime_fade warning">
                             O Registo não foi efectuado com sucesso, por favor verifique os dados introduzidos.
                         </div>
                     </div><?php

@@ -28,8 +28,14 @@
 
 session_start();
 
-require_once "connections/connection.php";
 
+if (!isset($_SESSION['id_u'])) {
+
+    header("location:log_in.php");
+}
+
+
+require_once "connections/connection.php";
 
 $link = new_db_connection();
 
@@ -66,6 +72,7 @@ if (mysqli_stmt_prepare($stmt, $query)) {
 include_once "components/header_app.php";
 include_once "components/map.php";
 include_once "components/bottom_app.php";
+include_once "components/popupmap.php";
 include_once "helpers/js.php";
 
 ?>

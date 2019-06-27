@@ -16,7 +16,7 @@ body {
 
 .background_1 {
     background-image: url("../images/background.png");
-    background-size: 59vh;
+    background-size: auto 100vh;
     background-repeat: no-repeat;
     background-position: center 0;
 }
@@ -42,6 +42,9 @@ html {
     color: #E6CEBB !important;
     border-radius: 10px;
     font-weight: normal;
+    -webkit-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.42);
+    -moz-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.42);
+    box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.42);
 }
 
 .div-w-scroll {
@@ -248,6 +251,7 @@ html {
 
 
 .anime_slide_up {
+    z-index: 10;
     animation: up_slide_bottom 1.2s;
     animation-timing-function: ease-in-out;
 }
@@ -420,7 +424,7 @@ html {
         clip-path: polygon(0 0, 100% 0, 100% 0%, 50% 88%, 0 0%);
     }
     10% {
-        clip-path: polygon(0 0, 100% 0, 100% 75%, 50% 90%, 0 75%);
+        clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 91%, 0 80%);
     }
 }
 
@@ -440,6 +444,7 @@ html {
     border-radius: 15px;
     padding: 5px;
     margin: 7px;
+    text-transform: uppercase;
 }
 
 .info_contactos {
@@ -776,8 +781,8 @@ p.ranking_titulo {
 .evento {
 
     background-color: #E6CEBB !important;
-    color: #230f1b!important;
-    border-radius: 0 0 15px 15px ;
+    color: #230f1b !important;
+    border-radius: 0 0 15px 15px;
 
 
 }
@@ -837,10 +842,35 @@ label:after {
     color: #23151F;
 }
 
+.evento_content a {
+
+    color: #23151F !important;
+}
+
 li {
     padding: 3px 10px;
 
 }
+
+.warning {
+    background-color: rgba(56, 20, 39, 1) !important;
+    border-radius: 10px;
+    font-size: 12px
+}
+
+.warning_2 {
+    background-color: #23151F !important;
+    border-radius: 15px;
+    font-size: 12px
+}
+
+.image_evento {
+
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+    background-position: center center;
+}
+
 
 .julho {
 
@@ -931,13 +961,23 @@ mes:last-child {
     border-radius: 10px;
     position: relative;
     top: -4vh;
+    -webkit-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.42);
+    -moz-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.42);
+    box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.42);
+}
+
+.btn_reservar button a {
+
+    color: #E6CEBB;
+
 }
 
 .btn_reservar button {
 
-    color: #E6CEBB !important;
+    color: #E6CEBB;
 
 }
+
 
 .vermais {
     margin-right: 75px !important;
@@ -1110,4 +1150,23 @@ mes:last-child {
 
 .errado {
     background-color: #5e2b2b !important;
+}
+
+.evento_reservado button a {
+    font-weight: bolder !important;
+    color: #23151F !important;
+}
+
+.evento_reservado button {
+    font-weight: bolder !important;
+    color: #23151F !important;
+}
+
+.evento_reservado {
+    font-weight: bolder !important;
+    color: #23151F !important;
+    background-color: #E6CEBB !important;
+    -webkit-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.42);
+    -moz-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.42);
+    box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.42);
 }
