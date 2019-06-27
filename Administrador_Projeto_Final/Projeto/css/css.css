@@ -835,7 +835,7 @@ label:after {
     transition: 0.3s linear;
     z-index: 0;
     background: #E6CEBB;
-    opacity: 0.9;
+    opacity: 1;
     border-radius: 10px;
     position: absolute;
     top: 1rem !important;
